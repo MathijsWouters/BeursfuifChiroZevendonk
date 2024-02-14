@@ -32936,11 +32936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif\\Beursfuif.csproj",
+      "projectUniqueName": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif.csproj",
       "projectName": "Beursfuif",
-      "projectPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif\\Beursfuif.csproj",
+      "projectPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif.csproj",
       "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif\\obj\\",
+      "outputPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

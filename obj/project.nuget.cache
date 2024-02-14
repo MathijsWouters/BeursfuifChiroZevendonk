@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YwA9x7aY+m95rk9WbTDYdIq8Di0oGkIAXUKKlw2RjBdY/37LjRxZr1hFxlr2wdry0ObeBkywROuhskGL4qMduA==",
+  "dgSpecHash": "c2Zm6JwiGsw7Br3q2amND/wqV1oNH17EV1nPe5TKQcp29C+jy+lEyFqCv3PMnZ3ExrvAAM11mAb9MGoSIcpY1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif\\Beursfuif.csproj",
+  "projectFilePath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathi\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\mathi\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
