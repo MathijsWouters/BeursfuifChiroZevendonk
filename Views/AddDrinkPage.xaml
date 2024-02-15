@@ -2,34 +2,46 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Beursfuif.Views.AddDrinkPage"
+             xmlns:controls="clr-namespace:Maui.ColorPicker;assembly=Maui.ColorPicker"
              Title="AddDrinkPage"
-             BackgroundColor="MediumPurple">
+             >
     <ContentPage.Content>
         <Frame BackgroundColor="White"
                CornerRadius="20"
                Padding="15"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
-               WidthRequest="300"
-               HeightRequest="400">
+               WidthRequest="350"
+               HeightRequest="450">
+            <!-- Increased height -->
             <StackLayout Spacing="10">
                 <!-- Drink Name -->
                 <Entry x:Name="nameEntry" Placeholder="Drink name" />
 
-                <!-- Color Picker -->
-                <Label Text="Pick a color:" />
-                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="25" 
-                       BorderColor="Gray" Padding="10">
-                    <BoxView x:Name="colorBoxView" Color="Red" />
-                </Frame>
-                <!-- Min Price -->
-                <Entry x:Name="minPriceEntry" Placeholder="Min price" Keyboard="Numeric" />
+                <!-- Color Picker and Selected Color Label -->
+                <Label Text="Pick a color:" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" />
+                <controls:ColorPicker x:Name="ColorPicker"
+                                      WidthRequest="250" HeightRequest="150"
+                                      HorizontalOptions="Center"
+                                      PickedColorChanged="ColorPicker_PickedColorChanged" />
+                <Label x:Name="SelectedColorValueLabel"
+                       Text="#COLOR"
+                       FontAttributes="Bold"
+                       FontSize="Title"
+                       HorizontalTextAlignment="Center"
+                       TextColor="AntiqueWhite"
+                       VerticalTextAlignment="Center" />
 
-                <!-- Max Price -->
-                <Entry x:Name="maxPriceEntry" Placeholder="Max price" Keyboard="Numeric" />
+                <!-- Price Entries -->
+                <StackLayout Orientation="Horizontal" Spacing="15">
+                    <!-- Min Price -->
+                    <Entry x:Name="minPriceEntry" Placeholder="Min price" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                    <!-- Max Price -->
+                    <Entry x:Name="maxPriceEntry" Placeholder="Max price" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
 
                 <!-- Add Button -->
-                <Button Text="Add Drink" Clicked="OnSubmitClicked" />
+                <Button Text="Save Drink" FontSize="Medium" FontAttributes="Bold" Clicked="OnSubmitClicked" />
             </StackLayout>
         </Frame>
     </ContentPage.Content>

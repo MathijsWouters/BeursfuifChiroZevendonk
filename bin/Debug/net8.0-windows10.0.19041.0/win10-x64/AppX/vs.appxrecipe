@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-15T12:25:55.208</Modified>
+      <Modified>2024-02-15T14:45:29.507</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-15T12:25:55.104</Modified>
+      <Modified>2024-02-15T14:45:29.398</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.runtimeconfig.json">
       <PackagePath>Beursfuif.runtimeconfig.json</PackagePath>
-      <Modified>2024-02-14T13:39:21.682</Modified>
+      <Modified>2024-02-15T14:07:39.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.dll">
       <PackagePath>Beursfuif.dll</PackagePath>
-      <Modified>2024-02-15T12:25:54.727</Modified>
+      <Modified>2024-02-15T14:45:29.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Beursfuif.exe</PackagePath>
-      <Modified>2024-02-15T12:25:54.775</Modified>
+      <Modified>2024-02-15T14:45:29.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.deps.json">
       <PackagePath>Beursfuif.deps.json</PackagePath>
-      <Modified>2024-02-15T12:18:14.734</Modified>
+      <Modified>2024-02-15T14:07:39.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -425,6 +425,26 @@
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.windowsappsdk\1.3.230724000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Release.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Release.Net.dll</PackagePath>
       <Modified>2023-07-24T19:10:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\nor0x.maui.colorpicker\1.0.1\lib\net6.0-windows10.0.19041\Maui.ColorPicker.dll">
+      <PackagePath>Maui.ColorPicker.dll</PackagePath>
+      <Modified>2022-08-24T08:04:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp\2.88.7\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2024-01-10T22:47:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp.views.maui.controls\2.88.7\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Controls.dll</PackagePath>
+      <Modified>2024-01-10T22:47:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp.views.maui.core\2.88.7\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Core.dll</PackagePath>
+      <Modified>2024-01-10T22:47:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp.views.winui\2.88.7\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
+      <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
+      <Modified>2024-01-10T22:47:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.maui.controls.core\8.0.3\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -569,6 +589,10 @@
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.windowsappsdk\1.3.230724000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2023-04-28T12:58:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp.nativeassets.win32\2.88.7\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2024-01-10T22:47:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.maui.controls.compatibility\8.0.3\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

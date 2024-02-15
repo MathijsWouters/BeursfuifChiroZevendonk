@@ -78,6 +78,14 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.7, )"
+            },
+            "nor0x.Maui.ColorPicker": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -121,6 +129,14 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.7, )"
+            },
+            "nor0x.Maui.ColorPicker": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -164,6 +180,14 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.7, )"
+            },
+            "nor0x.Maui.ColorPicker": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -202,6 +226,14 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.7, )"
+            },
+            "nor0x.Maui.ColorPicker": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [

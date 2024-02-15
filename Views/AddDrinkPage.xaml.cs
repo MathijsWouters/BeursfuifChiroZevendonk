@@ -14,4 +14,14 @@ public partial class AddDrinkPage : ContentPage
         // Now close the modal
         await Navigation.PopModalAsync();
     }
+    private void ColorPicker_PickedColorChanged(object sender, Color colorPicked)
+    {
+        // Use the selected color
+        SelectedColorValueLabel.Text = colorPicked.ToHex();
+        SelectedColorValueLabel.Background = colorPicked;
+        this.BackgroundColor = colorPicked;
+
+    }
+
+
 }
