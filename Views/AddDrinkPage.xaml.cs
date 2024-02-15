@@ -1,11 +1,16 @@
+using Beursfuif.Models;
 namespace Beursfuif.Views;
 
 public partial class AddDrinkPage : ContentPage
 {
-	public AddDrinkPage()
-	{
-		InitializeComponent();
-	}
+    private DrinksViewModel _viewModel;
+
+    // Constructor that takes the ViewModel
+    public AddDrinkPage(DrinksViewModel viewModel)
+    {
+        InitializeComponent();
+        _viewModel = viewModel;
+    }
     private void ValidateForm()
     {
         bool isNameNotEmpty = !string.IsNullOrWhiteSpace(nameEntry.Text);
@@ -30,17 +35,45 @@ public partial class AddDrinkPage : ContentPage
         // Assuming you have already created and populated a new Drink object...
         // This is where you would call your ViewModel and add the drink.
 
-        if (!saveDrinkButton.IsEnabled)
+        // Parse the color from the label's text
+        if (Color.TryParse(SelectedColorValueLabel.Text, out var selectedColor))
         {
-            return;
+            decimal minPrice, maxPrice;
+            bool isMinPriceValid = decimal.TryParse(minPriceEntry.Text, out minPrice);
+            bool isMaxPriceValid = decimal.TryParse(maxPriceEntry.Text, out maxPrice);
+
+            if (isMinPriceValid && isMaxPriceValid && minPrice < maxPrice && !string.IsNullOrWhiteSpace(nameEntry.Text))
+            {
+                // Use the parsed color and price to add a new drink
+                _viewModel.AddDrink(nameEntry.Text, selectedColor, minPrice, maxPrice);
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                // Handle validation failure
+                string validationMessage = "";
+                if (string.IsNullOrWhiteSpace(nameEntry.Text))
+                    validationMessage += "The drink name is required.\n";
+                if (!isMinPriceValid || !isMaxPriceValid)
+                    validationMessage += "Please enter valid prices.\n";
+                if (minPrice >= maxPrice)
+                    validationMessage += "The min price must be less than the max price.\n";
+
+                await DisplayAlert("Validation Error", validationMessage.Trim(), "OK");
+            }
         }
-        await Navigation.PopModalAsync();
+        else
+        {
+            // Handle invalid color format
+            await DisplayAlert("Invalid Color", "The selected color is not valid.", "OK");
+        }
     }
+
     private void ColorPicker_PickedColorChanged(object sender, Color colorPicked)
     {
         // Use the selected color
         SelectedColorValueLabel.Text = colorPicked.ToHex();
-        SelectedColorValueLabel.Background = colorPicked;
+        SelectedColorValueLabel.BackgroundColor = colorPicked;
         this.BackgroundColor = colorPicked;
 
     }

@@ -4,6 +4,7 @@
              x:Class="Beursfuif.Views.AddDrinkPage"
              xmlns:controls="clr-namespace:Maui.ColorPicker;assembly=Maui.ColorPicker"
              Title="AddDrinkPage"
+             Shell.NavBarIsVisible="False"
              >
     <ContentPage.Content>
         <Frame BackgroundColor="White"

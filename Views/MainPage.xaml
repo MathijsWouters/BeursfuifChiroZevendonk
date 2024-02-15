@@ -15,23 +15,13 @@
         </HorizontalStackLayout>
 
         <!-- Left Side 3x3 Grid for drinks -->
-        <Grid Grid.Row="1" Grid.Column="0" Padding="10"
-              RowDefinitions="*,*,*" ColumnDefinitions="*,*,*"
-              HorizontalOptions="Fill" VerticalOptions="Center">
-            <!-- Define the 9 buttons with placeholders for colors, names, and prices -->
-            <!-- Row 0 -->
-            <Button Text="Drankje 1\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="0" Grid.Column="0"/>
-            <Button Text="Drankje 2\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="0" Grid.Column="1"/>
-            <Button Text="Drankje 3\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="0" Grid.Column="2"/>
-            <!-- Row 1 -->
-            <Button Text="Drankje 4\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="1" Grid.Column="0"/>
-            <Button Text="Drankje 5\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="1" Grid.Column="1"/>
-            <Button Text="Drankje 6\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="1" Grid.Column="2"/>
-            <!-- Row 2 -->
-            <Button Text="Drankje 7\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="2" Grid.Column="0"/>
-            <Button Text="Drankje 8\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="2" Grid.Column="1"/>
-            <Button Text="Drankje 9\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="2" Grid.Column="2"/>
+        <Grid x:Name="DrinksGrid"
+      Grid.Row="1" Grid.Column="0" Padding="10"
+      RowDefinitions="*,*,*" ColumnDefinitions="*,*,*"
+      HorizontalOptions="Fill" VerticalOptions="Center">
+            <!-- Dynamic drink buttons will be added here -->
         </Grid>
+
 
         <!-- Right Side Information Box with rounded white border -->
         <Grid Grid.Row="1" Grid.Column="2" Padding="20">
