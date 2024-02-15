@@ -12,5 +12,9 @@
         Title="Beursfuif"
         ContentTemplate="{DataTemplate view:MainPage}"
         Route="MainPage" />
+    <ShellContent
+    Title="Add Drink"
+    ContentTemplate="{DataTemplate view:AddDrinkPage}"
+    Route="AddDrinkPage" />
 
 </Shell>

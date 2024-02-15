@@ -4,13 +4,53 @@
              x:Class="Beursfuif.Views.MainPage"
              Title=""
              Shell.NavBarIsVisible="False">
-    <VerticalStackLayout>
-        <HorizontalStackLayout HeightRequest="50" HorizontalOptions="Center">
+    <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="2*,3*,*">
+        <!-- Top Navigation Buttons -->
+        <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="50" HorizontalOptions="Center">
             <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}"/>
-            <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}" Clicked="OnAddDrinkButton_Clicked"/>
             <Button Text="Delete drink" Style="{StaticResource NavigationButtonStyle}"/>
             <Button Text="Start feestje" Style="{StaticResource NavigationButtonStyle}"/>
             <Button Text="Stop feestje" Style="{StaticResource NavigationButtonStyle}"/>
         </HorizontalStackLayout>
-    </VerticalStackLayout>
+
+        <!-- Left Side 3x3 Grid for drinks -->
+        <Grid Grid.Row="1" Grid.Column="0" Padding="10"
+              RowDefinitions="*,*,*" ColumnDefinitions="*,*,*"
+              HorizontalOptions="Fill" VerticalOptions="Center">
+            <!-- Define the 9 buttons with placeholders for colors, names, and prices -->
+            <!-- Row 0 -->
+            <Button Text="Drankje 1\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="0" Grid.Column="0"/>
+            <Button Text="Drankje 2\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="0" Grid.Column="1"/>
+            <Button Text="Drankje 3\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="0" Grid.Column="2"/>
+            <!-- Row 1 -->
+            <Button Text="Drankje 4\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="1" Grid.Column="0"/>
+            <Button Text="Drankje 5\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="1" Grid.Column="1"/>
+            <Button Text="Drankje 6\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="1" Grid.Column="2"/>
+            <!-- Row 2 -->
+            <Button Text="Drankje 7\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="2" Grid.Column="0"/>
+            <Button Text="Drankje 8\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="2" Grid.Column="1"/>
+            <Button Text="Drankje 9\n$Price" Style="{StaticResource DrinkButtonStyle}" Grid.Row="2" Grid.Column="2"/>
+        </Grid>
+
+        <!-- Right Side Information Box with rounded white border -->
+        <Grid Grid.Row="1" Grid.Column="2" Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Text="Timer" Grid.Row="0" HorizontalOptions="Center"/>
+            <Frame Grid.Row="1" CornerRadius="10" BorderColor="White" Padding="0">
+                <BoxView BackgroundColor="HotPink" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            </Frame>
+            <Label Text="Totaal vakjes" Grid.Row="2" HorizontalOptions="Center"/>
+            <Label Text="Totaal price" Grid.Row="3" HorizontalOptions="Center"/>
+        </Grid>
+
+        <!-- Bottom Large "Crash" Button -->
+        <Button Text="Crash" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="End"
+                Style="{StaticResource NavigationButtonStyle}" HeightRequest="80" WidthRequest="300" />
+    </Grid>
 </ContentPage>

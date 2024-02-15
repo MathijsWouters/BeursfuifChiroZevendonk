@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beursfuif.Views.AddDrinkPage"
+             Title="AddDrinkPage"
+             BackgroundColor="MediumPurple">
+    <ContentPage.Content>
+        <Frame BackgroundColor="White"
+               CornerRadius="20"
+               Padding="15"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               WidthRequest="300"
+               HeightRequest="400">
+            <StackLayout Spacing="10">
+                <!-- Drink Name -->
+                <Entry x:Name="nameEntry" Placeholder="Drink name" />
+
+                <!-- Color Picker -->
+                <Label Text="Pick a color:" />
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="25" 
+                       BorderColor="Gray" Padding="10">
+                    <BoxView x:Name="colorBoxView" Color="Red" />
+                </Frame>
+                <!-- Min Price -->
+                <Entry x:Name="minPriceEntry" Placeholder="Min price" Keyboard="Numeric" />
+
+                <!-- Max Price -->
+                <Entry x:Name="maxPriceEntry" Placeholder="Max price" Keyboard="Numeric" />
+
+                <!-- Add Button -->
+                <Button Text="Add Drink" Clicked="OnSubmitClicked" />
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

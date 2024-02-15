@@ -42,6 +42,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Beursfuif.Resources.Styles
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/mathi/OneDrive/Documenten/A1 chiro beursfuif/BeursfuifChiroZevendonk/Views/AddDrinkPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Beursfuif.Views.AddDrinkPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddDrinkPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddDrinkPage.xaml
+
 [C:/Users/mathi/OneDrive/Documenten/A1 chiro beursfuif/BeursfuifChiroZevendonk/Views/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Beursfuif.Views.MainPage.xaml
