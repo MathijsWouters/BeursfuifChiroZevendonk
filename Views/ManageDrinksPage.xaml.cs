@@ -28,6 +28,7 @@ namespace Beursfuif.Views
                 {
                     var drinkView = new DrinkManageView(drink, _viewModel);
                     drinkView.RequestDelete += DrinkView_RequestDelete;
+                    drinkView.EditRequested += DrinkView_EditRequested; // Subscribe to the new event
                     layout.Children.Add(drinkView);
                 }
             }
@@ -62,7 +63,14 @@ namespace Beursfuif.Views
                 }
             }
         }
-
-
+        private async void DrinkView_EditRequested(object sender, Drink drink)
+        {
+            await Navigation.PushAsync(new EditDrinkPage(_viewModel, drink));
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            LoadDrinks(); // Refresh the drinks list
+        }
     }
 }

@@ -13,10 +13,10 @@ namespace Beursfuif.Views
             _viewModel = viewModel;
             BindingContext = _drink;
         }
-
+        public event EventHandler<Drink> EditRequested;
         private void OnEditClicked(object sender, EventArgs e)
         {
-            // Navigate to an edit page or show an edit form
+            EditRequested?.Invoke(this, _drink);
         }
 
         public event EventHandler RequestDelete;
@@ -26,6 +26,7 @@ namespace Beursfuif.Views
             // Invoke the event
             RequestDelete?.Invoke(this, new EventArgs());
         }
+        
 
     }
 }

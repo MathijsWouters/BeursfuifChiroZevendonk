@@ -33,9 +33,20 @@ namespace Beursfuif.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Drinks)));
         }
 
-        public void EditDrink(Drink drink)
+        public void EditDrink(Drink drinkToEdit)
         {
-            // Edit logic
+            // Find the drink in the collection
+            var drink = Drinks.FirstOrDefault(d => d.Number == drinkToEdit.Number);
+            if (drink != null)
+            {
+                drink.Name = drinkToEdit.Name;
+                drink.DrinkColor = drinkToEdit.DrinkColor;
+                drink.MinPrice = drinkToEdit.MinPrice;
+                drink.MaxPrice = drinkToEdit.MaxPrice;
+
+                // Notify UI of changes
+                OnPropertyChanged(nameof(Drinks));
+            }
         }
 
         public void DeleteDrink(Drink drinkToDelete)
