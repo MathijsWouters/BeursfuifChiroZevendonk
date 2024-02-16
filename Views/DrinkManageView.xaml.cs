@@ -19,9 +19,13 @@ namespace Beursfuif.Views
             // Navigate to an edit page or show an edit form
         }
 
+        public event EventHandler RequestDelete;
+
         private void OnDeleteClicked(object sender, EventArgs e)
         {
-            _viewModel.DeleteDrink(_drink);
+            // Invoke the event
+            RequestDelete?.Invoke(this, new EventArgs());
         }
+
     }
 }

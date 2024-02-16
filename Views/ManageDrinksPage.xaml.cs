@@ -26,7 +26,8 @@ namespace Beursfuif.Views
                 // Dynamically add drinks to the layout
                 foreach (var drink in _viewModel.Drinks)
                 {
-                    var drinkView = new DrinkManageView(drink, _viewModel); // Ensure DrinkManageView is implemented
+                    var drinkView = new DrinkManageView(drink, _viewModel);
+                    drinkView.RequestDelete += DrinkView_RequestDelete;
                     layout.Children.Add(drinkView);
                 }
             }
@@ -38,6 +39,30 @@ namespace Beursfuif.Views
             }
         }
 
-        // Add methods for adding, editing, and deleting drinks
+        public event EventHandler DeleteRequested;
+
+        private void OnDeleteClicked(object sender, EventArgs e)
+        {
+            // Raise the DeleteRequested event when the delete button is clicked
+            DeleteRequested?.Invoke(this, EventArgs.Empty);
+        }
+        private async void DrinkView_RequestDelete(object sender, EventArgs e)
+        {
+            if (sender is DrinkManageView drinkView)
+            {
+                var drink = drinkView.BindingContext as Drink;
+                if (drink != null)
+                {
+                    bool isConfirmed = await DisplayAlert("Confirm Delete", "Are you sure you want to delete this drink?", "Yes", "No");
+                    if (isConfirmed)
+                    {
+                        _viewModel.DeleteDrink(drink);
+                        LoadDrinks(); // Refresh the drinks list
+                    }
+                }
+            }
+        }
+
+
     }
 }

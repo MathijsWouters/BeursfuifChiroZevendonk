@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-16T10:14:47.123</Modified>
+      <Modified>2024-02-16T11:23:09.421</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-16T10:14:47.026</Modified>
+      <Modified>2024-02-16T11:23:09.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.runtimeconfig.json">
       <PackagePath>Beursfuif.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.dll">
       <PackagePath>Beursfuif.dll</PackagePath>
-      <Modified>2024-02-16T10:14:46.676</Modified>
+      <Modified>2024-02-16T11:23:08.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Beursfuif.exe</PackagePath>
-      <Modified>2024-02-16T10:14:46.720</Modified>
+      <Modified>2024-02-16T11:23:08.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
