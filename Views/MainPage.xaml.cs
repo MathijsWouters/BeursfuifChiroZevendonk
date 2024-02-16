@@ -147,4 +147,16 @@ public partial class MainPage : ContentPage
         var manageDrinksPage = new ManageDrinksPage(_viewModel);
         await Navigation.PushAsync(manageDrinksPage);
     }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        RefreshDrinksDisplay();
+    }
+    private void RefreshDrinksDisplay()
+    {
+        // You can directly call Drinks_CollectionChanged here if it already sets up the drinks display correctly
+        // Passing null for sender and e since they're not used in the method
+        Drinks_CollectionChanged(null, null);
+    }
+
 }
