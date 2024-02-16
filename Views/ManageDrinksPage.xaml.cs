@@ -15,14 +15,26 @@ namespace Beursfuif.Views
 
         private void LoadDrinks()
         {
-            // Clear the layout
+            // Find the VerticalStackLayout by name
             var layout = this.FindByName<VerticalStackLayout>("DrinksLayout");
-
-            // Dynamically add drinks to the layout
-            foreach (var drink in _viewModel.Drinks)
+            // Ensure that the layout is not null
+            if (layout != null)
             {
-                var drinkView = new DrinkManageView(drink, _viewModel); // You will create this custom view
-                layout.Children.Add(drinkView);
+                // Clear the layout
+                layout.Children.Clear();
+
+                // Dynamically add drinks to the layout
+                foreach (var drink in _viewModel.Drinks)
+                {
+                    var drinkView = new DrinkManageView(drink, _viewModel); // Ensure DrinkManageView is implemented
+                    layout.Children.Add(drinkView);
+                }
+            }
+            else
+            {
+                // Handle the case where the layout is not found
+                // You might want to log this situation or throw a more informative exception
+                throw new InvalidOperationException("DrinksLayout not found on ManageDrinksPage.");
             }
         }
 

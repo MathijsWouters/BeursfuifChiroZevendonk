@@ -4,7 +4,7 @@
              x:Class="Beursfuif.Views.ManageDrinksPage"
              Title="Manage Drinks">
     <ScrollView>
-        <VerticalStackLayout Spacing="10" Padding="10">
+        <VerticalStackLayout x:Name="DrinksLayout" Spacing="10" Padding="10">
             <!-- Dynamically add drink views here -->
         </VerticalStackLayout>
     </ScrollView>
