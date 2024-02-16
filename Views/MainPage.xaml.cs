@@ -140,9 +140,11 @@ public partial class MainPage : ContentPage
     }
     private async void OnAddDrinkButton_Clicked(object sender, EventArgs e)
     {
-        // Navigate to AddDrinkPage, passing the DrinksViewModel
         await Navigation.PushAsync(new AddDrinkPage(_viewModel));
     }
-
-    // Other methods...
+    private async void OnManageDrinksButton_Clicked(object sender, EventArgs e)
+    {
+        var manageDrinksPage = new ManageDrinksPage(_viewModel);
+        await Navigation.PushAsync(manageDrinksPage);
+    }
 }

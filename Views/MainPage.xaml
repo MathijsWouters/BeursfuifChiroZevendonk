@@ -5,11 +5,10 @@
              Title=""
              Shell.NavBarIsVisible="False">
     <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="2*,3*,*">
-        <!-- Top Navigation Buttons -->
         <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="50" HorizontalOptions="Center">
             <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}"/>
             <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}" Clicked="OnAddDrinkButton_Clicked"/>
-            <Button Text="Delete drink" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Manage drinks" Style="{StaticResource NavigationButtonStyle}" Clicked="OnManageDrinksButton_Clicked"/>
             <Button Text="Start feestje" Style="{StaticResource NavigationButtonStyle}"/>
             <Button Text="Stop feestje" Style="{StaticResource NavigationButtonStyle}"/>
         </HorizontalStackLayout>
@@ -21,9 +20,6 @@
       HorizontalOptions="Fill" VerticalOptions="Center">
             <!-- Dynamic drink buttons will be added here -->
         </Grid>
-
-
-        <!-- Right Side Information Box with rounded white border -->
         <Grid Grid.Row="1" Grid.Column="2" Padding="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -39,7 +35,6 @@
             <Label Text="Totaal price" Grid.Row="3" HorizontalOptions="Center"/>
         </Grid>
 
-        <!-- Bottom Large "Crash" Button -->
         <Button Text="Crash" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="End"
                 Style="{StaticResource NavigationButtonStyle}" HeightRequest="80" WidthRequest="300" />
     </Grid>

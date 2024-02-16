@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Beursfuif.Views.ManageDrinksPage"
+             Title="Manage Drinks">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="10">
+            <!-- Dynamically add drink views here -->
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

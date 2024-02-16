@@ -29,7 +29,15 @@ namespace Beursfuif.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Drinks)));
         }
 
-        // Additional methods and logic for your ViewModel
+        public void EditDrink(Drink drink)
+        {
+            // Edit logic
+        }
+
+        public void DeleteDrink(Drink drink)
+        {
+            Drinks.Remove(drink);
+        }
     }
 }
 
