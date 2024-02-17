@@ -67,7 +67,6 @@ public partial class EditDrinkPage : ContentPage
         }
         else
         {
-            // If the current value is not a number, reset it to 0.00
             priceEntry.Text = "0.00";
         }
     }

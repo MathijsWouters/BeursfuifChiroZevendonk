@@ -18,12 +18,10 @@ namespace Beursfuif.Views
         {
             EditRequested?.Invoke(this, _drink);
         }
-
         public event EventHandler RequestDelete;
 
         private void OnDeleteClicked(object sender, EventArgs e)
         {
-            // Invoke the event
             RequestDelete?.Invoke(this, new EventArgs());
         }
         

@@ -28,14 +28,13 @@ namespace Beursfuif.Views
                 {
                     var drinkView = new DrinkManageView(drink, _viewModel);
                     drinkView.RequestDelete += DrinkView_RequestDelete;
-                    drinkView.EditRequested += DrinkView_EditRequested; // Subscribe to the new event
+                    drinkView.EditRequested += DrinkView_EditRequested; 
                     layout.Children.Add(drinkView);
                 }
             }
             else
             {
                 // Handle the case where the layout is not found
-                // You might want to log this situation or throw a more informative exception
                 throw new InvalidOperationException("DrinksLayout not found on ManageDrinksPage.");
             }
         }
@@ -44,7 +43,6 @@ namespace Beursfuif.Views
 
         private void OnDeleteClicked(object sender, EventArgs e)
         {
-            // Raise the DeleteRequested event when the delete button is clicked
             DeleteRequested?.Invoke(this, EventArgs.Empty);
         }
         private async void DrinkView_RequestDelete(object sender, EventArgs e)
@@ -58,7 +56,7 @@ namespace Beursfuif.Views
                     if (isConfirmed)
                     {
                         _viewModel.DeleteDrink(drink);
-                        LoadDrinks(); // Refresh the drinks list
+                        LoadDrinks();
                     }
                 }
             }
@@ -70,7 +68,7 @@ namespace Beursfuif.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            LoadDrinks(); // Refresh the drinks list
+            LoadDrinks(); 
         }
     }
 }
