@@ -7,6 +7,8 @@
         <HorizontalStackLayout HorizontalOptions="Center">
             <Button Text="Save Layout" Style="{StaticResource NavigationButtonStyle}" Clicked="OnSaveLayoutClicked"/>
             <Button Text="Load Layout" Style="{StaticResource NavigationButtonStyle}" Clicked="OnLoadLayoutClicked"/>
+            <Button Text="Delete Layout" Style="{StaticResource NavigationButtonStyle}" Clicked="OnDeleteLayoutClicked"/>
+
         </HorizontalStackLayout>
         <ScrollView>
             <VerticalStackLayout x:Name="DrinksLayout" Spacing="10" Padding="10">

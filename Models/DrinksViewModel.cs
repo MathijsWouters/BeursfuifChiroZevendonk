@@ -12,6 +12,8 @@ namespace Beursfuif.Models
     public class DrinksViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<Drink> Drinks { get; } = new();
+        private readonly DrinkDataService _dataService = new DrinkDataService();
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -63,6 +65,19 @@ namespace Beursfuif.Models
             // Inform the UI that the collection has changed
             OnPropertyChanged(nameof(Drinks));
         }
+        public async Task LoadLayoutAsync(string layoutName)
+        {
+            var drinks = await _dataService.LoadDrinksLayoutAsync(layoutName);
+            Drinks.Clear();
+            foreach (var drink in drinks)
+            {
+                Drinks.Add(drink);
+            }
+
+            // Notify UI that the entire collection has changed
+            OnPropertyChanged(nameof(Drinks));
+        }
+
     }
 }
 
