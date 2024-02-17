@@ -24,7 +24,5 @@ namespace Beursfuif.Views
         {
             RequestDelete?.Invoke(this, new EventArgs());
         }
-        
-
     }
 }

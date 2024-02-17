@@ -70,5 +70,15 @@ namespace Beursfuif.Views
             base.OnAppearing();
             LoadDrinks(); 
         }
+
+        private void OnSaveLayoutClicked(object sender, EventArgs e)
+        {
+
+        }
+        private void OnLoadLayoutClicked(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }
