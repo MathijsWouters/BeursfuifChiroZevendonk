@@ -13,8 +13,12 @@
         ContentTemplate="{DataTemplate view:MainPage}"
         Route="MainPage" />
     <ShellContent
-    Title="Add Drink"
-    ContentTemplate="{DataTemplate view:AddDrinkPage}"
-    Route="AddDrinkPage" />
+        Title="Add Drink"
+        ContentTemplate="{DataTemplate view:AddDrinkPage}"
+        Route="AddDrinkPage" />
+    <ShellContent
+        Title="Manage Drinks"
+        ContentTemplate="{DataTemplate view:ManageDrinksPage}"
+        Route="ManageDrinksPage" />
 
 </Shell>

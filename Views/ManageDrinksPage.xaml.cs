@@ -94,19 +94,18 @@ namespace Beursfuif.Views
             var dataService = new DrinkDataService();
             var layouts = dataService.GetSavedLayouts().ToList();
 
-            // Check if there are saved layouts
             if (layouts.Any())
             {
-                // Converts the IEnumerable<string> to string[]
                 var layoutChoices = layouts.ToArray();
-
-                // DisplayActionSheet returns the name of the selected layout
                 string layoutName = await DisplayActionSheet("Select a Layout", "Cancel", null, layoutChoices);
 
-                // Ensure user didn't hit cancel and a layout was selected
                 if (layoutName != null && layoutName != "Cancel")
                 {
                     await _viewModel.LoadLayoutAsync(layoutName);
+                    // Assuming the LoadLayoutAsync method internally ensures that the layout is correctly loaded
+                    await DisplayAlert("Success", "Layout loaded successfully.", "OK");
+                    // Navigate back to MainPage or refresh the current view
+                    await Navigation.PopToRootAsync(); // Or use an appropriate navigation command
                 }
             }
             else
@@ -114,6 +113,7 @@ namespace Beursfuif.Views
                 await DisplayAlert("No Layouts Found", "There are no saved layouts to load.", "OK");
             }
         }
+
         private async void OnDeleteLayoutClicked(object sender, EventArgs e)
         {
             var dataService = new DrinkDataService();
