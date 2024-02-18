@@ -10,6 +10,7 @@ namespace Beursfuif.Models
     {
         public int Number { get; set; }
         public string Name { get; set; }
+        public decimal CurrentPrice { get; set; }
 
         // Keep the Color property for internal use
         [System.Text.Json.Serialization.JsonIgnore] // Ignore this property for JSON serialization
@@ -25,6 +26,10 @@ namespace Beursfuif.Models
         public decimal MinPrice { get; set; }
         public decimal MaxPrice { get; set; }
         public decimal StartingPrice => (MinPrice + MaxPrice) / 2;
+        public Drink()
+        {
+            CurrentPrice = StartingPrice;
+        }
     }
 }
 
