@@ -1,6 +1,5 @@
 using Beursfuif.Models;
 using System.Collections.Specialized;
-using Beursfuif.Models;
 using Microsoft.Maui.Controls.PlatformConfiguration;
 namespace Beursfuif.Views;
 
@@ -168,10 +167,4 @@ public partial class MainPage : ContentPage
     {
 
     }
-
-
-
-
-
-
 }
