@@ -34,7 +34,7 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Orientation="Horizontal" Padding="10">
-                                <Label Text="{Binding DrinkName}" WidthRequest="100" />
+                                <Label Text="{Binding DrinkName}" WidthRequest="85" />
                                 <Label Text="X" WidthRequest="20" />
                                 <Label Text="{Binding Quantity}" WidthRequest="20" />
                                 <Label Text="=" WidthRequest="20" />
@@ -45,8 +45,8 @@
 
                 </CollectionView>
             </Frame>
-            <Label Text="{Binding TotalPrice, StringFormat='Total: {0:N2}'}" Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
-            <Label Text="{Binding TotalVakjes, StringFormat='Vakjes: {0:F0}'}" Grid.Row="3" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
+            <Label Text="{Binding TotalPrice, StringFormat='Total: {0:N2}'}" Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
+            <Label Text="{Binding TotalVakjes, StringFormat='Vakjes: {0:F0}'}" Grid.Row="3" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
         </Grid>
 
         <Button Text="Crash" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="End"

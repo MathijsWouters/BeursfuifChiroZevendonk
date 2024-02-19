@@ -28,8 +28,12 @@ namespace Beursfuif.Models
         {
             MinPrice = minPrice;
             MaxPrice = maxPrice;
-            StartingPrice = (MinPrice + MaxPrice) / 2;
+            StartingPrice = RoundToNearestQuarter((MinPrice + MaxPrice) / 2);
             CurrentPrice = StartingPrice;
+        }
+        private decimal RoundToNearestQuarter(decimal number)
+        {
+            return Math.Round(number * 4, MidpointRounding.AwayFromZero) / 4;
         }
     }
 }

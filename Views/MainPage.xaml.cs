@@ -1,14 +1,13 @@
 using Beursfuif.Models;
 using System.Collections.Specialized;
-using Beursfuif.Services;
 using Beursfuif.Models;
+using Microsoft.Maui.Controls.PlatformConfiguration;
 namespace Beursfuif.Views;
 
 public partial class MainPage : ContentPage
 {
     private DrinksViewModel _viewModel;
     private Receipt _receipt = new Receipt();
-    private readonly IKeyboardService _keyboardService;
 
     public MainPage()
     {
@@ -17,8 +16,6 @@ public partial class MainPage : ContentPage
         _receipt = new Receipt();
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
-        _keyboardService = DependencyService.Get<IKeyboardService>();
-        _keyboardService?.RegisterKeyPressHandler(KeyPressed);
         ReceiptListView.ItemsSource = _receipt.Items;
     }
 
@@ -166,22 +163,12 @@ public partial class MainPage : ContentPage
         // Passing null for sender and e since they're not used in the method
         Drinks_CollectionChanged(null, null);
     }
-    private void KeyPressed(int keyCode)
-    {
-        // Assuming keyCode is the drink number
-        var drink = _viewModel.Drinks.FirstOrDefault(d => d.Number == keyCode);
-        if (drink != null)
-        {
-            // Logic to add the drink to the receipt
-            _receipt.AddItem(drink);
-            // Refresh the UI to show the updated receipt
-            RefreshReceiptDisplay();
-        }
-    }
+
     private void RefreshReceiptDisplay()
     {
 
     }
+
 
 
 

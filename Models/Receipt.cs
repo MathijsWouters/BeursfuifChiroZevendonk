@@ -70,7 +70,25 @@ namespace Beursfuif.Models
             }
             UpdateTotalPrice();
         }
+        public void RemoveLastItem()
+        {
+            if (Items.Any())
+            {
+                var lastItem = Items.Last();
+                if (lastItem.Quantity > 1)
+                {
 
+                    lastItem.Quantity--;
+                }
+                else
+                {
+
+                    Items.Remove(lastItem);
+                }
+                OnPropertyChanged(nameof(TotalPrice));
+                OnPropertyChanged(nameof(TotalVakjes));
+            }
+        }
 
         private void UpdateTotalPrice()
         {
