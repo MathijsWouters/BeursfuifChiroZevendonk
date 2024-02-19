@@ -22,17 +22,15 @@ namespace Beursfuif.Models
         }
         public void AddDrink(string name, Color color, decimal minPrice, decimal maxPrice)
         {
-            var newDrink = new Drink
+            var newDrink = new Drink(minPrice, maxPrice)
             {
                 Number = Drinks.Count + 1,
                 Name = name,
                 DrinkColor = color,
-                MinPrice = minPrice,
-                MaxPrice = maxPrice
             };
 
             Drinks.Add(newDrink);
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Drinks)));
+            OnPropertyChanged(nameof(Drinks));
         }
 
         public void EditDrink(Drink drinkToEdit)

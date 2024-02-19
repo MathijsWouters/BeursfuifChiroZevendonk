@@ -14,11 +14,12 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         _viewModel = new DrinksViewModel();
+        _receipt = new Receipt();
+        BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         _keyboardService = DependencyService.Get<IKeyboardService>();
         _keyboardService?.RegisterKeyPressHandler(KeyPressed);
         ReceiptListView.ItemsSource = _receipt.Items;
-        BindingContext = this;
     }
 
     private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -179,8 +180,11 @@ public partial class MainPage : ContentPage
     }
     private void RefreshReceiptDisplay()
     {
-        ReceiptListView.ItemsSource = _receipt.Items;
+
     }
+
+
+
 
 
 }

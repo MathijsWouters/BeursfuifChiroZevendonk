@@ -12,11 +12,9 @@ namespace Beursfuif.Models
         public string Name { get; set; }
         public decimal CurrentPrice { get; set; }
 
-        // Keep the Color property for internal use
-        [System.Text.Json.Serialization.JsonIgnore] // Ignore this property for JSON serialization
+        [System.Text.Json.Serialization.JsonIgnore] 
         public Color DrinkColor { get; set; }
 
-        // Use this property for serialization
         public string DrinkColorHex
         {
             get => DrinkColor.ToHex();
@@ -25,9 +23,12 @@ namespace Beursfuif.Models
 
         public decimal MinPrice { get; set; }
         public decimal MaxPrice { get; set; }
-        public decimal StartingPrice => (MinPrice + MaxPrice) / 2;
-        public Drink()
+        public decimal StartingPrice { get; private set; }
+        public Drink(decimal minPrice, decimal maxPrice)
         {
+            MinPrice = minPrice;
+            MaxPrice = maxPrice;
+            StartingPrice = (MinPrice + MaxPrice) / 2;
             CurrentPrice = StartingPrice;
         }
     }

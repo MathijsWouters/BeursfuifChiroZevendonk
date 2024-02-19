@@ -30,20 +30,23 @@
             <Label Text="Timer" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
             <!-- Replace the BoxView with a ListView or CollectionView -->
             <Frame Grid.Row="1" CornerRadius="10" BorderColor="White" Padding="0">
-                <CollectionView x:Name="ReceiptListView" ItemsSource="{Binding Receipt.Items}">
+                <CollectionView x:Name="ReceiptListView" ItemsSource="{Binding Items}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Orientation="Horizontal" Padding="10">
-                                <Label Text="{Binding DrinkName}" WidthRequest="50" />
+                                <Label Text="{Binding DrinkName}" WidthRequest="100" />
+                                <Label Text="X" WidthRequest="20" />
                                 <Label Text="{Binding Quantity}" WidthRequest="20" />
-                                <Label Text="{Binding Price, StringFormat='{0:C}'}" WidthRequest="30" />
+                                <Label Text="=" WidthRequest="20" />
+                                <Label Text="{Binding TotalPrice, StringFormat='€ {0:N2}'}" WidthRequest="50" />
                             </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
+
                 </CollectionView>
             </Frame>
-            <Label Text="{Binding TotalPrice, StringFormat='Total: {0:C}'}" Grid.Row="3" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
-            <Label Text="{Binding TotalVakjes, StringFormat='Vakjes: {0:F0}'}" Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
+            <Label Text="{Binding TotalPrice, StringFormat='Total: {0:N2}'}" Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
+            <Label Text="{Binding TotalVakjes, StringFormat='Vakjes: {0:F0}'}" Grid.Row="3" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
         </Grid>
 
         <Button Text="Crash" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="End"

@@ -1,18 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Beursfuif.Models
 {
-    public class Receipt
+    public class Receipt : INotifyPropertyChanged
     {
-        public ObservableCollection<ReceiptItem> Items { get; } = new ObservableCollection<ReceiptItem>();
+        private ObservableCollection<ReceiptItem> _items = new ObservableCollection<ReceiptItem>();
 
-        public decimal TotalPrice => Items.Sum(item => item.TotalPrice);
-        public decimal TotalVakjes => TotalPrice / 0.25m;
+        public ObservableCollection<ReceiptItem> Items
+        {
+            get => _items;
+            set
+            {
+                if (_items != value)
+                {
+                    _items = value;
+                    OnPropertyChanged();
+                    UpdateTotalPrice();
+                }
+            }
+        }
+
+        public decimal TotalPrice
+        {
+            get => Items.Sum(item => item.TotalPrice);
+        }
+
+        public decimal TotalVakjes
+        {
+            get => TotalPrice / 0.25m;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public void AddItem(Drink drink)
         {
@@ -23,14 +53,29 @@ namespace Beursfuif.Models
             }
             else
             {
-                Items.Add(new ReceiptItem
+                var newItem = new ReceiptItem
                 {
                     DrinkName = drink.Name,
                     Quantity = 1,
-                    CurrentPrice = drink.CurrentPrice 
-                });
+                    CurrentPrice = drink.CurrentPrice
+                };
+                newItem.PropertyChanged += (sender, args) =>
+                {
+                    if (args.PropertyName == nameof(ReceiptItem.TotalPrice))
+                    {
+                        UpdateTotalPrice();
+                    }
+                };
+                Items.Add(newItem);
             }
+            UpdateTotalPrice();
         }
 
+
+        private void UpdateTotalPrice()
+        {
+            OnPropertyChanged(nameof(TotalPrice));
+            OnPropertyChanged(nameof(TotalVakjes));
+        }
     }
 }
