@@ -83,9 +83,13 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
-            "Plugin.Maui.KeyListener": {
+            "SharpHook": {
               "target": "Package",
-              "version": "[1.0.0-preview1, )"
+              "version": "[5.2.3, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",
@@ -142,9 +146,13 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
-            "Plugin.Maui.KeyListener": {
+            "SharpHook": {
               "target": "Package",
-              "version": "[1.0.0-preview1, )"
+              "version": "[5.2.3, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",
@@ -201,9 +209,13 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
-            "Plugin.Maui.KeyListener": {
+            "SharpHook": {
               "target": "Package",
-              "version": "[1.0.0-preview1, )"
+              "version": "[5.2.3, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",
@@ -255,9 +267,13 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
-            "Plugin.Maui.KeyListener": {
+            "SharpHook": {
               "target": "Package",
-              "version": "[1.0.0-preview1, )"
+              "version": "[5.2.3, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",

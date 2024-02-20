@@ -475,15 +475,77 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -581,6 +643,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -2820,15 +2898,38 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -2911,6 +3012,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -5150,15 +5267,38 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -5241,6 +5381,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -7480,15 +7636,38 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -7571,6 +7750,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -9810,15 +10005,35 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -9901,6 +10116,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -12140,15 +12371,35 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -12228,6 +12479,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -14467,15 +14734,38 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -14555,6 +14845,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -16794,15 +17100,35 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
             "related": ".xml"
           }
         }
@@ -16882,6 +17208,22 @@
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -19094,13 +19436,79 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -19204,6 +19612,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -19662,13 +20086,40 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -19746,6 +20197,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -20204,13 +20671,40 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -20288,6 +20782,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -20746,13 +21256,40 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -20830,6 +21367,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -21288,13 +21841,37 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -21372,6 +21949,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -21830,13 +22423,37 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -21919,6 +22536,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -22377,13 +23010,40 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -22466,6 +23126,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -22924,13 +23600,37 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -23008,6 +23708,22 @@
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -23466,13 +24182,79 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -23556,6 +24338,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -24014,13 +24812,40 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -24098,6 +24923,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -24556,13 +25397,40 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -24640,6 +25508,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -25098,13 +25982,40 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -25182,6 +26093,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -25640,13 +26567,37 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -25724,6 +26675,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -26182,13 +27149,37 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -26266,6 +27257,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -26724,13 +27731,40 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -26811,6 +27845,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -27269,13 +28319,37 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
         "compile": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -27353,6 +28427,22 @@
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -27953,16 +29043,79 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -28070,45 +29223,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net7.0/System.Management.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     },
@@ -28673,16 +29804,40 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -28770,39 +29925,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     },
@@ -29367,16 +30506,40 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -29464,39 +30627,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     },
@@ -30061,16 +31208,40 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -30158,39 +31329,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     },
@@ -30755,16 +31910,37 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -30852,39 +32028,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     },
@@ -31449,16 +32609,37 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -31546,39 +32727,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     },
@@ -32143,16 +33308,40 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/maccatalyst-x64/native/libuiohook.dylib": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -32240,39 +33429,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     },
@@ -32843,16 +34016,40 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
         "type": "package",
-        "dependencies": {
-          "System.Management": "7.0.0"
-        },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+          "lib/net8.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/uiohook.dll": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SkiaSharp/2.88.7": {
@@ -32943,39 +34140,23 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
             "related": ".xml"
           }
         },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
         "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Management/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net7.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net6.0-windows10.0.19041/_._": {}
         }
       }
     }
@@ -35145,22 +36326,61 @@
         "nor0x.maui.colorpicker.nuspec"
       ]
     },
-    "Plugin.Maui.KeyListener/1.0.0-preview1": {
-      "sha512": "iDlPyOl0oxUL5ZaR2RwknSEfV0PdXzUCUdmTopi8Fye8k0hBeuJEhNgW1QhnGC9KNDDSEa/cjB3jbGtHOsKjPQ==",
+    "SharpHook/5.2.3": {
+      "sha512": "FU8X5hyT9oro/YEANxmTetvV8TMgY0jJp9JJE9P0UnfVxGPYrNKaM4hxF2GgVhEbOYq4zrf+exOvZPy9NefwGw==",
       "type": "package",
-      "path": "plugin.maui.keylistener/1.0.0-preview1",
+      "path": "sharphook/5.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
+        "build/SharpHook.targets",
         "icon.png",
-        "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll",
-        "lib/net8.0-android34.0/Plugin.Maui.KeyListener.xml",
-        "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll",
-        "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll",
-        "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll",
-        "lib/net8.0/Plugin.Maui.KeyListener.dll",
-        "plugin.maui.keylistener.1.0.0-preview1.nupkg.sha512",
-        "plugin.maui.keylistener.nuspec"
+        "lib/net462/SharpHook.dll",
+        "lib/net462/SharpHook.xml",
+        "lib/net6.0/SharpHook.dll",
+        "lib/net6.0/SharpHook.xml",
+        "lib/net7.0/SharpHook.dll",
+        "lib/net7.0/SharpHook.xml",
+        "lib/net8.0/SharpHook.dll",
+        "lib/net8.0/SharpHook.xml",
+        "lib/netstandard2.0/SharpHook.dll",
+        "lib/netstandard2.0/SharpHook.xml",
+        "runtimes/linux-arm/native/libuiohook.so",
+        "runtimes/linux-arm64/native/libuiohook.so",
+        "runtimes/linux-x64/native/libuiohook.so",
+        "runtimes/maccatalyst-arm64/native/libuiohook.dylib",
+        "runtimes/maccatalyst-x64/native/libuiohook.dylib",
+        "runtimes/osx-arm64/native/libuiohook.dylib",
+        "runtimes/osx-x64/native/libuiohook.dylib",
+        "runtimes/win-arm64/native/uiohook.dll",
+        "runtimes/win-x64/native/uiohook.dll",
+        "runtimes/win-x86/native/uiohook.dll",
+        "sharphook.5.2.3.nupkg.sha512",
+        "sharphook.nuspec"
+      ]
+    },
+    "SharpHook.Reactive/5.2.3": {
+      "sha512": "s8TH77DoDMtkKTOXu+A7EL5E2pTHQhord6JCoo3lhVu/FmggJUdv3zFwSHcn8AA1wRLiZo+UHoJQdEBnrzRfKA==",
+      "type": "package",
+      "path": "sharphook.reactive/5.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net462/SharpHook.Reactive.dll",
+        "lib/net462/SharpHook.Reactive.xml",
+        "lib/net6.0/SharpHook.Reactive.dll",
+        "lib/net6.0/SharpHook.Reactive.xml",
+        "lib/net7.0/SharpHook.Reactive.dll",
+        "lib/net7.0/SharpHook.Reactive.xml",
+        "lib/net8.0/SharpHook.Reactive.dll",
+        "lib/net8.0/SharpHook.Reactive.xml",
+        "lib/netstandard2.0/SharpHook.Reactive.dll",
+        "lib/netstandard2.0/SharpHook.Reactive.xml",
+        "sharphook.reactive.5.2.3.nupkg.sha512",
+        "sharphook.reactive.nuspec"
       ]
     },
     "SkiaSharp/2.88.7": {
@@ -35487,59 +36707,32 @@
         "skiasharp.views.winui.nuspec"
       ]
     },
-    "System.CodeDom/7.0.0": {
-      "sha512": "GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+    "System.Reactive/6.0.0": {
+      "sha512": "31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
       "type": "package",
-      "path": "system.codedom/7.0.0",
+      "path": "system.reactive/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.CodeDom.targets",
-        "buildTransitive/net462/_._",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
         "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
-        "lib/net462/System.CodeDom.dll",
-        "lib/net462/System.CodeDom.xml",
-        "lib/net6.0/System.CodeDom.dll",
-        "lib/net6.0/System.CodeDom.xml",
-        "lib/net7.0/System.CodeDom.dll",
-        "lib/net7.0/System.CodeDom.xml",
-        "lib/netstandard2.0/System.CodeDom.dll",
-        "lib/netstandard2.0/System.CodeDom.xml",
-        "system.codedom.7.0.0.nupkg.sha512",
-        "system.codedom.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Management/7.0.0": {
-      "sha512": "A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
-      "type": "package",
-      "path": "system.management/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Management.targets",
-        "lib/net462/_._",
-        "lib/net6.0/System.Management.dll",
-        "lib/net6.0/System.Management.xml",
-        "lib/net7.0/System.Management.dll",
-        "lib/net7.0/System.Management.xml",
-        "lib/netstandard2.0/System.Management.dll",
-        "lib/netstandard2.0/System.Management.xml",
-        "runtimes/win/lib/net6.0/System.Management.dll",
-        "runtimes/win/lib/net6.0/System.Management.xml",
-        "runtimes/win/lib/net7.0/System.Management.dll",
-        "runtimes/win/lib/net7.0/System.Management.xml",
-        "system.management.7.0.0.nupkg.sha512",
-        "system.management.nuspec",
-        "useSharedDesignerContext.txt"
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
       ]
     },
     "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -37604,7 +38797,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
+      "SharpHook >= 5.2.3",
+      "SharpHook.Reactive >= 5.2.3",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -37614,7 +38808,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
+      "SharpHook >= 5.2.3",
+      "SharpHook.Reactive >= 5.2.3",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -37624,7 +38819,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
+      "SharpHook >= 5.2.3",
+      "SharpHook.Reactive >= 5.2.3",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -37633,7 +38829,8 @@
       "Microsoft.Maui.Controls >= 8.0.7",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Newtonsoft.Json >= 13.0.3",
-      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
+      "SharpHook >= 5.2.3",
+      "SharpHook.Reactive >= 5.2.3",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ]
@@ -37721,9 +38918,13 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
-          "Plugin.Maui.KeyListener": {
+          "SharpHook": {
             "target": "Package",
-            "version": "[1.0.0-preview1, )"
+            "version": "[5.2.3, )"
+          },
+          "SharpHook.Reactive": {
+            "target": "Package",
+            "version": "[5.2.3, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
@@ -37780,9 +38981,13 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
-          "Plugin.Maui.KeyListener": {
+          "SharpHook": {
             "target": "Package",
-            "version": "[1.0.0-preview1, )"
+            "version": "[5.2.3, )"
+          },
+          "SharpHook.Reactive": {
+            "target": "Package",
+            "version": "[5.2.3, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
@@ -37839,9 +39044,13 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
-          "Plugin.Maui.KeyListener": {
+          "SharpHook": {
             "target": "Package",
-            "version": "[1.0.0-preview1, )"
+            "version": "[5.2.3, )"
+          },
+          "SharpHook.Reactive": {
+            "target": "Package",
+            "version": "[5.2.3, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
@@ -37893,9 +39102,13 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
-          "Plugin.Maui.KeyListener": {
+          "SharpHook": {
             "target": "Package",
-            "version": "[1.0.0-preview1, )"
+            "version": "[5.2.3, )"
+          },
+          "SharpHook.Reactive": {
+            "target": "Package",
+            "version": "[5.2.3, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",

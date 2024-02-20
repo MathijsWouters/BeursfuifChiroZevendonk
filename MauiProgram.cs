@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using Plugin.Maui.KeyListener;
 using Microsoft.Maui.Handlers;
 using SkiaSharp.Views.Maui.Controls.Hosting;
+using Beursfuif.Services;
 
 namespace Beursfuif
 {
@@ -12,13 +12,14 @@ namespace Beursfuif
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                .UseKeyListener()
                 .UseSkiaSharp()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.Services.AddSingleton<IGlobalKeyListenerService, GlobalKeyListenerService>();
+
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
