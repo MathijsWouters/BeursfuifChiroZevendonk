@@ -1,7 +1,6 @@
 using Beursfuif.Models;
 using System.Collections.Specialized;
 using Microsoft.Maui.Controls.PlatformConfiguration;
-using Beursfuif.Services;
 using Microsoft.Maui.Controls;
 using System;
 
@@ -10,26 +9,19 @@ namespace Beursfuif.Views;
 public partial class MainPage : ContentPage
 
 {
-    private readonly IGlobalKeyListenerService _keyListenerService;
     private DrinksViewModel _viewModel;
     private Receipt _receipt = new Receipt();
 
-    public MainPage(IGlobalKeyListenerService keyListenerService)
+    public MainPage()
     {
         InitializeComponent();
-        _keyListenerService = keyListenerService;
         _viewModel = new DrinksViewModel();
         _receipt = new Receipt();
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         ReceiptListView.ItemsSource = _receipt.Items;
-        _keyListenerService.StartListening();
     }
-    protected override void OnDisappearing()
-    {
-        base.OnDisappearing();
-        _keyListenerService.StopListening();
-    }
+    
     private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
     {
         DrinksGrid.Children.Clear(); // Clear existing buttons
