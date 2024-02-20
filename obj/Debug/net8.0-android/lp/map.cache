@@ -164,3 +164,4 @@ SkiaSharp.Views.Maui.Controls.dll
 SkiaSharp.Views.Maui.Core.dll
 SkiaSharp.Views.Android.aar
 Maui.ColorPicker.dll
+Plugin.Maui.KeyListener.dll

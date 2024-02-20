@@ -1,12 +1,14 @@
 using Beursfuif.Models;
 using System.Collections.Specialized;
 using Microsoft.Maui.Controls.PlatformConfiguration;
+using Plugin.Maui.KeyListener;
 namespace Beursfuif.Views;
 
 public partial class MainPage : ContentPage
 {
     private DrinksViewModel _viewModel;
     private Receipt _receipt = new Receipt();
+    private KeyboardBehavior keyboardBehavior = new KeyboardBehavior();
 
     public MainPage()
     {
@@ -16,8 +18,51 @@ public partial class MainPage : ContentPage
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         ReceiptListView.ItemsSource = _receipt.Items;
+        keyboardBehavior.KeyDown += OnKeyDown;
+        this.Behaviors.Add(keyboardBehavior);
+    }
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
     }
 
+    protected override void OnNavigatedFrom(NavigatedFromEventArgs args)
+    {
+
+        base.OnNavigatedFrom(args);
+    }
+    private void OnKeyDown(object sender, KeyPressedEventArgs e)
+    {
+        System.Diagnostics.Debug.WriteLine($"KeyDown: {e.Keys}");
+        if (e.Keys.HasFlag(KeyboardKeys.Backspace))
+        {
+            DeleteLastItemFromReceipt();
+        }
+        else if (e.Keys >= KeyboardKeys.Number0 && e.Keys <= KeyboardKeys.Number9)
+        {
+            int drinkNumber = e.Keys - KeyboardKeys.Number0;
+            SelectDrink(drinkNumber);
+        }
+    }
+    void DeleteLastItemFromReceipt()
+    {
+        if (_receipt.Items.Any())
+        {
+            _receipt.RemoveLastItem();
+            RefreshReceiptDisplay();
+        }
+    }
+    void SelectDrink(int drinkNumber)
+    {
+        // Assuming _viewModel.Drinks is an ObservableCollection or List of Drink objects
+        var selectedDrink = _viewModel.Drinks.FirstOrDefault(drink => drink.Number == drinkNumber);
+
+        if (selectedDrink != null)
+        {
+            _receipt.AddItem(selectedDrink);
+            RefreshReceiptDisplay();
+        }
+    }
     private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
     {
         DrinksGrid.Children.Clear(); // Clear existing buttons
@@ -158,11 +203,8 @@ public partial class MainPage : ContentPage
     }
     private void RefreshDrinksDisplay()
     {
-        // You can directly call Drinks_CollectionChanged here if it already sets up the drinks display correctly
-        // Passing null for sender and e since they're not used in the method
         Drinks_CollectionChanged(null, null);
     }
-
     private void RefreshReceiptDisplay()
     {
 

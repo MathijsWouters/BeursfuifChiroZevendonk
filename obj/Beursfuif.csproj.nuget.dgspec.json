@@ -83,6 +83,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Plugin.Maui.KeyListener": {
+              "target": "Package",
+              "version": "[1.0.0-preview1, )"
+            },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",
               "version": "[2.88.7, )"
@@ -137,6 +141,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Plugin.Maui.KeyListener": {
+              "target": "Package",
+              "version": "[1.0.0-preview1, )"
             },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",
@@ -193,6 +201,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Plugin.Maui.KeyListener": {
+              "target": "Package",
+              "version": "[1.0.0-preview1, )"
+            },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",
               "version": "[2.88.7, )"
@@ -242,6 +254,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Plugin.Maui.KeyListener": {
+              "target": "Package",
+              "version": "[1.0.0-preview1, )"
             },
             "SkiaSharp.Views.Maui.Controls": {
               "target": "Package",

@@ -475,6 +475,19 @@
           }
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -2807,6 +2820,19 @@
           }
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -5120,6 +5146,19 @@
         },
         "runtime": {
           "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
             "related": ".xml"
           }
         }
@@ -7441,6 +7480,19 @@
           }
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -9754,6 +9806,19 @@
         },
         "runtime": {
           "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
             "related": ".xml"
           }
         }
@@ -12075,6 +12140,19 @@
           }
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -14385,6 +14463,19 @@
         },
         "runtime": {
           "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
             "related": ".xml"
           }
         }
@@ -16703,6 +16794,19 @@
           }
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -18990,6 +19094,15 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -19549,6 +19662,15 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -20080,6 +20202,15 @@
         },
         "runtime": {
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
         }
       },
       "SkiaSharp/2.88.7": {
@@ -20615,6 +20746,15 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -21148,6 +21288,15 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -21679,6 +21828,15 @@
         },
         "runtime": {
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
         }
       },
       "SkiaSharp/2.88.7": {
@@ -22219,6 +22377,15 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -22757,6 +22924,15 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -23288,6 +23464,15 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
         }
       },
       "SkiaSharp/2.88.7": {
@@ -23829,6 +24014,15 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -24360,6 +24554,15 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
         }
       },
       "SkiaSharp/2.88.7": {
@@ -24895,6 +25098,15 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -25426,6 +25638,15 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
         }
       },
       "SkiaSharp/2.88.7": {
@@ -25961,6 +26182,15 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -26492,6 +26722,15 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
         }
       },
       "SkiaSharp/2.88.7": {
@@ -27028,6 +27267,15 @@
         },
         "runtime": {
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
+        }
+      },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll": {}
         }
       },
       "SkiaSharp/2.88.7": {
@@ -27705,6 +27953,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -27807,6 +28067,47 @@
         "runtime": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       }
@@ -28372,6 +28673,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -28455,6 +28768,41 @@
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     },
@@ -29019,6 +29367,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -29102,6 +29462,41 @@
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     },
@@ -29666,6 +30061,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -29749,6 +30156,41 @@
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     },
@@ -30313,6 +30755,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -30396,6 +30850,41 @@
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     },
@@ -30960,6 +31449,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -31043,6 +31544,41 @@
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     },
@@ -31607,6 +32143,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -31690,6 +32238,41 @@
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     },
@@ -32260,6 +32843,18 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
+      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {}
+        }
+      },
       "SkiaSharp/2.88.7": {
         "type": "package",
         "dependencies": {
@@ -32346,6 +32941,41 @@
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     }
@@ -34515,6 +35145,24 @@
         "nor0x.maui.colorpicker.nuspec"
       ]
     },
+    "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "sha512": "iDlPyOl0oxUL5ZaR2RwknSEfV0PdXzUCUdmTopi8Fye8k0hBeuJEhNgW1QhnGC9KNDDSEa/cjB3jbGtHOsKjPQ==",
+      "type": "package",
+      "path": "plugin.maui.keylistener/1.0.0-preview1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0-android34.0/Plugin.Maui.KeyListener.dll",
+        "lib/net8.0-android34.0/Plugin.Maui.KeyListener.xml",
+        "lib/net8.0-ios16.1/Plugin.Maui.KeyListener.dll",
+        "lib/net8.0-maccatalyst16.1/Plugin.Maui.KeyListener.dll",
+        "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll",
+        "lib/net8.0/Plugin.Maui.KeyListener.dll",
+        "plugin.maui.keylistener.1.0.0-preview1.nupkg.sha512",
+        "plugin.maui.keylistener.nuspec"
+      ]
+    },
     "SkiaSharp/2.88.7": {
       "sha512": "LJHAMrbWO00J7jXWLWehyjqFo29T4VzABimfJb4nICqpEe3c/KvQGWL4ItON8ymzhxYOeFgyxeRzuNzO4GHSug==",
       "type": "package",
@@ -34837,6 +35485,61 @@
         "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.xml",
         "skiasharp.views.winui.2.88.7.nupkg.sha512",
         "skiasharp.views.winui.nuspec"
+      ]
+    },
+    "System.CodeDom/7.0.0": {
+      "sha512": "GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "type": "package",
+      "path": "system.codedom/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.CodeDom.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "lib/net462/System.CodeDom.dll",
+        "lib/net462/System.CodeDom.xml",
+        "lib/net6.0/System.CodeDom.dll",
+        "lib/net6.0/System.CodeDom.xml",
+        "lib/net7.0/System.CodeDom.dll",
+        "lib/net7.0/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.7.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Management/7.0.0": {
+      "sha512": "A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
+      "type": "package",
+      "path": "system.management/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "lib/net462/_._",
+        "lib/net6.0/System.Management.dll",
+        "lib/net6.0/System.Management.xml",
+        "lib/net7.0/System.Management.dll",
+        "lib/net7.0/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net6.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.xml",
+        "runtimes/win/lib/net7.0/System.Management.dll",
+        "runtimes/win/lib/net7.0/System.Management.xml",
+        "system.management.7.0.0.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
@@ -36901,6 +37604,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -36910,6 +37614,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -36919,6 +37624,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -36927,6 +37633,7 @@
       "Microsoft.Maui.Controls >= 8.0.7",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.KeyListener >= 1.0.0-preview1",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ]
@@ -37014,6 +37721,10 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
+          "Plugin.Maui.KeyListener": {
+            "target": "Package",
+            "version": "[1.0.0-preview1, )"
+          },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
             "version": "[2.88.7, )"
@@ -37068,6 +37779,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Plugin.Maui.KeyListener": {
+            "target": "Package",
+            "version": "[1.0.0-preview1, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
@@ -37124,6 +37839,10 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
+          "Plugin.Maui.KeyListener": {
+            "target": "Package",
+            "version": "[1.0.0-preview1, )"
+          },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
             "version": "[2.88.7, )"
@@ -37173,6 +37892,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Plugin.Maui.KeyListener": {
+            "target": "Package",
+            "version": "[1.0.0-preview1, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",

@@ -325,6 +325,9 @@
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\nor0x.maui.colorpicker\1.0.1\lib\net6.0-windows10.0.19041\Maui.ColorPicker.dll">
       <PackagePath>Maui.ColorPicker.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\plugin.maui.keylistener\1.0.0-preview1\lib\net8.0-windows10.0.19041\Plugin.Maui.KeyListener.dll">
+      <PackagePath>Plugin.Maui.KeyListener.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp\2.88.7\lib\net6.0\SkiaSharp.dll">
       <PackagePath>SkiaSharp.dll</PackagePath>
     </AppxPackagedFile>
@@ -336,6 +339,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp.views.winui\2.88.7\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
       <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\system.codedom\7.0.0\lib\net7.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\system.management\7.0.0\runtimes\win\lib\net7.0\System.Management.dll">
+      <PackagePath>System.Management.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.maui.controls.core\8.0.7\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
