@@ -24,7 +24,7 @@
                 <controls:ColorPicker x:Name="ColorPicker"
                                       WidthRequest="250" HeightRequest="150"
                                       HorizontalOptions="Center"
-                                      PickedColorChanged="ColorPicker_PickedColorChanged" />
+                                      PickedColorChanged="ColorPicker_PickedColorChanged"/>
                 <Label x:Name="SelectedColorValueLabel"
                        Text="#COLOR"
                        FontAttributes="Bold"

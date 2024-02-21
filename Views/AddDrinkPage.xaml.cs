@@ -68,7 +68,6 @@ public partial class AddDrinkPage : ContentPage
             await DisplayAlert("Invalid Color", "The selected color is not valid.", "OK");
         }
     }
-
     private void ColorPicker_PickedColorChanged(object sender, Color colorPicked)
     {
         // Use the selected color

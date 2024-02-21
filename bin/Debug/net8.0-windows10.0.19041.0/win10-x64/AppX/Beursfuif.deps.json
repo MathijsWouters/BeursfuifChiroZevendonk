@@ -13,7 +13,8 @@
           "Microsoft.Maui.Controls": "8.0.7",
           "Microsoft.Maui.Controls.Compatibility": "8.0.7",
           "Newtonsoft.Json": "13.0.3",
-          "Plugin.Maui.KeyListener": "1.0.0-preview1",
+          "SharpHook": "5.2.3",
+          "SharpHook.Reactive": "5.2.3",
           "SkiaSharp.Views.Maui.Controls": "2.88.7",
           "nor0x.Maui.ColorPicker": "1.0.1",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
@@ -460,14 +461,28 @@
           }
         }
       },
-      "Plugin.Maui.KeyListener/1.0.0-preview1": {
+      "SharpHook/5.2.3": {
+        "runtime": {
+          "lib/net8.0/SharpHook.dll": {
+            "assemblyVersion": "5.2.3.0",
+            "fileVersion": "5.2.3.0"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/uiohook.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SharpHook.Reactive/5.2.3": {
         "dependencies": {
-          "System.Management": "7.0.0"
+          "SharpHook": "5.2.3",
+          "System.Reactive": "6.0.0"
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.Maui.KeyListener.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+          "lib/net8.0/SharpHook.Reactive.dll": {
+            "assemblyVersion": "5.2.3.0",
+            "fileVersion": "5.2.3.0"
           }
         }
       },
@@ -526,22 +541,11 @@
           }
         }
       },
-      "System.CodeDom/7.0.0": {
+      "System.Reactive/6.0.0": {
         "runtime": {
-          "lib/net7.0/System.CodeDom.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
-          }
-        }
-      },
-      "System.Management/7.0.0": {
-        "dependencies": {
-          "System.CodeDom": "7.0.0"
-        },
-        "runtime": {
-          "runtimes/win/lib/net7.0/System.Management.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "7.0.22.51805"
+          "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.1"
           }
         }
       }
@@ -726,12 +730,19 @@
       "path": "nor0x.maui.colorpicker/1.0.1",
       "hashPath": "nor0x.maui.colorpicker.1.0.1.nupkg.sha512"
     },
-    "Plugin.Maui.KeyListener/1.0.0-preview1": {
+    "SharpHook/5.2.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iDlPyOl0oxUL5ZaR2RwknSEfV0PdXzUCUdmTopi8Fye8k0hBeuJEhNgW1QhnGC9KNDDSEa/cjB3jbGtHOsKjPQ==",
-      "path": "plugin.maui.keylistener/1.0.0-preview1",
-      "hashPath": "plugin.maui.keylistener.1.0.0-preview1.nupkg.sha512"
+      "sha512": "sha512-FU8X5hyT9oro/YEANxmTetvV8TMgY0jJp9JJE9P0UnfVxGPYrNKaM4hxF2GgVhEbOYq4zrf+exOvZPy9NefwGw==",
+      "path": "sharphook/5.2.3",
+      "hashPath": "sharphook.5.2.3.nupkg.sha512"
+    },
+    "SharpHook.Reactive/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s8TH77DoDMtkKTOXu+A7EL5E2pTHQhord6JCoo3lhVu/FmggJUdv3zFwSHcn8AA1wRLiZo+UHoJQdEBnrzRfKA==",
+      "path": "sharphook.reactive/5.2.3",
+      "hashPath": "sharphook.reactive.5.2.3.nupkg.sha512"
     },
     "SkiaSharp/2.88.7": {
       "type": "package",
@@ -775,19 +786,12 @@
       "path": "skiasharp.views.winui/2.88.7",
       "hashPath": "skiasharp.views.winui.2.88.7.nupkg.sha512"
     },
-    "System.CodeDom/7.0.0": {
+    "System.Reactive/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
-      "path": "system.codedom/7.0.0",
-      "hashPath": "system.codedom.7.0.0.nupkg.sha512"
-    },
-    "System.Management/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
-      "path": "system.management/7.0.0",
-      "hashPath": "system.management.7.0.0.nupkg.sha512"
+      "sha512": "sha512-31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "path": "system.reactive/6.0.0",
+      "hashPath": "system.reactive.6.0.0.nupkg.sha512"
     }
   }
 }

@@ -2,6 +2,7 @@
 using Microsoft.Maui.Handlers;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 
+
 namespace Beursfuif
 {
     public static class MauiProgram

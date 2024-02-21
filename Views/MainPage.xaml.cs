@@ -1,8 +1,5 @@
 using Beursfuif.Models;
 using System.Collections.Specialized;
-using Microsoft.Maui.Controls.PlatformConfiguration;
-using Microsoft.Maui.Controls;
-using System;
 
 namespace Beursfuif.Views;
 
@@ -21,7 +18,6 @@ public partial class MainPage : ContentPage
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         ReceiptListView.ItemsSource = _receipt.Items;
     }
-    
     private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
     {
         DrinksGrid.Children.Clear(); // Clear existing buttons
