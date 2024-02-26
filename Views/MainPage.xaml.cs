@@ -21,12 +21,14 @@ public partial class MainPage : ContentPage
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         ReceiptListView.ItemsSource = _receipt.Items;
+
 #if WINDOWS
         _keyboardService = new KeyboardService();
         _keyboardService.OnBackspacePressed = RemoveLastItemFromReceipt;
         _keyboardService.Start();
+        
+        
 #endif
-
     }
     public void RemoveLastItemFromReceipt()
     {

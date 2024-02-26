@@ -26,7 +26,7 @@ namespace Beursfuif.Models
             if (e.Data.KeyCode == KeyCode.VcBackspace) 
             {
                 Debug.WriteLine("backspace key pressed.");
-                OnBackspacePressed?.Invoke();
+               OnBackspacePressed?.Invoke();
             }
         }
 
