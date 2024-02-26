@@ -13,8 +13,8 @@
           "Microsoft.Maui.Controls": "8.0.7",
           "Microsoft.Maui.Controls.Compatibility": "8.0.7",
           "Newtonsoft.Json": "13.0.3",
-          "SharpHook": "5.2.3",
-          "SharpHook.Reactive": "5.2.3",
+          "SharpHook": "5.3.0",
+          "SharpHook.Reactive": "5.3.0",
           "SkiaSharp.Views.Maui.Controls": "2.88.7",
           "nor0x.Maui.ColorPicker": "1.0.1",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
@@ -461,11 +461,11 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "runtime": {
           "lib/net8.0/SharpHook.dll": {
-            "assemblyVersion": "5.2.3.0",
-            "fileVersion": "5.2.3.0"
+            "assemblyVersion": "5.3.0.0",
+            "fileVersion": "5.3.0.0"
           }
         },
         "native": {
@@ -474,15 +474,15 @@
           }
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "runtime": {
           "lib/net8.0/SharpHook.Reactive.dll": {
-            "assemblyVersion": "5.2.3.0",
-            "fileVersion": "5.2.3.0"
+            "assemblyVersion": "5.3.0.0",
+            "fileVersion": "5.3.0.0"
           }
         }
       },
@@ -730,19 +730,19 @@
       "path": "nor0x.maui.colorpicker/1.0.1",
       "hashPath": "nor0x.maui.colorpicker.1.0.1.nupkg.sha512"
     },
-    "SharpHook/5.2.3": {
+    "SharpHook/5.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FU8X5hyT9oro/YEANxmTetvV8TMgY0jJp9JJE9P0UnfVxGPYrNKaM4hxF2GgVhEbOYq4zrf+exOvZPy9NefwGw==",
-      "path": "sharphook/5.2.3",
-      "hashPath": "sharphook.5.2.3.nupkg.sha512"
+      "sha512": "sha512-3WIKP6gtUp7EF/5fWz347tgnlb2WOQNggrKtTyQrjhZLchvWqXDQEkw10Trf3RqPh9wk+O4PTVF1Z+qqTiWc9Q==",
+      "path": "sharphook/5.3.0",
+      "hashPath": "sharphook.5.3.0.nupkg.sha512"
     },
-    "SharpHook.Reactive/5.2.3": {
+    "SharpHook.Reactive/5.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-s8TH77DoDMtkKTOXu+A7EL5E2pTHQhord6JCoo3lhVu/FmggJUdv3zFwSHcn8AA1wRLiZo+UHoJQdEBnrzRfKA==",
-      "path": "sharphook.reactive/5.2.3",
-      "hashPath": "sharphook.reactive.5.2.3.nupkg.sha512"
+      "sha512": "sha512-bin8azjuxhKHC2Ghcm/9VkwB0I1ojevtUfNizMMqDq27e4FJTekQU0XFpDYK6Gg/BdttIT0XjOUoOzCNjW7Pnw==",
+      "path": "sharphook.reactive/5.3.0",
+      "hashPath": "sharphook.reactive.5.3.0.nupkg.sha512"
     },
     "SkiaSharp/2.88.7": {
       "type": "package",

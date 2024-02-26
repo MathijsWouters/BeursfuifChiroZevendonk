@@ -475,7 +475,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -533,10 +533,10 @@
           }
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -2898,7 +2898,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -2917,10 +2917,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -5267,7 +5267,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -5286,10 +5286,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -7636,7 +7636,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -7655,10 +7655,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -10005,7 +10005,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -10021,10 +10021,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -12371,7 +12371,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -12387,10 +12387,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -14734,7 +14734,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -14753,10 +14753,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -17100,7 +17100,7 @@
           }
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -17116,10 +17116,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -19436,7 +19436,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -19494,10 +19494,10 @@
           }
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -20086,7 +20086,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -20105,10 +20105,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -20671,7 +20671,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -20690,10 +20690,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -21256,7 +21256,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -21275,10 +21275,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -21841,7 +21841,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -21857,10 +21857,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -22423,7 +22423,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -22439,10 +22439,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -23010,7 +23010,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -23029,10 +23029,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -23600,7 +23600,7 @@
           "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -23616,10 +23616,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -24182,7 +24182,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -24240,10 +24240,10 @@
           }
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -24812,7 +24812,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -24831,10 +24831,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -25397,7 +25397,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -25416,10 +25416,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -25982,7 +25982,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -26001,10 +26001,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -26567,7 +26567,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -26583,10 +26583,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -27149,7 +27149,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -27165,10 +27165,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -27731,7 +27731,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -27750,10 +27750,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -28319,7 +28319,7 @@
           "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -28335,10 +28335,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -29043,7 +29043,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -29101,10 +29101,10 @@
           }
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -29804,7 +29804,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -29823,10 +29823,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -30506,7 +30506,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -30525,10 +30525,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -31208,7 +31208,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -31227,10 +31227,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -31910,7 +31910,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -31926,10 +31926,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -32609,7 +32609,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -32625,10 +32625,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -33308,7 +33308,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -33327,10 +33327,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -34016,7 +34016,7 @@
           "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
-      "SharpHook/5.2.3": {
+      "SharpHook/5.3.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/SharpHook.dll": {
@@ -34035,10 +34035,10 @@
           "build/SharpHook.targets": {}
         }
       },
-      "SharpHook.Reactive/5.2.3": {
+      "SharpHook.Reactive/5.3.0": {
         "type": "package",
         "dependencies": {
-          "SharpHook": "5.2.3",
+          "SharpHook": "5.3.0",
           "System.Reactive": "6.0.0"
         },
         "compile": {
@@ -36326,10 +36326,10 @@
         "nor0x.maui.colorpicker.nuspec"
       ]
     },
-    "SharpHook/5.2.3": {
-      "sha512": "FU8X5hyT9oro/YEANxmTetvV8TMgY0jJp9JJE9P0UnfVxGPYrNKaM4hxF2GgVhEbOYq4zrf+exOvZPy9NefwGw==",
+    "SharpHook/5.3.0": {
+      "sha512": "3WIKP6gtUp7EF/5fWz347tgnlb2WOQNggrKtTyQrjhZLchvWqXDQEkw10Trf3RqPh9wk+O4PTVF1Z+qqTiWc9Q==",
       "type": "package",
-      "path": "sharphook/5.2.3",
+      "path": "sharphook/5.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36356,14 +36356,14 @@
         "runtimes/win-arm64/native/uiohook.dll",
         "runtimes/win-x64/native/uiohook.dll",
         "runtimes/win-x86/native/uiohook.dll",
-        "sharphook.5.2.3.nupkg.sha512",
+        "sharphook.5.3.0.nupkg.sha512",
         "sharphook.nuspec"
       ]
     },
-    "SharpHook.Reactive/5.2.3": {
-      "sha512": "s8TH77DoDMtkKTOXu+A7EL5E2pTHQhord6JCoo3lhVu/FmggJUdv3zFwSHcn8AA1wRLiZo+UHoJQdEBnrzRfKA==",
+    "SharpHook.Reactive/5.3.0": {
+      "sha512": "bin8azjuxhKHC2Ghcm/9VkwB0I1ojevtUfNizMMqDq27e4FJTekQU0XFpDYK6Gg/BdttIT0XjOUoOzCNjW7Pnw==",
       "type": "package",
-      "path": "sharphook.reactive/5.2.3",
+      "path": "sharphook.reactive/5.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36379,7 +36379,7 @@
         "lib/net8.0/SharpHook.Reactive.xml",
         "lib/netstandard2.0/SharpHook.Reactive.dll",
         "lib/netstandard2.0/SharpHook.Reactive.xml",
-        "sharphook.reactive.5.2.3.nupkg.sha512",
+        "sharphook.reactive.5.3.0.nupkg.sha512",
         "sharphook.reactive.nuspec"
       ]
     },
@@ -38797,8 +38797,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "SharpHook >= 5.2.3",
-      "SharpHook.Reactive >= 5.2.3",
+      "SharpHook >= 5.3.0",
+      "SharpHook.Reactive >= 5.3.0",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -38808,8 +38808,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "SharpHook >= 5.2.3",
-      "SharpHook.Reactive >= 5.2.3",
+      "SharpHook >= 5.3.0",
+      "SharpHook.Reactive >= 5.3.0",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -38819,8 +38819,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "SharpHook >= 5.2.3",
-      "SharpHook.Reactive >= 5.2.3",
+      "SharpHook >= 5.3.0",
+      "SharpHook.Reactive >= 5.3.0",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
@@ -38829,8 +38829,8 @@
       "Microsoft.Maui.Controls >= 8.0.7",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Newtonsoft.Json >= 13.0.3",
-      "SharpHook >= 5.2.3",
-      "SharpHook.Reactive >= 5.2.3",
+      "SharpHook >= 5.3.0",
+      "SharpHook.Reactive >= 5.3.0",
       "SkiaSharp.Views.Maui.Controls >= 2.88.7",
       "nor0x.Maui.ColorPicker >= 1.0.1"
     ]
@@ -38920,11 +38920,11 @@
           },
           "SharpHook": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SharpHook.Reactive": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
@@ -38983,11 +38983,11 @@
           },
           "SharpHook": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SharpHook.Reactive": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
@@ -39046,11 +39046,11 @@
           },
           "SharpHook": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SharpHook.Reactive": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
@@ -39104,11 +39104,11 @@
           },
           "SharpHook": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SharpHook.Reactive": {
             "target": "Package",
-            "version": "[5.2.3, )"
+            "version": "[5.3.0, )"
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",

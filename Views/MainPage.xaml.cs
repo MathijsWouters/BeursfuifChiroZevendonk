@@ -1,6 +1,7 @@
 using Beursfuif.Models;
 using System.Collections.Specialized;
 
+
 namespace Beursfuif.Views;
 
 public partial class MainPage : ContentPage
@@ -8,6 +9,9 @@ public partial class MainPage : ContentPage
 {
     private DrinksViewModel _viewModel;
     private Receipt _receipt = new Receipt();
+#if WINDOWS
+    private KeyboardService _keyboardService;
+#endif
 
     public MainPage()
     {
@@ -17,7 +21,30 @@ public partial class MainPage : ContentPage
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         ReceiptListView.ItemsSource = _receipt.Items;
+#if WINDOWS
+        _keyboardService = new KeyboardService();
+        _keyboardService.OnBackspacePressed = RemoveLastItemFromReceipt;
+        _keyboardService.Start();
+#endif
+
     }
+    public void RemoveLastItemFromReceipt()
+    {
+        _receipt.RemoveLastItem();
+
+    }
+
+    public void AddDrinkByNumber(int number)
+    {
+        Drink drink = GetDrinkByNumber(number);
+        _receipt.AddItem(drink);
+
+    }
+    public Drink GetDrinkByNumber(int number)
+    {
+        return _viewModel.Drinks.FirstOrDefault(drink => drink.Number == number);
+    }
+
     private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
     {
         DrinksGrid.Children.Clear(); // Clear existing buttons

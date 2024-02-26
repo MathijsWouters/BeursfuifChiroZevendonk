@@ -10,12 +10,14 @@ namespace Beursfuif.Models
     public class KeyboardService
     {
         private IGlobalHook hook;
+        public Action OnBackspacePressed { get; set; }
 
         public KeyboardService()
         {
             this.hook = new TaskPoolGlobalHook();
-
             this.hook.KeyPressed += OnKeyPressed;
+            Debug.WriteLine("KeyboardService initialized and hook attached.");
+
 
         }
 
@@ -24,18 +26,36 @@ namespace Beursfuif.Models
             if (e.Data.KeyCode == KeyCode.VcBackspace) 
             {
                 Debug.WriteLine("backspace key pressed.");
+                OnBackspacePressed?.Invoke();
             }
         }
 
         public void Start()
         {
-            this.hook.Run();
+            try
+            {
+                this.hook.RunAsync();
+                Debug.WriteLine("Hook started.");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error starting hook: {ex.Message}");
+            }
         }
 
         public void Stop()
         {
-            this.hook.Dispose();
+            try
+            {
+                this.hook.Dispose();
+                Debug.WriteLine("Hook stopped.");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error stopping hook: {ex.Message}");
+            }
         }
+
     }
 #endif
 }

@@ -1,5 +1,8 @@
 ﻿using Beursfuif.Views;
 using Beursfuif.Models;
+using System.Diagnostics;
+using SharpHook.Native;
+using SharpHook;
 
 namespace Beursfuif
 {
@@ -19,10 +22,11 @@ namespace Beursfuif
 
                 this.keyboardService = new KeyboardService();
                 this.keyboardService.Start();
+               Debug.WriteLine("KeyboardService started.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception initializing KeyboardService: {ex.Message}");
+                Debug.WriteLine($"Exception initializing KeyboardService: {ex}");
 
             }
         }

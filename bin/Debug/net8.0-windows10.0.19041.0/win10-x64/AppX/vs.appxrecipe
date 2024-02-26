@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-21T10:08:05.841</Modified>
+      <Modified>2024-02-26T10:35:13.247</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-21T10:00:33.390</Modified>
+      <Modified>2024-02-26T10:35:13.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.runtimeconfig.json">
       <PackagePath>Beursfuif.runtimeconfig.json</PackagePath>
-      <Modified>2024-02-21T08:34:43.907</Modified>
+      <Modified>2024-02-26T10:25:55.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.dll">
       <PackagePath>Beursfuif.dll</PackagePath>
-      <Modified>2024-02-21T10:08:05.413</Modified>
+      <Modified>2024-02-26T10:35:12.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Beursfuif.exe</PackagePath>
-      <Modified>2024-02-21T10:08:05.446</Modified>
+      <Modified>2024-02-26T10:35:12.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sharphook\5.2.3\runtimes\win-x64\native\uiohook.dll">
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sharphook\5.3.0\runtimes\win-x64\native\uiohook.dll">
       <PackagePath>uiohook.dll</PackagePath>
-      <Modified>2024-02-01T23:01:38.000</Modified>
+      <Modified>2024-02-24T16:18:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -292,7 +292,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.deps.json">
       <PackagePath>Beursfuif.deps.json</PackagePath>
-      <Modified>2024-02-21T09:52:10.989</Modified>
+      <Modified>2024-02-26T10:25:55.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -438,13 +438,13 @@
       <PackagePath>Maui.ColorPicker.dll</PackagePath>
       <Modified>2022-08-24T08:04:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sharphook\5.2.3\lib\net8.0\SharpHook.dll">
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sharphook\5.3.0\lib\net8.0\SharpHook.dll">
       <PackagePath>SharpHook.dll</PackagePath>
-      <Modified>2024-02-01T23:02:14.000</Modified>
+      <Modified>2024-02-24T16:19:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sharphook.reactive\5.2.3\lib\net8.0\SharpHook.Reactive.dll">
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sharphook.reactive\5.3.0\lib\net8.0\SharpHook.Reactive.dll">
       <PackagePath>SharpHook.Reactive.dll</PackagePath>
-      <Modified>2024-02-01T23:02:20.000</Modified>
+      <Modified>2024-02-24T16:19:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp\2.88.7\lib\net6.0\SkiaSharp.dll">
       <PackagePath>SkiaSharp.dll</PackagePath>
