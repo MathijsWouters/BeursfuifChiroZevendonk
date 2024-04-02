@@ -116,7 +116,7 @@ public partial class MainPage : ContentPage
 
     private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
     {
-        DrinksGrid.Children.Clear(); // Clear existing buttons
+        DrinksGrid.Children.Clear(); 
 
         foreach (var drink in _viewModel.Drinks)
         {
@@ -263,7 +263,7 @@ public partial class MainPage : ContentPage
     }
     private void OnOpenBeursClicked(object sender, EventArgs e)
     {
-        var newWindow = new Window(new BeursPage());
+        var newWindow = new Window(new BeursPage(_viewModel));
         Application.Current.OpenWindow(newWindow);
     }
     private async void OnStopFeestjeClicked(object sender, EventArgs e)
