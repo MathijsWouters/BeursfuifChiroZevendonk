@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\beurspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\beurspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\beurspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\beurspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -103,40 +103,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
-              "RelativeToolTip": "Views\\MainPage.xaml.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAywH0AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T10:33:16.997Z",
+              "Title": "BeursPage.xaml",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml",
+              "RelativeDocumentMoniker": "Views\\BeursPage.xaml",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml",
+              "RelativeToolTip": "Views\\BeursPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-02T13:02:27.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BeursPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\BeursPage.xaml.cs",
               "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml.cs",
               "RelativeToolTip": "Views\\BeursPage.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAcwCAAAAAJAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAqwFYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T13:02:43.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BeursPage.xaml",
-              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml",
-              "RelativeDocumentMoniker": "Views\\BeursPage.xaml",
-              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml",
-              "RelativeToolTip": "Views\\BeursPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T13:02:27.004Z",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "Views\\MainPage.xaml.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAIwJkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T10:33:16.997Z",
               "EditorCaption": ""
             },
             {
@@ -149,8 +149,7 @@
               "RelativeToolTip": "Views\\MainPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T10:33:17.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:33:17.069Z"
             },
             {
               "$type": "Document",
@@ -162,8 +161,7 @@
               "RelativeToolTip": "Models\\Drink.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAA9wCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T10:49:48.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:49:48.796Z"
             },
             {
               "$type": "Document",
@@ -175,8 +173,7 @@
               "RelativeToolTip": "Models\\DrinksViewModel.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAcwFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T14:09:10.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T14:09:10.247Z"
             },
             {
               "$type": "Document",
@@ -272,8 +269,7 @@
               "RelativeToolTip": "Views\\AddDrinkPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T10:49:42.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:49:42.795Z"
             },
             {
               "$type": "Document",

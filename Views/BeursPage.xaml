@@ -4,17 +4,19 @@
              x:Class="Beursfuif.Views.BeursPage"
              Title="BeursPage">
 
-    <Grid RowDefinitions="*,20*">
-        <!-- Graph Placeholder -->
-        <BoxView Grid.Row="0"
-                 Color="LightGray" />
-        <ScrollView Grid.Row="1" Orientation="Horizontal">
+    <Grid RowDefinitions="3*,1*">
+
+        <BoxView Grid.Row="0" Color="LightGray" />
+
+        <ScrollView Grid.Row="1" Orientation="Horizontal" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
+
             <HorizontalStackLayout x:Name="DrinksLayout" 
-                           Spacing="10"
-                           HorizontalOptions="CenterAndExpand" 
-                           VerticalOptions="Center">
+                                   Spacing="10"
+                                   HorizontalOptions="CenterAndExpand" 
+                                   VerticalOptions="CenterAndExpand">
             </HorizontalStackLayout>
         </ScrollView>
     </Grid>
 
 </ContentPage>
+
