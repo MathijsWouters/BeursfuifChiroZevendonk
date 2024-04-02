@@ -12,6 +12,9 @@
     <MauiXaml Update="Views\AddDrinkPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\BeursPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\DrinkManageView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

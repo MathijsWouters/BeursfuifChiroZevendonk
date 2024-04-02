@@ -218,4 +218,10 @@ public partial class MainPage : ContentPage
     {
 
     }
+    private void OnOpenBeursClicked(object sender, EventArgs e)
+    {
+        var newWindow = new Window(new BeursPage());
+        Application.Current.OpenWindow(newWindow);
+    }
+
 }

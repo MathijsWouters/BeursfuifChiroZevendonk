@@ -7,7 +7,7 @@
     <Grid>
         <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="2*,3*,*">
             <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="50" HorizontalOptions="Center">
-                <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}"/>
+                <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}" Clicked="OnOpenBeursClicked"/>
                 <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}" Clicked="OnAddDrinkButton_Clicked"/>
                 <Button Text="Manage drinks" Style="{StaticResource NavigationButtonStyle}" Clicked="OnManageDrinksButton_Clicked"/>
                 <Button Text="Start feestje" Style="{StaticResource NavigationButtonStyle}"/>

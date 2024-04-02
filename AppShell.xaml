@@ -20,5 +20,9 @@
         Title="Manage Drinks"
         ContentTemplate="{DataTemplate view:ManageDrinksPage}"
         Route="ManageDrinksPage" />
+    <ShellContent
+    Title="Beurs"
+    ContentTemplate="{DataTemplate view:BeursPage}"
+    Route="BeursPage" />
 
 </Shell>

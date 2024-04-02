@@ -110,6 +110,9 @@
 	  <MauiXaml Update="Views\AddDrinkPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\BeursPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\DrinkManageView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
