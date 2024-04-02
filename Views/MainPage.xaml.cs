@@ -9,6 +9,8 @@ public partial class MainPage : ContentPage
 {
     private DrinksViewModel _viewModel;
     private Receipt _receipt = new Receipt();
+    private CountdownTimer _countdownTimer;
+    private Label _timerLabel;
 #if WINDOWS
     private KeyboardService _keyboardService;
 #endif
@@ -21,14 +23,29 @@ public partial class MainPage : ContentPage
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         ReceiptListView.ItemsSource = _receipt.Items;
+        _countdownTimer = new CountdownTimer(Dispatcher);
+        _countdownTimer.TimeUpdated += OnTimeUpdated;
+        _countdownTimer.CountdownCompleted += OnCountdownCompleted;
 
 #if WINDOWS
         _keyboardService = new KeyboardService();
         _keyboardService.OnBackspacePressed = RemoveLastItemFromReceipt;
         _keyboardService.OnNumpadPressed = AddDrinkByNumber;
+        _keyboardService.OnEnterPressed = OnCountdownCompleted;
         _keyboardService.Start();
 #endif
     }
+
+    private void OnTimeUpdated(int time)
+    {
+        TenSecondTimerLabel.Text = $"Timer: {time} seconds";
+    }
+    private void OnCountdownCompleted()
+    {
+        _receipt.Items.Clear(); 
+        _countdownTimer.Reset();
+    }
+
     public void RemoveLastItemFromReceipt()
     {
         _receipt.RemoveLastItem();
@@ -45,6 +62,7 @@ public partial class MainPage : ContentPage
         else
         {
             _receipt.AddItem(drink);
+            _countdownTimer.Start(10);
         }
     }
 
@@ -175,6 +193,7 @@ public partial class MainPage : ContentPage
     private void DrinkButton_Clicked(Drink drink)
     {
         _receipt.AddItem(drink);
+        _countdownTimer.Start(10);
         RefreshReceiptDisplay();
     }
     private async void OnAddDrinkButton_Clicked(object sender, EventArgs e)

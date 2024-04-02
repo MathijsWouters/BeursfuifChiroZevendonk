@@ -14,12 +14,10 @@
                 <Button Text="Stop feestje" Style="{StaticResource NavigationButtonStyle}"/>
             </HorizontalStackLayout>
 
-            <!-- Left Side 3x3 Grid for drinks -->
             <Grid x:Name="DrinksGrid"
               Grid.Row="1" Grid.Column="0" Padding="10"
               RowDefinitions="*,*,*" ColumnDefinitions="*,*,*"
               HorizontalOptions="Fill" VerticalOptions="Center">
-                <!-- Dynamic drink buttons will be added here -->
             </Grid>
             <Grid Grid.Row="1" Grid.Column="2" Padding="20">
                 <Grid.RowDefinitions>
@@ -28,8 +26,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label Text="Timer" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
-                <!-- Replace the BoxView with a ListView or CollectionView -->
+                <Label x:Name="TenSecondTimerLabel" Text="Timer: 10 seconds" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
                 <Frame Grid.Row="1" CornerRadius="10" BorderColor="White" Padding="0">
                     <CollectionView x:Name="ReceiptListView" ItemsSource="{Binding Items}">
                         <CollectionView.ItemTemplate>

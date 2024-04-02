@@ -11,6 +11,7 @@ namespace Beursfuif.Models
     {
         private IGlobalHook hook;
         public Action OnBackspacePressed { get; set; }
+        public Action OnEnterPressed { get; set; }
         public Action<int> OnNumpadPressed { get; set; }
 
         public KeyboardService()
@@ -30,12 +31,16 @@ namespace Beursfuif.Models
                OnBackspacePressed?.Invoke();
             }
             else if (e.Data.KeyCode >= KeyCode.VcNumPad1 && e.Data.KeyCode <= KeyCode.VcNumPad9) // Assuming KeyCode enum supports numpad keys
-        {
-            // Convert KeyCode to drink number
+            {
             int drinkNumber = e.Data.KeyCode - KeyCode.VcNumPad1 + 1;
             Debug.WriteLine($"Numpad {drinkNumber} pressed.");
             OnNumpadPressed?.Invoke(drinkNumber);
-        }
+            }
+            else if (e.Data.KeyCode == KeyCode.VcEnter)
+            {
+            Debug.WriteLine("Enter key pressed.");
+            OnEnterPressed?.Invoke();
+            }
         }
 
         public void Start()
