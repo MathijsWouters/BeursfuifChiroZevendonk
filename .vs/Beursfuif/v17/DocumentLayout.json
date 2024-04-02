@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\models\\keyboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:models\\keyboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\models\\drinkdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:models\\drinkdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\globalusingscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:globalusingscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\models\\drinksalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:models\\drinksalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\models\\drinksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:models\\drinksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +55,8 @@
       "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\adddrinkpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\views\\managedrinkspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -63,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:models\\receipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\models\\drinkdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:models\\drinkdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|c:\\users\\mathi\\onedrive\\documenten\\beursfuifchirozevendonk\\models\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40EF59B5-94A7-4BDE-A27A-6DE489335136}|Beursfuif.csproj|solutionrelative:models\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -82,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,20 +102,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\AppShell.xaml.cs",
-              "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "GlobalUsingscs.cs",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\GlobalUsingscs.cs",
+              "RelativeDocumentMoniker": "GlobalUsingscs.cs",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\GlobalUsingscs.cs",
+              "RelativeToolTip": "GlobalUsingscs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T12:48:00.255Z",
+              "WhenOpened": "2024-04-02T15:02:53.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "Views\\MainPage.xaml.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowEkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T10:33:16.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DrinkSalesData.cs",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinkSalesData.cs",
+              "RelativeDocumentMoniker": "Models\\DrinkSalesData.cs",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinkSalesData.cs",
+              "RelativeToolTip": "Models\\DrinkSalesData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T14:08:48.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DrinkDataService.cs",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinkDataService.cs",
+              "RelativeDocumentMoniker": "Models\\DrinkDataService.cs",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinkDataService.cs",
+              "RelativeToolTip": "Models\\DrinkDataService.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAswD4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T10:46:39.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml",
+              "RelativeToolTip": "Views\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-02T10:33:17.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DrinksViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinksViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\DrinksViewModel.cs",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinksViewModel.cs",
+              "RelativeToolTip": "Models\\DrinksViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T14:09:10.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -115,25 +188,23 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T10:49:23.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:49:23.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "KeyboardService.cs",
-              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\KeyboardService.cs",
-              "RelativeDocumentMoniker": "Models\\KeyboardService.cs",
-              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\KeyboardService.cs",
-              "RelativeToolTip": "Models\\KeyboardService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAiwC0AAAAbAAAA",
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T10:33:17.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T12:48:00.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -141,12 +212,11 @@
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T10:33:17.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:33:17.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -154,12 +224,11 @@
               "RelativeToolTip": "App.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T10:49:25.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:49:25.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "BeursPage.xaml",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml",
               "RelativeDocumentMoniker": "Views\\BeursPage.xaml",
@@ -167,12 +236,11 @@
               "RelativeToolTip": "Views\\BeursPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T13:02:27.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T13:02:27.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "BeursPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\BeursPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\BeursPage.xaml.cs",
@@ -180,12 +248,11 @@
               "RelativeToolTip": "Views\\BeursPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T13:02:43.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T13:02:43.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "AddDrinkPage.xaml",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\AddDrinkPage.xaml",
               "RelativeDocumentMoniker": "Views\\AddDrinkPage.xaml",
@@ -193,25 +260,11 @@
               "RelativeToolTip": "Views\\AddDrinkPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T10:49:42.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:49:42.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
-              "RelativeToolTip": "Views\\MainPage.xaml.cs",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAUwOAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T10:33:16.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -219,25 +272,11 @@
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T10:33:17.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T10:33:17.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml",
-              "RelativeDocumentMoniker": "Views\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml",
-              "RelativeToolTip": "Views\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T10:33:17.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ManageDrinksPage.xaml",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\ManageDrinksPage.xaml",
               "RelativeDocumentMoniker": "Views\\ManageDrinksPage.xaml",
@@ -245,12 +284,11 @@
               "RelativeToolTip": "Views\\ManageDrinksPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T12:46:12.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T12:46:12.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "CountdownTimer.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\CountdownTimer.cs",
               "RelativeDocumentMoniker": "Models\\CountdownTimer.cs",
@@ -258,12 +296,11 @@
               "RelativeToolTip": "Models\\CountdownTimer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T11:53:49.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T11:53:49.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ReceiptItem.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\ReceiptItem.cs",
               "RelativeDocumentMoniker": "Models\\ReceiptItem.cs",
@@ -275,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Receipt.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\Receipt.cs",
               "RelativeDocumentMoniker": "Models\\Receipt.cs",
@@ -287,19 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DrinkDataService.cs",
-              "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinkDataService.cs",
-              "RelativeDocumentMoniker": "Models\\DrinkDataService.cs",
-              "ToolTip": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\DrinkDataService.cs",
-              "RelativeToolTip": "Models\\DrinkDataService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T10:46:39.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Drink.cs",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Models\\Drink.cs",
               "RelativeDocumentMoniker": "Models\\Drink.cs",
@@ -311,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "DrinkManageView.xaml",
               "DocumentMoniker": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Views\\DrinkManageView.xaml",
               "RelativeDocumentMoniker": "Views\\DrinkManageView.xaml",

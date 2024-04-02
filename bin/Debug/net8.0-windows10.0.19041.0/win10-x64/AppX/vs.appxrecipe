@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-02T13:34:20.810</Modified>
+      <Modified>2024-04-02T15:10:54.128</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-02T13:03:10.388</Modified>
+      <Modified>2024-04-02T15:10:53.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.runtimeconfig.json">
       <PackagePath>Beursfuif.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-02T12:18:52.144</Modified>
+      <Modified>2024-04-02T15:10:53.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.dll">
       <PackagePath>Beursfuif.dll</PackagePath>
-      <Modified>2024-04-02T13:34:20.316</Modified>
+      <Modified>2024-04-02T15:10:52.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Beursfuif.exe</PackagePath>
-      <Modified>2024-04-02T13:34:20.353</Modified>
+      <Modified>2024-04-02T15:10:52.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sharphook\5.3.0\runtimes\win-x64\native\uiohook.dll">
       <PackagePath>uiohook.dll</PackagePath>
@@ -60,23 +60,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:12.818</Modified>
+      <Modified>2024-04-02T15:10:50.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:12.834</Modified>
+      <Modified>2024-04-02T15:10:50.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:12.850</Modified>
+      <Modified>2024-04-02T15:10:50.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:12.883</Modified>
+      <Modified>2024-04-02T15:10:50.858</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:12.998</Modified>
+      <Modified>2024-04-02T15:10:50.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -86,213 +86,213 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2024-04-02T10:32:46.962</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
-      <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-04-02T12:15:14.353</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
-      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.838</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
-      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.859</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
-      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.879</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
-      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.921</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
-      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:15.063</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.496</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.496</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.527</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.509</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.511</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.449</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.458</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.485</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.469</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.475</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
-      <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.369</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
-      <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.377</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
-      <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.384</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
-      <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.393</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
-      <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.404</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
-      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.409</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
-      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.417</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
-      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.447</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
-      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.426</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
-      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.433</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
-      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.621</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
-      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.621</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
-      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.637</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
-      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.652</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
-      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.693</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
-      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.575</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
-      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.575</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
-      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.589</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
-      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.595</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
-      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.605</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
-      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.536</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
-      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.543</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
-      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.548</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
-      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.557</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
-      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.567</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
-      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.700</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
-      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.717</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
-      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.731</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
-      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.747</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
-      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.821</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.360</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.371</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.385</Modified>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.406</Modified>
+      <Modified>2024-04-02T15:10:51.496</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-04-02T12:15:14.472</Modified>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.478</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.467</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+      <Modified>2024-04-02T15:10:52.116</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+      <Modified>2024-04-02T15:10:52.003</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.977</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.956</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.765</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.733</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.698</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.690</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.678</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.678</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.655</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.655</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.622</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.615</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.575</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.569</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.563</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.555</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.544</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.537</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.528</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.512</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.496</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.485</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.485</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+      <Modified>2024-04-02T15:10:51.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+      <Modified>2024-04-02T15:10:51.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.deps.json">
       <PackagePath>Beursfuif.deps.json</PackagePath>
-      <Modified>2024-04-02T13:03:10.037</Modified>
+      <Modified>2024-04-02T15:10:53.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -301,6 +301,22 @@
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-10-16T19:41:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\closedxml\0.102.2\lib\netstandard2.1\ClosedXML.dll">
+      <PackagePath>ClosedXML.dll</PackagePath>
+      <Modified>2024-01-05T14:14:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\documentformat.openxml\2.16.0\lib\netstandard2.0\DocumentFormat.OpenXml.dll">
+      <PackagePath>DocumentFormat.OpenXml.dll</PackagePath>
+      <Modified>2022-03-15T01:39:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\excelnumberformat\1.1.0\lib\netstandard2.0\ExcelNumberFormat.dll">
+      <PackagePath>ExcelNumberFormat.dll</PackagePath>
+      <Modified>2020-10-02T08:42:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\irony.netcore\1.0.11\lib\netstandard1.6\Irony.dll">
+      <PackagePath>Irony.dll</PackagePath>
+      <Modified>2018-07-18T01:40:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -446,6 +462,10 @@
       <PackagePath>SharpHook.Reactive.dll</PackagePath>
       <Modified>2024-02-24T16:19:06.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\sixlabors.fonts\1.0.0\lib\netcoreapp3.1\SixLabors.Fonts.dll">
+      <PackagePath>SixLabors.Fonts.dll</PackagePath>
+      <Modified>2023-08-11T12:04:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\skiasharp\2.88.7\lib\net6.0\SkiaSharp.dll">
       <PackagePath>SkiaSharp.dll</PackagePath>
       <Modified>2024-01-10T22:47:10.000</Modified>
@@ -465,6 +485,10 @@
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\system.reactive\6.0.0\lib\net6.0-windows10.0.19041\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
       <Modified>2023-05-19T05:42:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\xlparser\1.5.2\lib\netstandard1.6\XLParser.dll">
+      <PackagePath>XLParser.dll</PackagePath>
+      <Modified>2022-05-20T08:49:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.maui.controls.core\8.0.7\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>

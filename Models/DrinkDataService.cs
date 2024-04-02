@@ -3,6 +3,8 @@ using System.Collections.ObjectModel;
 using Microsoft.Maui.Storage;
 using System.IO;
 using System.Threading.Tasks;
+using Beursfuif.Models.Beursfuif.Models;
+using System.Diagnostics;
 
 namespace Beursfuif.Models
 {
@@ -13,6 +15,7 @@ namespace Beursfuif.Models
             try
             {
                 var folderPath = FileSystem.AppDataDirectory;
+                Debug.WriteLine(folderPath);
                 var filePath = Path.Combine(folderPath, $"{filename}.json");
 
                 var json = JsonSerializer.Serialize(drinks, new JsonSerializerOptions { WriteIndented = true });
@@ -66,6 +69,64 @@ namespace Beursfuif.Models
                 return false;
             }
         }
+        public async Task<List<DrinkSalesData>> LoadOrCreateSalesDataAsync(string filename)
+        {
+            var folderPath = FileSystem.AppDataDirectory;
+            var filePath = Path.Combine(folderPath, filename);
+
+            if (File.Exists(filePath))
+            {
+                var json = await File.ReadAllTextAsync(filePath);
+                var salesData = JsonSerializer.Deserialize<List<DrinkSalesData>>(json);
+                return salesData ?? new List<DrinkSalesData>();
+            }
+
+            return new List<DrinkSalesData>();
+        }
+        public async Task<bool> UpdateAndSaveSalesDataAsync(string filename, string drinkName, int quantitySold, decimal income)
+        {
+            var salesDataList = await LoadOrCreateSalesDataAsync(filename);
+            var drinkData = salesDataList.FirstOrDefault(d => d.DrinkName == drinkName);
+
+            if (drinkData != null)
+            {
+                // Update existing data
+                drinkData.TotalSold += quantitySold;
+                drinkData.TotalIncome += income;
+            }
+            else
+            {
+                // Add new data entry
+                salesDataList.Add(new DrinkSalesData
+                {
+                    DrinkName = drinkName,
+                    TotalSold = quantitySold,
+                    TotalIncome = income
+                });
+            }
+
+            // Save updated list back to file
+            return await SaveSalesDataAsync(filename, salesDataList);
+        }
+
+        private async Task<bool> SaveSalesDataAsync(string filename, List<DrinkSalesData> salesData)
+        {
+            try
+            {
+                var folderPath = FileSystem.AppDataDirectory;
+                var filePath = Path.Combine(folderPath, filename);
+
+                var json = JsonSerializer.Serialize(salesData, new JsonSerializerOptions { WriteIndented = true });
+                await File.WriteAllTextAsync(filePath, json);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+
 
     }
 }

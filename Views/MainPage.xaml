@@ -10,8 +10,8 @@
                 <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}" Clicked="OnOpenBeursClicked"/>
                 <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}" Clicked="OnAddDrinkButton_Clicked"/>
                 <Button Text="Manage drinks" Style="{StaticResource NavigationButtonStyle}" Clicked="OnManageDrinksButton_Clicked"/>
-                <Button Text="Start feestje" Style="{StaticResource NavigationButtonStyle}"/>
-                <Button Text="Stop feestje" Style="{StaticResource NavigationButtonStyle}"/>
+                <Button x:Name="StartFeestjeButton" Text="Start feestje" Style="{StaticResource NavigationButtonStyle}" Clicked="OnStartFeestjeClicked"/>
+                <Button x:Name="StopFeestjeButton" Text="Stop feestje" Style="{StaticResource NavigationButtonStyle}" Clicked="OnStopFeestjeClicked"/>
             </HorizontalStackLayout>
 
             <Grid x:Name="DrinksGrid"

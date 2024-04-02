@@ -1,4 +1,4 @@
-using Beursfuif.Models;
+using Beursfuif.Models.Beursfuif.Models;
 using System.Collections.Specialized;
 
 
@@ -40,8 +40,51 @@ public partial class MainPage : ContentPage
     {
         TenSecondTimerLabel.Text = $"Timer: {time} seconds";
     }
-    private void OnCountdownCompleted()
+    private async void OnStartFeestjeClicked(object sender, EventArgs e)
     {
+        StartFeestjeButton.BackgroundColor = Colors.Green;
+        var drinkSalesDataService = new DrinkDataService();
+        string filename = "sales_data.json";
+        await HandleExistingFileAsync(filename);
+        await drinkSalesDataService.LoadOrCreateSalesDataAsync(filename);
+
+    }
+    private async Task<bool> PromptUserForFileHandlingAsync()
+    {
+        bool deleteFile = await DisplayAlert("File Exists", "A sales data file already exists. Do you want to delete it?", "Delete", "Keep and Rename");
+        return deleteFile;
+    }
+    private async Task HandleExistingFileAsync(string filename)
+    {
+        var folderPath = FileSystem.AppDataDirectory;
+        var filePath = Path.Combine(folderPath, filename);
+
+        if (File.Exists(filePath))
+        {
+            bool deleteFile = await PromptUserForFileHandlingAsync();
+
+            if (deleteFile)
+            {
+                File.Delete(filePath);
+            }
+            else
+            {
+
+                string newFileName = $"sales_data_{DateTime.Now:yyyyMMddHHmmss}.json";
+                string newFilePath = Path.Combine(folderPath, newFileName);
+
+                File.Move(filePath, newFilePath);
+            }
+        }
+    }
+    private async void OnCountdownCompleted()
+    {
+        var drinkSalesDataService = new DrinkDataService();
+        string filename = "sales_data.json";
+        foreach (var item in _receipt.Items)
+        {
+            await drinkSalesDataService.UpdateAndSaveSalesDataAsync(filename, item.DrinkName, item.Quantity, item.TotalPrice);
+        }
         _receipt.Items.Clear(); 
         _countdownTimer.Reset();
     }
@@ -223,5 +266,59 @@ public partial class MainPage : ContentPage
         var newWindow = new Window(new BeursPage());
         Application.Current.OpenWindow(newWindow);
     }
+    private async void OnStopFeestjeClicked(object sender, EventArgs e)
+    {
+        bool confirmStop = await DisplayAlert("Confirm", "Are you sure you want to stop? There is no going back.", "Yes", "No");
+        if (!confirmStop) return;
+
+        StartFeestjeButton.BackgroundColor = Colors.Transparent; 
+        string filename = "sales_data.json";
+        var folderPath = FileSystem.AppDataDirectory;
+        var jsonFilePath = Path.Combine(folderPath, filename);
+        var downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
+        string excelFilePath = Path.Combine(downloadsPath, "sales_data.xlsx");
+        await ConvertJsonToExcelAndHandleFileAsync(jsonFilePath, excelFilePath);
+    }
+
+    private async Task ConvertJsonToExcelAndHandleFileAsync(string jsonFilePath, string excelFilePath)
+    {
+        try
+        {
+            var jsonString = await File.ReadAllTextAsync(jsonFilePath);
+            var drinks = JsonSerializer.Deserialize<List<DrinkSalesData>>(jsonString);
+
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Sales Data");
+                worksheet.Cell(1, 1).Value = "Drink Name";
+                worksheet.Cell(1, 2).Value = "Total Sold";
+                worksheet.Cell(1, 3).Value = "Total Income";
+
+                int currentRow = 2;
+                decimal totalIncome = 0;
+                foreach (var drink in drinks)
+                {
+                    worksheet.Cell(currentRow, 1).Value = drink.DrinkName;
+                    worksheet.Cell(currentRow, 2).Value = drink.TotalSold;
+                    worksheet.Cell(currentRow, 3).Value = drink.TotalIncome;
+                    totalIncome += drink.TotalIncome;
+                    currentRow++;
+                }
+
+                // Optionally, add total income at the end
+                worksheet.Cell(currentRow + 1, 2).Value = "Total Income";
+                worksheet.Cell(currentRow + 1, 3).Value = totalIncome;
+
+                workbook.SaveAs(excelFilePath);
+            }
+            File.Delete(jsonFilePath);
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", "Failed to save Excel file.", "OK");
+        }
+    }
+
+
 
 }
