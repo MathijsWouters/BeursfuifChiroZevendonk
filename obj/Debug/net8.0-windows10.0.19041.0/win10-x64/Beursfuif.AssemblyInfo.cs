@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Beursfuif")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+35cc3d1293a6d42f51353130502191dfc5ec5e20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cfb70c908c5b296a1183b90554f8b45d4c47490d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Beursfuif")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Beursfuif")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

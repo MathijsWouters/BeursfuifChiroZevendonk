@@ -1,1 +1,1 @@
-C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\Beursfuif.csproj;x64
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\Beursfuif.csproj;x64

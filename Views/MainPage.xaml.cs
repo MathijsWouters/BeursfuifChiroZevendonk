@@ -25,9 +25,8 @@ public partial class MainPage : ContentPage
 #if WINDOWS
         _keyboardService = new KeyboardService();
         _keyboardService.OnBackspacePressed = RemoveLastItemFromReceipt;
+        _keyboardService.OnNumpadPressed = AddDrinkByNumber;
         _keyboardService.Start();
-        
-        
 #endif
     }
     public void RemoveLastItemFromReceipt()
@@ -39,9 +38,16 @@ public partial class MainPage : ContentPage
     public void AddDrinkByNumber(int number)
     {
         Drink drink = GetDrinkByNumber(number);
-        _receipt.AddItem(drink);
-
+        if (drink == null)
+        {
+            Console.WriteLine($"Numpad {number} pressed, but no corresponding drink found.");
+        }
+        else
+        {
+            _receipt.AddItem(drink);
+        }
     }
+
     public Drink GetDrinkByNumber(int number)
     {
         return _viewModel.Drinks.FirstOrDefault(drink => drink.Number == number);

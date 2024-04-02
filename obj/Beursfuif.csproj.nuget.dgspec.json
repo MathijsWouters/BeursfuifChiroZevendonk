@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif.csproj": {}
+    "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Beursfuif.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif.csproj": {
+    "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Beursfuif.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif.csproj",
+        "projectUniqueName": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Beursfuif.csproj",
         "projectName": "Beursfuif",
-        "projectPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\Beursfuif.csproj",
+        "projectPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\Beursfuif.csproj",
         "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\A1 chiro beursfuif\\BeursfuifChiroZevendonk\\obj\\",
+        "outputPath": "C:\\Users\\mathi\\OneDrive\\Documenten\\BeursfuifChiroZevendonk\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -55,6 +55,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -76,7 +81,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.2, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
@@ -119,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
@@ -139,7 +144,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.2, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
@@ -182,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
@@ -202,7 +207,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.2, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
@@ -246,7 +251,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
@@ -309,7 +314,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

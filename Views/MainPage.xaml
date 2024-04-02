@@ -4,52 +4,59 @@
              x:Class="Beursfuif.Views.MainPage"
              Title=""
              Shell.NavBarIsVisible="False">
-    <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="2*,3*,*">
-        <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="50" HorizontalOptions="Center">
-            <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}"/>
-            <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}" Clicked="OnAddDrinkButton_Clicked"/>
-            <Button Text="Manage drinks" Style="{StaticResource NavigationButtonStyle}" Clicked="OnManageDrinksButton_Clicked"/>
-            <Button Text="Start feestje" Style="{StaticResource NavigationButtonStyle}"/>
-            <Button Text="Stop feestje" Style="{StaticResource NavigationButtonStyle}"/>
-        </HorizontalStackLayout>
+    <Grid>
+        <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="2*,3*,*">
+            <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="50" HorizontalOptions="Center">
+                <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}"/>
+                <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}" Clicked="OnAddDrinkButton_Clicked"/>
+                <Button Text="Manage drinks" Style="{StaticResource NavigationButtonStyle}" Clicked="OnManageDrinksButton_Clicked"/>
+                <Button Text="Start feestje" Style="{StaticResource NavigationButtonStyle}"/>
+                <Button Text="Stop feestje" Style="{StaticResource NavigationButtonStyle}"/>
+            </HorizontalStackLayout>
 
-        <!-- Left Side 3x3 Grid for drinks -->
-        <Grid x:Name="DrinksGrid"
-      Grid.Row="1" Grid.Column="0" Padding="10"
-      RowDefinitions="*,*,*" ColumnDefinitions="*,*,*"
-      HorizontalOptions="Fill" VerticalOptions="Center">
-            <!-- Dynamic drink buttons will be added here -->
+            <!-- Left Side 3x3 Grid for drinks -->
+            <Grid x:Name="DrinksGrid"
+              Grid.Row="1" Grid.Column="0" Padding="10"
+              RowDefinitions="*,*,*" ColumnDefinitions="*,*,*"
+              HorizontalOptions="Fill" VerticalOptions="Center">
+                <!-- Dynamic drink buttons will be added here -->
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2" Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="Timer" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
+                <!-- Replace the BoxView with a ListView or CollectionView -->
+                <Frame Grid.Row="1" CornerRadius="10" BorderColor="White" Padding="0">
+                    <CollectionView x:Name="ReceiptListView" ItemsSource="{Binding Items}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <Label Text="{Binding DrinkName}" WidthRequest="85" />
+                                    <Label Text="X" WidthRequest="20" />
+                                    <Label Text="{Binding Quantity}" WidthRequest="20" />
+                                    <Label Text="=" WidthRequest="20" />
+                                    <Label Text="{Binding TotalPrice, StringFormat='€ {0:N2}'}" WidthRequest="50" />
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+                </Frame>
+                <Label Text="{Binding TotalPrice, StringFormat='Total: {0:N2}'}" Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
+                <Label Text="{Binding TotalVakjes, StringFormat='Vakjes: {0:F0}'}" Grid.Row="3" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
+            </Grid>
+
+            <Button Text="Crash" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="End"
+                        Style="{StaticResource NavigationButtonStyle}" HeightRequest="80" WidthRequest="300" />
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="2" Padding="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <Label Text="Timer" Grid.Row="0" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
-            <!-- Replace the BoxView with a ListView or CollectionView -->
-            <Frame Grid.Row="1" CornerRadius="10" BorderColor="White" Padding="0">
-                <CollectionView x:Name="ReceiptListView" ItemsSource="{Binding Items}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout Orientation="Horizontal" Padding="10">
-                                <Label Text="{Binding DrinkName}" WidthRequest="85" />
-                                <Label Text="X" WidthRequest="20" />
-                                <Label Text="{Binding Quantity}" WidthRequest="20" />
-                                <Label Text="=" WidthRequest="20" />
-                                <Label Text="{Binding TotalPrice, StringFormat='€ {0:N2}'}" WidthRequest="50" />
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-
-                </CollectionView>
-            </Frame>
-            <Label Text="{Binding TotalPrice, StringFormat='Total: {0:N2}'}" Grid.Row="2" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
-            <Label Text="{Binding TotalVakjes, StringFormat='Vakjes: {0:F0}'}" Grid.Row="3" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Medium"/>
-        </Grid>
-
-        <Button Text="Crash" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="End"
-                Style="{StaticResource NavigationButtonStyle}" HeightRequest="80" WidthRequest="300" />
+        <AbsoluteLayout x:Name="MainLayout" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="False">
+            <StackLayout x:Name="NotificationView" BackgroundColor="#FF0000" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.1,-1,-1" Padding="10">
+                <Label x:Name="NotificationLabel" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+        </AbsoluteLayout>
     </Grid>
 </ContentPage>
