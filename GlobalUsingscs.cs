@@ -3,3 +3,4 @@ global using ClosedXML.Excel;
 global using Beursfuif.Models;
 global using Beursfuif.Views;
 global using Microsoft.Maui.Devices;
+global using System.Reflection;

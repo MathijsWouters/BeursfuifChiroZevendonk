@@ -39,7 +39,7 @@ namespace Beursfuif.Models
         public decimal CurrentPrice
         {
             get => _currentPrice;
-            private set => SetProperty(ref _currentPrice, value);
+            set => SetProperty(ref _currentPrice, value);
         }
 
         public decimal MinPrice
@@ -88,7 +88,7 @@ namespace Beursfuif.Models
             if (StartingPrice != newStartingPrice)
             {
                 StartingPrice = newStartingPrice;
-                CurrentPrice = StartingPrice; // Aannemend dat dit de gewenste logica is
+                CurrentPrice = StartingPrice; 
             }
         }
 

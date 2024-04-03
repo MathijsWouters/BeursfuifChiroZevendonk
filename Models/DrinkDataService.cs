@@ -31,8 +31,11 @@ namespace Beursfuif.Models
         {
             var folderPath = FileSystem.AppDataDirectory;
             var files = Directory.EnumerateFiles(folderPath, "*.json");
-            return files.Select(Path.GetFileNameWithoutExtension);
+            return files
+                .Where(file => !Path.GetFileName(file).EndsWith("_data.json"))
+                .Select(Path.GetFileNameWithoutExtension);
         }
+
         public async Task<ObservableCollection<Drink>> LoadDrinksLayoutAsync(string filename)
         {
             try
@@ -125,66 +128,49 @@ namespace Beursfuif.Models
                 return false;
             }
         }
-        public async Task<List<FiveMinuteDrinkSalesData>> LoadOrCreateFiveMinuteSalesDataAsync(string filename)
+        public async Task<bool> SaveFiveMinuteSalesDataAsync(string filename, List<FiveMinuteDrinkSalesData> salesData)
         {
-            var folderPath = FileSystem.AppDataDirectory;
-            var filePath = Path.Combine(folderPath, filename);
-
-            if (File.Exists(filePath))
+            try
             {
-                var json = await File.ReadAllTextAsync(filePath);
-                var data = JsonSerializer.Deserialize<List<FiveMinuteDrinkSalesData>>(json);
-                return data ?? new List<FiveMinuteDrinkSalesData>();
-            }
+                var folderPath = FileSystem.AppDataDirectory;
+                var filePath = Path.Combine(folderPath, filename);
 
-            return new List<FiveMinuteDrinkSalesData>();
+                var json = JsonSerializer.Serialize(salesData, new JsonSerializerOptions { WriteIndented = true });
+                await File.WriteAllTextAsync(filePath, json);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
-        public async Task UpdateAndSaveFiveMinuteSalesDataAsync(string filename, string drinkName, int quantitySold)
+        public async Task<List<FiveMinuteDrinkSalesData>> LoadSalesDataAsync(string filename)
         {
-            var data = await LoadOrCreateFiveMinuteSalesDataAsync(filename);
-            var drinkData = data.FirstOrDefault(d => d.DrinkName == drinkName);
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, filename);
+            if (!File.Exists(filePath))
+            {
+                return new List<FiveMinuteDrinkSalesData>();
+            }
 
+            var json = await File.ReadAllTextAsync(filePath);
+            return JsonSerializer.Deserialize<List<FiveMinuteDrinkSalesData>>(json) ?? new List<FiveMinuteDrinkSalesData>();
+        }
+
+        public async Task UpdateSalesDataAsync(string filename, string drinkName, int quantitySold)
+        {
+            var salesData = await LoadSalesDataAsync(filename);
+            var drinkData = salesData.FirstOrDefault(d => d.DrinkName == drinkName);
             if (drinkData != null)
             {
-                // Update existing data
                 drinkData.QuantitySoldLastFiveMinutes += quantitySold;
             }
             else
             {
-                // Add new data entry
-                data.Add(new FiveMinuteDrinkSalesData
-                {
-                    DrinkName = drinkName,
-                    QuantitySoldLastFiveMinutes = quantitySold
-                });
+                salesData.Add(new FiveMinuteDrinkSalesData { DrinkName = drinkName, QuantitySoldLastFiveMinutes = quantitySold });
             }
-
-            // Save updated list back to file
-            await SaveFiveMinuteSalesDataAsync(filename, data);
+            await SaveFiveMinuteSalesDataAsync(filename, salesData);
         }
 
-        private async Task SaveFiveMinuteSalesDataAsync(string filename, List<FiveMinuteDrinkSalesData> data)
-        {
-            var folderPath = FileSystem.AppDataDirectory;
-            var filePath = Path.Combine(folderPath, filename);
-
-            var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
-            await File.WriteAllTextAsync(filePath, json);
-        }
-
-        public async Task ClearFiveMinuteSalesDataAsync(string filename)
-        {
-            var folderPath = FileSystem.AppDataDirectory;
-            var filePath = Path.Combine(folderPath, filename);
-
-            if (File.Exists(filePath))
-            {
-                File.Delete(filePath);
-            }
-
-            // Optionally, create a new empty file
-            await File.WriteAllTextAsync(filePath, "[]");
-        }
     }
 }

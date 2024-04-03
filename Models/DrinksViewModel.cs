@@ -14,7 +14,7 @@ namespace Beursfuif.Models
         public ObservableCollection<Drink> Drinks { get; } = new();
         private readonly DrinkDataService _dataService = new DrinkDataService();
 
-
+        public event Action DrinksUpdated;
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -32,7 +32,6 @@ namespace Beursfuif.Models
             Drinks.Add(newDrink);
             OnPropertyChanged(nameof(Drinks));
         }
-
         public void EditDrink(Drink drinkToEdit)
         {
             // Find the drink in the collection
@@ -46,6 +45,7 @@ namespace Beursfuif.Models
 
                 // Notify UI of changes
                 OnPropertyChanged(nameof(Drinks));
+                DrinksUpdated?.Invoke();
             }
         }
 
@@ -62,6 +62,7 @@ namespace Beursfuif.Models
 
             // Inform the UI that the collection has changed
             OnPropertyChanged(nameof(Drinks));
+            DrinksUpdated?.Invoke();
         }
         public async Task LoadLayoutAsync(string layoutName)
         {

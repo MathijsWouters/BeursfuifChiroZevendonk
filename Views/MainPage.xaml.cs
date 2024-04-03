@@ -17,6 +17,9 @@ public partial class MainPage : ContentPage
     private Label _timerLabel;
     private const string SalesDataFile = "sales_data.json";
     private const string FiveMinuteDataFile = "five_minute_drink_data.json";
+    private DrinkDataService _drinkDataService = new DrinkDataService();
+    private Dictionary<int, Frame> drinkViews = new Dictionary<int, Frame>();
+
 
 #if WINDOWS
     private KeyboardService _keyboardService;
@@ -29,6 +32,7 @@ public partial class MainPage : ContentPage
         _receipt = new Receipt();
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
+        _viewModel.DrinksUpdated += RefreshDrinksDisplay;
         ReceiptListView.ItemsSource = _receipt.Items;
         _tenSecondTimer = new CountdownTimer(Dispatcher);
         _tenSecondTimer.TimeUpdated += OnTenSecondTimeUpdated;
@@ -38,20 +42,32 @@ public partial class MainPage : ContentPage
         _fiveMinuteTimer.TimeUpdated += OnFiveMinuteTimeUpdated;
         _fiveMinuteTimer.CountdownCompleted += OnFiveMinuteCountdownCompleted;
 #if WINDOWS
-        _keyboardService = new KeyboardService();
-        _keyboardService.OnBackspacePressed = RemoveLastItemFromReceipt;
-        _keyboardService.OnNumpadPressed = AddDrinkByNumber;
-        _keyboardService.OnEnterPressed = OnTenSecondCountdownCompleted;
-        _keyboardService.Start();
+    _keyboardService = new KeyboardService();
+    _keyboardService.OnBackspacePressed = RemoveLastItemFromReceipt;
+    _keyboardService.OnNumpadPressed = AddDrinkByNumber;
+    _keyboardService.OnEnterPressed = OnEnterKeyPressed;
+    _keyboardService.Start();
 #endif
-    }
 
+    }
+    private void OnEnterKeyPressed()
+    {
+        if (_isFeestjeActive)
+        {
+            // Only finalize the receipt or perform the intended action
+            // No toggling of feestje state here
+            OnTenSecondCountdownCompleted();
+        }
+        // Else, you might want to handle a different action when feestje is not active, or do nothing.
+    }
     private void OnTenSecondTimeUpdated(int time)
     {
         TenSecondTimerLabel.Text = $"Timer: {time} seconds";
     }
     private async void OnStartFeestjeClicked(object sender, EventArgs e)
     {
+        StartFeestjeButton.IsEnabled = false;
+        StopFeestjeButton.IsEnabled = false ;
         _isFeestjeActive = !_isFeestjeActive;
         StartFeestjeButton.BackgroundColor = _isFeestjeActive ? Colors.Green : Colors.Transparent;
 
@@ -61,15 +77,17 @@ public partial class MainPage : ContentPage
             await HandleExistingFileAsync(SalesDataFile);
             await drinkSalesDataService.LoadOrCreateSalesDataAsync(SalesDataFile);
 
-            var fiveMinuteDataService = new DrinkDataService();
-            await fiveMinuteDataService.LoadOrCreateFiveMinuteSalesDataAsync(FiveMinuteDataFile);
-
-            _fiveMinuteTimer.Start(5 * 60); 
+            await InitializeFiveMinuteSalesDataWithRandomValues();
+            await InitializeCurrentSalesData();
+            _fiveMinuteTimer.Start(1 * 20); 
         }
         else
         {
             _fiveMinuteTimer.Stop(); 
         }
+        StopFeestjeButton.IsEnabled = true;
+        StartFeestjeButton.IsEnabled = true;
+        FocusSinkButton.Focus();
     }
     private async Task<bool> PromptUserForFileHandlingAsync()
     {
@@ -103,9 +121,8 @@ public partial class MainPage : ContentPage
             var drinkSalesDataService = new DrinkDataService();
             foreach (var item in _receipt.Items)
             {
+                await drinkSalesDataService.UpdateSalesDataAsync("current_" + FiveMinuteDataFile, item.DrinkName, item.Quantity);
                 await drinkSalesDataService.UpdateAndSaveSalesDataAsync(SalesDataFile, item.DrinkName, item.Quantity, item.TotalPrice);
-
-                await drinkSalesDataService.UpdateAndSaveFiveMinuteSalesDataAsync(FiveMinuteDataFile, item.DrinkName, item.Quantity);
             }
         }
         _receipt.Items.Clear(); 
@@ -137,117 +154,153 @@ public partial class MainPage : ContentPage
     {
         return _viewModel.Drinks.FirstOrDefault(drink => drink.Number == number);
     }
-
-    private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+    private void RefreshDrinksDisplay()
     {
-        DrinksGrid.Children.Clear(); 
-
         foreach (var drink in _viewModel.Drinks)
         {
-            // Create the frame that will act like a button with rounded corners and a border
-            var frame = new Frame
+            // Check if the view already exists
+            if (!drinkViews.TryGetValue(drink.Number, out var existingView))
             {
-                CornerRadius = 10,
-                BorderColor = Colors.White,
-                Padding = 0,
-                Margin = new Thickness(2),
-                WidthRequest = 200,
-                HeightRequest = 125,
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-            };
+                // Create a new view for the drink if it doesn't exist
+                var drinkView = CreateDrinkView(drink);
+                DrinksGrid.Children.Add(drinkView);
+                drinkViews[drink.Number] = drinkView; // Track the view by drink number
+            }
+            else
+            {
+                // Update existing view's context if it already exists
+                existingView.BindingContext = drink;
+            }
+        }
 
-            // Create the grid to hold the color block and text
-            var gridButton = new Grid
+        // Clean up any views that no longer have a corresponding drink
+        var currentDrinkNumbers = _viewModel.Drinks.Select(d => d.Number).ToList();
+        var viewNumbersToRemove = drinkViews.Keys.Where(k => !currentDrinkNumbers.Contains(k)).ToList();
+        foreach (var numberToRemove in viewNumbersToRemove)
+        {
+            DrinksGrid.Children.Remove(drinkViews[numberToRemove]);
+            drinkViews.Remove(numberToRemove);
+        }
+    }
+    private void Drinks_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+    {
+        // No need to clear all children since we are reusing views now
+        foreach (var drink in _viewModel.Drinks)
+        {
+            if (!drinkViews.TryGetValue(drink.Number, out var frame))
             {
-                ColumnDefinitions =
+                frame = CreateDrinkView(drink);
+                DrinksGrid.Children.Add(frame);
+                drinkViews[drink.Number] = frame;
+            }
+            else
             {
-                new ColumnDefinition { Width = new GridLength(1, GridUnitType.Auto) },
-                new ColumnDefinition { Width = new GridLength(2, GridUnitType.Star) }
-            },
-                RowDefinitions =
-            {
-                new RowDefinition { Height = GridLength.Auto },
-                new RowDefinition { Height = GridLength.Auto },
-                new RowDefinition { Height = GridLength.Auto }
-            },
-                BackgroundColor = Colors.Transparent
-            };
+                // If the view already exists, just update its context
+                frame.BindingContext = drink;
+            }
 
-            // Add the colored box for the button's left side
-            var colorBoxView = new BoxView
-            {
-                Color = drink.DrinkColor,
-                WidthRequest = 60,
-                HeightRequest = 125,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                VerticalOptions = LayoutOptions.FillAndExpand
-            };
-            gridButton.Children.Add(colorBoxView);
-            Grid.SetColumn(colorBoxView, 0);
-            Grid.SetRowSpan(colorBoxView, 3);
-
-            // Add the text content for the button's right side
-            var nameLabel = new Label
-            {
-                Text = drink.Name,
-                FontAttributes = FontAttributes.Bold,
-                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Start
-            };
-            gridButton.Children.Add(nameLabel);
-            Grid.SetColumn(nameLabel, 1);
-            Grid.SetRow(nameLabel, 0);
-
-            // Create a Frame for the drink's number with a border and gray background
-            var numberFrame = new Frame
-            {
-                BackgroundColor = Colors.Gray,
-                BorderColor = Colors.Black,
-                Padding = 0,
-                Content = new Label
-                {
-                    Text = $"{drink.Number}",
-                    FontAttributes = FontAttributes.Bold,
-                    HorizontalOptions = LayoutOptions.Center,
-                    VerticalOptions = LayoutOptions.Center,
-                    TextColor = Colors.White
-                },
-                CornerRadius = 5,
-                WidthRequest = 30,
-                HeightRequest = 30,
-                HorizontalOptions = LayoutOptions.Start,
-                VerticalOptions = LayoutOptions.Center,
-                Margin = new Thickness(10, 0, 0, 0)
-            };
-            gridButton.Children.Add(numberFrame);
-            Grid.SetColumn(numberFrame, 1);
-            Grid.SetRow(numberFrame, 1);
-
-            // Add a Label for the drink's price at the bottom right
-            var priceLabel = new Label
-            {
-                Text = $"{drink.StartingPrice:C}",
-                FontAttributes = FontAttributes.Bold,
-                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
-                HorizontalOptions = LayoutOptions.End,
-                VerticalOptions = LayoutOptions.End,
-                Margin = new Thickness(0, 0, 10, 0)
-            };
-            gridButton.Children.Add(priceLabel);
-            Grid.SetColumn(priceLabel, 1);
-            Grid.SetRow(priceLabel, 2);
-            frame.Content = gridButton;
-            var tapGesture = new TapGestureRecognizer();
-            tapGesture.Tapped += (s, args) => DrinkButton_Clicked(drink);
-            frame.GestureRecognizers.Add(tapGesture);
+            // Update the Grid layout position if necessary
             int row = (drink.Number - 1) / 3;
             int column = (drink.Number - 1) % 3;
             Grid.SetRow(frame, row);
             Grid.SetColumn(frame, column);
-            DrinksGrid.Children.Add(frame);
         }
+
+        // Remove views for drinks that are no longer present
+        var drinksInViewModel = _viewModel.Drinks.Select(d => d.Number).ToList();
+        var numbersToRemove = drinkViews.Keys.Where(k => !drinksInViewModel.Contains(k)).ToList();
+        foreach (var number in numbersToRemove)
+        {
+            DrinksGrid.Children.Remove(drinkViews[number]);
+            drinkViews.Remove(number);
+        }
+    }
+
+    private Frame CreateDrinkView(Drink drink)
+    {
+        var nameLabel = new Label
+        {
+            Text = drink.Name,
+            FontAttributes = FontAttributes.Bold,
+            FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Start
+        };
+
+        var priceLabel = new Label
+        {
+            FontAttributes = FontAttributes.Bold,
+            FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+            HorizontalOptions = LayoutOptions.End,
+            VerticalOptions = LayoutOptions.End,
+            Margin = new Thickness(0, 0, 10, 0)
+        };
+        priceLabel.SetBinding(Label.TextProperty, "CurrentPrice", stringFormat: "{0:C}");
+
+        var colorBoxView = new BoxView
+        {
+            Color = drink.DrinkColor,
+            WidthRequest = 60,
+            HeightRequest = 125,
+            HorizontalOptions = LayoutOptions.FillAndExpand,
+            VerticalOptions = LayoutOptions.FillAndExpand
+        };
+
+        var gridButton = new Grid
+        {
+            ColumnDefinitions = { new ColumnDefinition { Width = GridLength.Auto }, new ColumnDefinition { Width = new GridLength(2, GridUnitType.Star) } },
+            RowDefinitions = { new RowDefinition { Height = GridLength.Auto }, new RowDefinition { Height = GridLength.Auto }, new RowDefinition { Height = GridLength.Auto } },
+            BackgroundColor = Colors.Transparent
+        };
+
+        gridButton.Children.Add(colorBoxView);
+        Grid.SetColumn(colorBoxView, 0);
+        Grid.SetRowSpan(colorBoxView, 3);
+
+        gridButton.Children.Add(nameLabel);
+        Grid.SetColumn(nameLabel, 1);
+        Grid.SetRow(nameLabel, 0);
+
+        var numberFrame = new Frame
+        {
+            BackgroundColor = Colors.Gray,
+            BorderColor = Colors.Black,
+            Padding = 0,
+            Content = new Label { Text = $"{drink.Number}", FontAttributes = FontAttributes.Bold, HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, TextColor = Colors.White },
+            CornerRadius = 5,
+            WidthRequest = 30,
+            HeightRequest = 30,
+            HorizontalOptions = LayoutOptions.Start,
+            VerticalOptions = LayoutOptions.Center,
+            Margin = new Thickness(10, 0, 0, 0)
+        };
+        gridButton.Children.Add(numberFrame);
+        Grid.SetColumn(numberFrame, 1);
+        Grid.SetRow(numberFrame, 1);
+
+        gridButton.Children.Add(priceLabel);
+        Grid.SetColumn(priceLabel, 1);
+        Grid.SetRow(priceLabel, 2);
+
+        var frame = new Frame
+        {
+            CornerRadius = 10,
+            BorderColor = Colors.White,
+            Padding = 0,
+            Margin = new Thickness(2),
+            WidthRequest = 200,
+            HeightRequest = 125,
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Center,
+            Content = gridButton,
+            BindingContext = drink // Ensure that the frame's context is the drink for binding to work
+        };
+
+        var tapGesture = new TapGestureRecognizer();
+        tapGesture.Tapped += (s, args) => DrinkButton_Clicked(drink);
+        frame.GestureRecognizers.Add(tapGesture);
+
+        return frame;
     }
     private void DrinkButton_Clicked(Drink drink)
     {
@@ -267,10 +320,6 @@ public partial class MainPage : ContentPage
     {
         base.OnAppearing();
         RefreshDrinksDisplay();
-    }
-    private void RefreshDrinksDisplay()
-    {
-        Drinks_CollectionChanged(null, null);
     }
     private async void OnOpenBeursClicked(object sender, EventArgs e)
     {
@@ -301,7 +350,7 @@ public partial class MainPage : ContentPage
         bool confirmStop = await DisplayAlert("Confirm", "Are you sure you want to stop? There is no going back.", "Yes", "No");
         if (!confirmStop) return;
         _isFeestjeActive = false;
-        StartFeestjeButton.BackgroundColor = Colors.Transparent;
+        StartFeestjeButton.BackgroundColor = Colors.DarkSlateGray;
         string filename = "sales_data.json";
         var folderPath = FileSystem.AppDataDirectory;
         var jsonFilePath = Path.Combine(folderPath, filename);
@@ -320,6 +369,16 @@ public partial class MainPage : ContentPage
         _receipt.Items.Clear();
         _tenSecondTimer.Reset();
         _fiveMinuteTimer.Stop();
+        var fiveMinuteDataFilePath = Path.Combine(folderPath, FiveMinuteDataFile);
+        if (File.Exists(fiveMinuteDataFilePath))
+        {
+            File.Delete(fiveMinuteDataFilePath);
+        }
+        var currentFiveMinuteDataFilePath = Path.Combine(folderPath, "current_" + FiveMinuteDataFile);
+        if (File.Exists(currentFiveMinuteDataFilePath))
+        {
+            File.Delete(currentFiveMinuteDataFilePath);
+        }
     }
     private async Task ConvertJsonToExcelAndHandleFileAsync(string jsonFilePath, string excelFilePath)
     {
@@ -366,24 +425,122 @@ public partial class MainPage : ContentPage
         if (_isFeestjeActive)
         {
             await ProcessFiveMinuteSalesData();
-            var fiveMinuteDataService = new DrinkDataService();
-            await fiveMinuteDataService.ClearFiveMinuteSalesDataAsync(FiveMinuteDataFile);
+            await ResetCurrentSalesData();
+            _fiveMinuteTimer.Start(1 * 20);
         }
-        if (_isFeestjeActive)
+    }
+
+    private decimal CalculatePercentageChange(int previousSales, int currentSales)
+    {
+        if (previousSales == 0) return 100; 
+        return ((currentSales - previousSales) / (decimal)previousSales) * 100;
+    }
+
+    private decimal DetermineAdjustmentMagnitude(decimal percentageChange)
+    {
+        var random = new Random();
+        var chance = random.Next(100); 
+
+        if (percentageChange >= 20) 
         {
-            _fiveMinuteTimer.Start(5 * 60);
+            if (chance < 50) 
+            {
+                return 0.25m; 
+            }
+            else if (chance > 75) 
+            {
+                return 0.50m; 
+            }
+            else 
+            {
+                return 0; 
+            }
         }
+        else if (percentageChange <= -20) 
+        {
+            if (chance < 50) 
+            {
+                return -0.25m; 
+            }
+            else if (chance > 75) 
+            {
+                return -0.50m; 
+            }
+            else 
+            {
+                return 0; 
+            }
+        }
+
+        return 0; 
+    }
+    private async Task InitializeFiveMinuteSalesDataWithRandomValues()
+    {
+        var initialData = _viewModel.Drinks.Select(drink => new FiveMinuteDrinkSalesData
+        {
+            DrinkName = drink.Name,
+            QuantitySoldLastFiveMinutes = new Random().Next(5, 15) 
+        }).ToList();
+
+        var filePath = Path.Combine(FileSystem.AppDataDirectory, FiveMinuteDataFile);
+        var json = JsonSerializer.Serialize(initialData);
+        await File.WriteAllTextAsync(filePath, json);
     }
 
     private async Task ProcessFiveMinuteSalesData()
     {
-        var fiveMinuteDataService = new DrinkDataService();
-        var salesData = await fiveMinuteDataService.LoadOrCreateFiveMinuteSalesDataAsync(FiveMinuteDataFile);
-        // Perform your calculations with salesData here...
-        Debug.WriteLine("Processing 5-minute sales data...");
-        // This is where you would process and use the data. This might involve calculations,
-        // updating the UI, or other logic specific to your application.
+        var previousSalesDataPath = Path.Combine(FileSystem.AppDataDirectory, FiveMinuteDataFile);
+        var previousSalesData = await _drinkDataService.LoadSalesDataAsync(previousSalesDataPath);
+        var currentSalesDataPath = Path.Combine(FileSystem.AppDataDirectory, "current_" + FiveMinuteDataFile);
+        var currentSalesData = await _drinkDataService.LoadSalesDataAsync(currentSalesDataPath);
+        var adjustments = new Dictionary<string, decimal>();
+        foreach (var currentSale in currentSalesData)
+        {
+            var previousSale = previousSalesData.FirstOrDefault(p => p.DrinkName == currentSale.DrinkName);
+            if (previousSale == null) continue;
+
+            var percentageChange = CalculatePercentageChange(previousSale.QuantitySoldLastFiveMinutes, currentSale.QuantitySoldLastFiveMinutes);
+            var adjustment = DetermineAdjustmentMagnitude(percentageChange);
+
+            adjustments[currentSale.DrinkName] = adjustment; 
+        }
+        foreach (var drink in _viewModel.Drinks)
+        {
+            if (adjustments.TryGetValue(drink.Name, out var adjustment))
+            {
+                var newPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, drink.CurrentPrice + adjustment));
+                MainThread.BeginInvokeOnMainThread(() =>
+                {
+                    drink.CurrentPrice = newPrice;
+                });
+            }
+        }
+        await File.WriteAllTextAsync(previousSalesDataPath, JsonSerializer.Serialize(currentSalesData));
+        await ResetCurrentSalesData();
     }
 
 
+    private async Task ResetCurrentSalesData()
+    {
+        var resetData = _viewModel.Drinks.Select(drink => new FiveMinuteDrinkSalesData
+        {
+            DrinkName = drink.Name,
+            QuantitySoldLastFiveMinutes = 0
+        }).ToList();
+
+        var filePath = Path.Combine(FileSystem.AppDataDirectory, "current_" + FiveMinuteDataFile);
+        await File.WriteAllTextAsync(filePath, JsonSerializer.Serialize(resetData));
+    }
+    private async Task InitializeCurrentSalesData()
+    {
+        var currentSalesData = _viewModel.Drinks.Select(drink => new FiveMinuteDrinkSalesData
+        {
+            DrinkName = drink.Name,
+            QuantitySoldLastFiveMinutes = 0 
+        }).ToList();
+
+        var filePath = Path.Combine(FileSystem.AppDataDirectory, "current_" + FiveMinuteDataFile);
+        var json = JsonSerializer.Serialize(currentSalesData);
+        await File.WriteAllTextAsync(filePath, json);
+    }
 }

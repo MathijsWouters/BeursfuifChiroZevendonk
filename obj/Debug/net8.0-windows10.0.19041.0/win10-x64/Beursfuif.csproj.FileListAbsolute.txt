@@ -365,18 +365,6 @@ C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\ob
 C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\mathi\OneDrive\Documenten\A1 chiro beursfuif\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.csproj.AssemblyReference.cache
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
-C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\uiohook.dll
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.exe
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
@@ -472,6 +460,18 @@ C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-wind
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\libSkiaSharp.dll
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.csproj.AssemblyReference.cache
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Beursfuif.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
 C:\Users\mathi\OneDrive\Documenten\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png

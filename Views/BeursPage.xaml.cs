@@ -5,6 +5,8 @@ namespace Beursfuif.Views;
 public partial class BeursPage : ContentPage
 {
     private DrinksViewModel _viewModel;
+    private Dictionary<string, Label> priceLabels = new Dictionary<string, Label>();
+
 
     public BeursPage(DrinksViewModel viewModel)
     {
@@ -23,14 +25,18 @@ public partial class BeursPage : ContentPage
     }
     private void UpdateDrinkViews()
     {
-        // Clear existing views
-        DrinksLayout.Children.Clear();
-
         foreach (var drink in _viewModel.Drinks)
         {
-            drink.PropertyChanged += Drink_PropertyChanged;
-            var drinkView = CreateDrinkView(drink);
-            DrinksLayout.Children.Add(drinkView);
+            if (!priceLabels.ContainsKey(drink.Name))
+            {
+                var drinkView = CreateDrinkView(drink);
+                DrinksLayout.Children.Add(drinkView);
+            }
+            else
+            {
+                var priceLabel = priceLabels[drink.Name];
+                priceLabel.Text = $"{drink.CurrentPrice:C}";
+            }
         }
     }
     private View CreateDrinkView(Drink drink)
@@ -46,14 +52,13 @@ public partial class BeursPage : ContentPage
         };
         var priceLabel = new Label
         {
-            Text = $"{drink.CurrentPrice:C}",
             TextColor = Colors.White,
             FontAttributes = FontAttributes.Bold,
             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
             HorizontalOptions = LayoutOptions.Center,
             VerticalOptions = LayoutOptions.Center
         };
-
+        priceLabel.SetBinding(Label.TextProperty, new Binding("CurrentPrice", stringFormat: "{0:C}"));
         var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         var frameHeight = screenHeight * 0.25 * 0.85;
         var textStackLayout = new StackLayout
@@ -94,7 +99,8 @@ public partial class BeursPage : ContentPage
             Margin = new Thickness(5, 2.5), 
             Content = grid
         };
-
+        priceLabels[drink.Name] = priceLabel;
+        frame.BindingContext = drink;
         return frame;
     }
 
