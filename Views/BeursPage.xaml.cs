@@ -28,7 +28,6 @@ public partial class BeursPage : ContentPage
     }
     private View CreateDrinkView(Drink drink)
     {
-        // Label for the name of the drink
         var nameLabel = new Label
         {
             Text = drink.Name,
@@ -38,8 +37,6 @@ public partial class BeursPage : ContentPage
             HorizontalOptions = LayoutOptions.Center,
             VerticalOptions = LayoutOptions.Center
         };
-
-        // Label for the price of the drink
         var priceLabel = new Label
         {
             Text = $"{drink.CurrentPrice:C}",
@@ -50,49 +47,44 @@ public partial class BeursPage : ContentPage
             VerticalOptions = LayoutOptions.Center
         };
 
-        // StackLayout for the text part of the frame (50% height)
+        var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
+        var frameHeight = screenHeight * 0.25 * 0.85;
         var textStackLayout = new StackLayout
         {
             Children = { nameLabel, priceLabel },
             VerticalOptions = LayoutOptions.FillAndExpand,
-            Spacing = 5 // Adjust the spacing between the labels if needed
+            Spacing = 5 
         };
-
-        // BoxView for the color part of the frame (50% height)
         var colorBoxView = new BoxView
         {
             Color = drink.DrinkColor,
             VerticalOptions = LayoutOptions.FillAndExpand,
             HorizontalOptions = LayoutOptions.FillAndExpand
         };
-
-        // Grid to hold the textStackLayout and colorBoxView
         var grid = new Grid
         {
             RowDefinitions =
         {
             new RowDefinition { Height = new GridLength(1, GridUnitType.Star) }, // 50% for text
             new RowDefinition { Height = new GridLength(1, GridUnitType.Star) }  // 50% for color
-        }
+        },
+            HeightRequest = frameHeight
         };
-
-        // Add the text layout and color layout to the grid
         grid.Children.Add(textStackLayout);
-        Grid.SetRow(textStackLayout, 0); // Place the textStackLayout in the first row
+        Grid.SetRow(textStackLayout, 0); 
         grid.Children.Add(colorBoxView);
-        Grid.SetRow(colorBoxView, 1); // Place the colorBoxView in the second row
-
-        // Create the frame and set the grid as its content
+        Grid.SetRow(colorBoxView, 1);
         var frame = new Frame
         {
             BorderColor = Colors.White,
             CornerRadius = 10,
-            BackgroundColor = Colors.Transparent, // No background color; let the child elements dictate the color
+            BackgroundColor = Colors.Transparent, 
             HorizontalOptions = LayoutOptions.Center,
-            VerticalOptions = LayoutOptions.FillAndExpand, // Let the frame fill 90% of its container's height
-            WidthRequest = 150, // Standard width for all frames
+            VerticalOptions = LayoutOptions.FillAndExpand, 
+            WidthRequest = 150,
+            HeightRequest = frameHeight,
             Padding = new Thickness(0),
-            Margin = new Thickness(5, 2.5), // Reduced margin for spacing between frames and a margin at the top and bottom
+            Margin = new Thickness(5, 2.5), 
             Content = grid
         };
 

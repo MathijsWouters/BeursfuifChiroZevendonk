@@ -10,6 +10,7 @@ public partial class MainPage : ContentPage
     private DrinksViewModel _viewModel;
     private Receipt _receipt = new Receipt();
     private CountdownTimer _countdownTimer;
+    private bool _isFeestjeActive = false;
     private Label _timerLabel;
 #if WINDOWS
     private KeyboardService _keyboardService;
@@ -42,11 +43,15 @@ public partial class MainPage : ContentPage
     }
     private async void OnStartFeestjeClicked(object sender, EventArgs e)
     {
-        StartFeestjeButton.BackgroundColor = Colors.Green;
-        var drinkSalesDataService = new DrinkDataService();
-        string filename = "sales_data.json";
-        await HandleExistingFileAsync(filename);
-        await drinkSalesDataService.LoadOrCreateSalesDataAsync(filename);
+        _isFeestjeActive = !_isFeestjeActive;
+        StartFeestjeButton.BackgroundColor = _isFeestjeActive ? Colors.Green : Colors.Transparent;
+        if (_isFeestjeActive)
+        {
+            var drinkSalesDataService = new DrinkDataService();
+            string filename = "sales_data.json";
+            await HandleExistingFileAsync(filename);
+            await drinkSalesDataService.LoadOrCreateSalesDataAsync(filename);
+        }
 
     }
     private async Task<bool> PromptUserForFileHandlingAsync()
@@ -79,11 +84,14 @@ public partial class MainPage : ContentPage
     }
     private async void OnCountdownCompleted()
     {
-        var drinkSalesDataService = new DrinkDataService();
-        string filename = "sales_data.json";
-        foreach (var item in _receipt.Items)
+        if (_isFeestjeActive)
         {
-            await drinkSalesDataService.UpdateAndSaveSalesDataAsync(filename, item.DrinkName, item.Quantity, item.TotalPrice);
+            var drinkSalesDataService = new DrinkDataService();
+            string filename = "sales_data.json";
+            foreach (var item in _receipt.Items)
+            {
+                await drinkSalesDataService.UpdateAndSaveSalesDataAsync(filename, item.DrinkName, item.Quantity, item.TotalPrice);
+            }
         }
         _receipt.Items.Clear(); 
         _countdownTimer.Reset();
@@ -126,9 +134,9 @@ public partial class MainPage : ContentPage
                 CornerRadius = 10,
                 BorderColor = Colors.White,
                 Padding = 0,
-                Margin = new Thickness(5),
-                WidthRequest = 150,
-                HeightRequest = 100,
+                Margin = new Thickness(2),
+                WidthRequest = 200,
+                HeightRequest = 125,
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
             };
@@ -154,8 +162,8 @@ public partial class MainPage : ContentPage
             var colorBoxView = new BoxView
             {
                 Color = drink.DrinkColor,
-                WidthRequest = 50,
-                HeightRequest = 100,
+                WidthRequest = 60,
+                HeightRequest = 125,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
@@ -168,6 +176,7 @@ public partial class MainPage : ContentPage
             {
                 Text = drink.Name,
                 FontAttributes = FontAttributes.Bold,
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Start
             };
@@ -205,6 +214,7 @@ public partial class MainPage : ContentPage
             {
                 Text = $"{drink.StartingPrice:C}",
                 FontAttributes = FontAttributes.Bold,
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                 HorizontalOptions = LayoutOptions.End,
                 VerticalOptions = LayoutOptions.End,
                 Margin = new Thickness(0, 0, 10, 0)
@@ -237,7 +247,6 @@ public partial class MainPage : ContentPage
     {
         _receipt.AddItem(drink);
         _countdownTimer.Start(10);
-        RefreshReceiptDisplay();
     }
     private async void OnAddDrinkButton_Clicked(object sender, EventArgs e)
     {
@@ -257,10 +266,6 @@ public partial class MainPage : ContentPage
     {
         Drinks_CollectionChanged(null, null);
     }
-    private void RefreshReceiptDisplay()
-    {
-
-    }
     private void OnOpenBeursClicked(object sender, EventArgs e)
     {
         var newWindow = new Window(new BeursPage(_viewModel));
@@ -270,16 +275,26 @@ public partial class MainPage : ContentPage
     {
         bool confirmStop = await DisplayAlert("Confirm", "Are you sure you want to stop? There is no going back.", "Yes", "No");
         if (!confirmStop) return;
-
-        StartFeestjeButton.BackgroundColor = Colors.Transparent; 
+        _isFeestjeActive = false;
+        StartFeestjeButton.BackgroundColor = Colors.Transparent;
         string filename = "sales_data.json";
         var folderPath = FileSystem.AppDataDirectory;
         var jsonFilePath = Path.Combine(folderPath, filename);
+
+        if (_receipt.Items.Any()) 
+        {
+            var drinkSalesDataService = new DrinkDataService();
+            foreach (var item in _receipt.Items)
+            {
+                await drinkSalesDataService.UpdateAndSaveSalesDataAsync(filename, item.DrinkName, item.Quantity, item.TotalPrice);
+            }
+        }
         var downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
         string excelFilePath = Path.Combine(downloadsPath, "sales_data.xlsx");
         await ConvertJsonToExcelAndHandleFileAsync(jsonFilePath, excelFilePath);
+        _receipt.Items.Clear();
+        _countdownTimer.Reset();
     }
-
     private async Task ConvertJsonToExcelAndHandleFileAsync(string jsonFilePath, string excelFilePath)
     {
         try
@@ -304,8 +319,6 @@ public partial class MainPage : ContentPage
                     totalIncome += drink.TotalIncome;
                     currentRow++;
                 }
-
-                // Optionally, add total income at the end
                 worksheet.Cell(currentRow + 1, 2).Value = "Total Income";
                 worksheet.Cell(currentRow + 1, 3).Value = totalIncome;
 

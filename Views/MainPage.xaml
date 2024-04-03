@@ -5,7 +5,7 @@
              Title=""
              Shell.NavBarIsVisible="False">
     <Grid>
-        <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="2*,3*,*">
+        <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="3*,2*,*">
             <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="50" HorizontalOptions="Center">
                 <Button Text="Open beurs" Style="{StaticResource NavigationButtonStyle}" Clicked="OnOpenBeursClicked"/>
                 <Button Text="Add drink" Style="{StaticResource NavigationButtonStyle}" Clicked="OnAddDrinkButton_Clicked"/>
