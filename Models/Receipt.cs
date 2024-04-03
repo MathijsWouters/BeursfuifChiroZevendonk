@@ -96,5 +96,11 @@ namespace Beursfuif.Models
             OnPropertyChanged(nameof(TotalPrice));
             OnPropertyChanged(nameof(TotalVakjes));
         }
+        public void NotifyTotalUpdates()
+        {
+            OnPropertyChanged(nameof(TotalPrice));
+            OnPropertyChanged(nameof(TotalVakjes));
+        }
+
     }
 }

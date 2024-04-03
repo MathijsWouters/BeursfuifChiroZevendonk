@@ -1,5 +1,6 @@
 using Beursfuif.Models.Beursfuif.Models;
 using System.Collections.Specialized;
+using System.Diagnostics;
 
 
 namespace Beursfuif.Views;
@@ -7,11 +8,16 @@ namespace Beursfuif.Views;
 public partial class MainPage : ContentPage
 
 {
+    private bool _isBeursPageOpen = false;
     private DrinksViewModel _viewModel;
     private Receipt _receipt = new Receipt();
-    private CountdownTimer _countdownTimer;
+    private CountdownTimer _tenSecondTimer;
+    private CountdownTimer _fiveMinuteTimer;
     private bool _isFeestjeActive = false;
     private Label _timerLabel;
+    private const string SalesDataFile = "sales_data.json";
+    private const string FiveMinuteDataFile = "five_minute_drink_data.json";
+
 #if WINDOWS
     private KeyboardService _keyboardService;
 #endif
@@ -24,20 +30,23 @@ public partial class MainPage : ContentPage
         BindingContext = _receipt;
         _viewModel.Drinks.CollectionChanged += Drinks_CollectionChanged;
         ReceiptListView.ItemsSource = _receipt.Items;
-        _countdownTimer = new CountdownTimer(Dispatcher);
-        _countdownTimer.TimeUpdated += OnTimeUpdated;
-        _countdownTimer.CountdownCompleted += OnCountdownCompleted;
+        _tenSecondTimer = new CountdownTimer(Dispatcher);
+        _tenSecondTimer.TimeUpdated += OnTenSecondTimeUpdated;
+        _tenSecondTimer.CountdownCompleted += OnTenSecondCountdownCompleted;
 
+        _fiveMinuteTimer = new CountdownTimer(Dispatcher);
+        _fiveMinuteTimer.TimeUpdated += OnFiveMinuteTimeUpdated;
+        _fiveMinuteTimer.CountdownCompleted += OnFiveMinuteCountdownCompleted;
 #if WINDOWS
         _keyboardService = new KeyboardService();
         _keyboardService.OnBackspacePressed = RemoveLastItemFromReceipt;
         _keyboardService.OnNumpadPressed = AddDrinkByNumber;
-        _keyboardService.OnEnterPressed = OnCountdownCompleted;
+        _keyboardService.OnEnterPressed = OnTenSecondCountdownCompleted;
         _keyboardService.Start();
 #endif
     }
 
-    private void OnTimeUpdated(int time)
+    private void OnTenSecondTimeUpdated(int time)
     {
         TenSecondTimerLabel.Text = $"Timer: {time} seconds";
     }
@@ -45,14 +54,22 @@ public partial class MainPage : ContentPage
     {
         _isFeestjeActive = !_isFeestjeActive;
         StartFeestjeButton.BackgroundColor = _isFeestjeActive ? Colors.Green : Colors.Transparent;
+
         if (_isFeestjeActive)
         {
             var drinkSalesDataService = new DrinkDataService();
-            string filename = "sales_data.json";
-            await HandleExistingFileAsync(filename);
-            await drinkSalesDataService.LoadOrCreateSalesDataAsync(filename);
-        }
+            await HandleExistingFileAsync(SalesDataFile);
+            await drinkSalesDataService.LoadOrCreateSalesDataAsync(SalesDataFile);
 
+            var fiveMinuteDataService = new DrinkDataService();
+            await fiveMinuteDataService.LoadOrCreateFiveMinuteSalesDataAsync(FiveMinuteDataFile);
+
+            _fiveMinuteTimer.Start(5 * 60); 
+        }
+        else
+        {
+            _fiveMinuteTimer.Stop(); 
+        }
     }
     private async Task<bool> PromptUserForFileHandlingAsync()
     {
@@ -64,7 +81,7 @@ public partial class MainPage : ContentPage
         var folderPath = FileSystem.AppDataDirectory;
         var filePath = Path.Combine(folderPath, filename);
 
-        if (File.Exists(filePath))
+        if (File.Exists(filePath) && _isFeestjeActive)
         {
             bool deleteFile = await PromptUserForFileHandlingAsync();
 
@@ -74,27 +91,26 @@ public partial class MainPage : ContentPage
             }
             else
             {
-
                 string newFileName = $"sales_data_{DateTime.Now:yyyyMMddHHmmss}.json";
-                string newFilePath = Path.Combine(folderPath, newFileName);
-
-                File.Move(filePath, newFilePath);
+                File.Move(filePath, Path.Combine(folderPath, newFileName));
             }
         }
     }
-    private async void OnCountdownCompleted()
+    private async void OnTenSecondCountdownCompleted()
     {
         if (_isFeestjeActive)
         {
             var drinkSalesDataService = new DrinkDataService();
-            string filename = "sales_data.json";
             foreach (var item in _receipt.Items)
             {
-                await drinkSalesDataService.UpdateAndSaveSalesDataAsync(filename, item.DrinkName, item.Quantity, item.TotalPrice);
+                await drinkSalesDataService.UpdateAndSaveSalesDataAsync(SalesDataFile, item.DrinkName, item.Quantity, item.TotalPrice);
+
+                await drinkSalesDataService.UpdateAndSaveFiveMinuteSalesDataAsync(FiveMinuteDataFile, item.DrinkName, item.Quantity);
             }
         }
         _receipt.Items.Clear(); 
-        _countdownTimer.Reset();
+        _tenSecondTimer.Reset();
+        _receipt.NotifyTotalUpdates();
     }
 
     public void RemoveLastItemFromReceipt()
@@ -113,7 +129,7 @@ public partial class MainPage : ContentPage
         else
         {
             _receipt.AddItem(drink);
-            _countdownTimer.Start(10);
+            _tenSecondTimer.Start(10);
         }
     }
 
@@ -222,31 +238,21 @@ public partial class MainPage : ContentPage
             gridButton.Children.Add(priceLabel);
             Grid.SetColumn(priceLabel, 1);
             Grid.SetRow(priceLabel, 2);
-
-            // Set the grid as the content of the frame
             frame.Content = gridButton;
-
-            // Add TapGestureRecognizer to the frame
             var tapGesture = new TapGestureRecognizer();
             tapGesture.Tapped += (s, args) => DrinkButton_Clicked(drink);
             frame.GestureRecognizers.Add(tapGesture);
-
-            // Determine the row and column based on the drink number
             int row = (drink.Number - 1) / 3;
             int column = (drink.Number - 1) % 3;
-
-            // Set the row and column for the frame
             Grid.SetRow(frame, row);
             Grid.SetColumn(frame, column);
-
-            // Add the frame to the grid
             DrinksGrid.Children.Add(frame);
         }
     }
     private void DrinkButton_Clicked(Drink drink)
     {
         _receipt.AddItem(drink);
-        _countdownTimer.Start(10);
+        _tenSecondTimer.Start(10);
     }
     private async void OnAddDrinkButton_Clicked(object sender, EventArgs e)
     {
@@ -266,10 +272,29 @@ public partial class MainPage : ContentPage
     {
         Drinks_CollectionChanged(null, null);
     }
-    private void OnOpenBeursClicked(object sender, EventArgs e)
+    private async void OnOpenBeursClicked(object sender, EventArgs e)
     {
-        var newWindow = new Window(new BeursPage(_viewModel));
-        Application.Current.OpenWindow(newWindow);
+        if (_isBeursPageOpen)
+        {
+            bool response = await DisplayAlert("Venster Open", "Het Beurs venster lijkt al open te zijn. Staat het ergens anders open?", "Ja", "Nee");
+            if (response)
+            {
+                // Gebruiker bevestigt dat het venster ergens open is, doe niets.
+                return;
+            }
+            else
+            {
+                // Gebruiker zegt dat het venster niet open is, probeer opnieuw te openen.
+                _isBeursPageOpen = false;
+            }
+        }
+
+        if (!_isBeursPageOpen)
+        {
+            var newWindow = new Window(new BeursPage(_viewModel));
+            Application.Current.OpenWindow(newWindow);
+            _isBeursPageOpen = true;
+        }
     }
     private async void OnStopFeestjeClicked(object sender, EventArgs e)
     {
@@ -293,7 +318,8 @@ public partial class MainPage : ContentPage
         string excelFilePath = Path.Combine(downloadsPath, "sales_data.xlsx");
         await ConvertJsonToExcelAndHandleFileAsync(jsonFilePath, excelFilePath);
         _receipt.Items.Clear();
-        _countdownTimer.Reset();
+        _tenSecondTimer.Reset();
+        _fiveMinuteTimer.Stop();
     }
     private async Task ConvertJsonToExcelAndHandleFileAsync(string jsonFilePath, string excelFilePath)
     {
@@ -331,7 +357,33 @@ public partial class MainPage : ContentPage
             await DisplayAlert("Error", "Failed to save Excel file.", "OK");
         }
     }
+    private void OnFiveMinuteTimeUpdated(int timeRemaining)
+    {
+        Debug.WriteLine($"5-minute timer: {timeRemaining} seconds remaining");
+    }
+    private async void OnFiveMinuteCountdownCompleted()
+    {
+        if (_isFeestjeActive)
+        {
+            await ProcessFiveMinuteSalesData();
+            var fiveMinuteDataService = new DrinkDataService();
+            await fiveMinuteDataService.ClearFiveMinuteSalesDataAsync(FiveMinuteDataFile);
+        }
+        if (_isFeestjeActive)
+        {
+            _fiveMinuteTimer.Start(5 * 60);
+        }
+    }
 
+    private async Task ProcessFiveMinuteSalesData()
+    {
+        var fiveMinuteDataService = new DrinkDataService();
+        var salesData = await fiveMinuteDataService.LoadOrCreateFiveMinuteSalesDataAsync(FiveMinuteDataFile);
+        // Perform your calculations with salesData here...
+        Debug.WriteLine("Processing 5-minute sales data...");
+        // This is where you would process and use the data. This might involve calculations,
+        // updating the UI, or other logic specific to your application.
+    }
 
 
 }

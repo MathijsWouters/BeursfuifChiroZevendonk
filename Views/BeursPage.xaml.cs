@@ -1,3 +1,5 @@
+using System.ComponentModel;
+
 namespace Beursfuif.Views;
 
 public partial class BeursPage : ContentPage
@@ -15,6 +17,10 @@ public partial class BeursPage : ContentPage
     {
         UpdateDrinkViews();
     }
+    private void Drink_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    {
+        UpdateDrinkViews();
+    }
     private void UpdateDrinkViews()
     {
         // Clear existing views
@@ -22,6 +28,7 @@ public partial class BeursPage : ContentPage
 
         foreach (var drink in _viewModel.Drinks)
         {
+            drink.PropertyChanged += Drink_PropertyChanged;
             var drinkView = CreateDrinkView(drink);
             DrinksLayout.Children.Add(drinkView);
         }
