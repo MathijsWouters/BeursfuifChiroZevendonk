@@ -5,12 +5,12 @@
              xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
              xmlns:controls="clr-namespace:Maui.ColorPicker;assembly=Maui.ColorPicker"
              x:DataType="vm:AddDrinkPageViewModel"
-             Title="Add Drink">
+             Title="">
     <ContentPage.Content>
         <Frame BackgroundColor="White" CornerRadius="20" Padding="15"
                HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <StackLayout Spacing="20">
-                <Entry Placeholder="Drink Name" Text="{Binding Name}" TextColor="Black"/>
+                <Entry Placeholder="Drink Name" PlaceholderColor="Gray" Text="{Binding Name}" TextColor="Black"/>
                 <Label Text="Pick a color:" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" />
                 <controls:ColorPicker x:Name="ColorPicker"
                                       WidthRequest="250" HeightRequest="150"
@@ -29,7 +29,7 @@
                         <Label Text="Min Price" FontSize="Small" TextColor="Black"/>
                         <StackLayout Orientation="Horizontal" Spacing="0">
                             <Button Command="{Binding DecreaseMinPriceCommand}" Text="-" WidthRequest="30" />
-                            <Entry Text="{Binding MinPrice, StringFormat='{0:F2}'}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black" />
+                            <Entry Placeholder="Min Price" PlaceholderColor="Gray" Text="{Binding MinPrice, StringFormat='{0:F2}'}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black" />
                             <Button Command="{Binding IncreaseMinPriceCommand}" Text="+" WidthRequest="30" />
                         </StackLayout>
                     </StackLayout>
@@ -37,7 +37,7 @@
                         <Label Text="Max Price" FontSize="Small" TextColor="Black"/>
                         <StackLayout Orientation="Horizontal" Spacing="0">
                             <Button Command="{Binding DecreaseMaxPriceCommand}" Text="-" WidthRequest="30" />
-                            <Entry Text="{Binding MaxPrice, StringFormat='{0:F2}'}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black" />
+                            <Entry Placeholder="Max Price" PlaceholderColor="Gray" Text="{Binding MaxPrice, StringFormat='{0:F2}'}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black" />
                             <Button Command="{Binding IncreaseMaxPriceCommand}" Text="+" WidthRequest="30" />
                         </StackLayout>
                     </StackLayout>

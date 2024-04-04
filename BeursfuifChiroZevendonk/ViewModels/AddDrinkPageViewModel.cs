@@ -34,14 +34,28 @@ namespace BeursfuifChiroZevendonk.ViewModels
         {
             return !string.IsNullOrWhiteSpace(Name) && MinPrice < MaxPrice && !string.IsNullOrWhiteSpace(ColorHex);
         }
-        private void SaveDrink()
+        private async void SaveDrink()
         {
+            int drinkCount = _drinksService.Drinks.Count;
+            int drinkNumber = drinkCount + 1;
             var newDrink = new Drink(MinPrice, MaxPrice)
             {
+                Number = drinkNumber,
                 Name = this.Name,
                 DrinkColorHex = this.ColorHex
             };
             _drinksService.Drinks.Add(newDrink);
+            await DisplayConfirmation();
+
+            Name = string.Empty;
+            MinPrice = 0;
+            MaxPrice = 0;
+            // Navigate back to the main page
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+        }
+        private async Task DisplayConfirmation()
+        {
+            await Application.Current.MainPage.DisplayAlert("Success", "Drink added successfully", "OK");
         }
         protected override void OnPropertyChanged(PropertyChangedEventArgs e)
         {

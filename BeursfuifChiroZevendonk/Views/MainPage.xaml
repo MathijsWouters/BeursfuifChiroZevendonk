@@ -18,46 +18,84 @@
             <Button Text="Stop Feestje" Command="{Binding StopFeestjeCommand}" Style="{StaticResource NavigationButtonStyle}"/>
         </HorizontalStackLayout>
 
-        <CollectionView ItemsSource="{Binding Drinks}"
-                        SelectionMode="None"
-                        Grid.Row="1" Grid.Column="0" 
-                        HorizontalOptions="Fill" VerticalOptions="Center">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Drink">
-                    <Frame CornerRadius="10"
-                           BorderColor="White"
-                           Padding="10"
-                           Margin="5">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="*" />
-                            </Grid.RowDefinitions>
-                            <Label Text="{Binding Name}" Grid.Row="0"
-                                   FontAttributes="Bold"
-                                   FontSize="Medium"
-                                   HorizontalOptions="Center"/>
-                            <BoxView Color="{Binding DrinkColor}" Grid.Row="1"
-                                     WidthRequest="60"
-                                     HeightRequest="125"
-                                     HorizontalOptions="FillAndExpand"
-                                     VerticalOptions="FillAndExpand"/>
-                            <Label Text="{Binding CurrentPrice, StringFormat='{0:C}'}" Grid.Row="1"
-                                   HorizontalOptions="End"
-                                   VerticalOptions="End"
-                                   Margin="0,0,10,10"
-                                   FontAttributes="Bold"
-                                   FontSize="Medium"/>
-                            <!-- Additional elements like number frame can be added here -->
-                        </Grid>
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MainPageViewModel}}, Path=DrinkSelectedCommand}"
-                                                  CommandParameter="{Binding .}" />
-                        </Frame.GestureRecognizers>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+        <Grid x:Name="DrinksGrid"
+      Grid.Row="1" Grid.Column="0" Padding="10"
+      HorizontalOptions="Fill" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <CollectionView ItemsSource="{Binding Drinks}" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="3" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Drink">
+                        <Frame CornerRadius="10"
+               BorderColor="White"
+               Padding="0"
+               Margin="5"
+               WidthRequest="200" HeightRequest="125"
+               BindingContext="{Binding .}">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MainPageViewModel}}, Path=DrinkSelectedCommand}"
+                                      CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <BoxView Color="{Binding DrinkColor}" Grid.Column="0" Grid.RowSpan="3"
+                         WidthRequest="60"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"/>
+                                <Label Text="{Binding Name}" Grid.Column="1" Grid.Row="0"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"/>
+                                <Frame Grid.Column="1" Grid.Row="1"
+                       BackgroundColor="Gray"
+                       BorderColor="Black"
+                       Padding="0"
+                       CornerRadius="5"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       Margin="10, 0, 0, 0">
+                                    <Label Text="{Binding Number}"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="White" />
+                                </Frame>
+                                <Label Text="{Binding CurrentPrice, StringFormat='{0:C}'}" Grid.Column="1" Grid.Row="2"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
+                       Margin="0,0,10,0"
+                       FontAttributes="Bold"
+                       FontSize="Medium"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
 
         <!-- Other UI components like the receipt list, timer display, etc., can go here -->
     </Grid>
