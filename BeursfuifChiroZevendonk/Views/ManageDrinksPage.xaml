@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
+             xmlns:models="clr-namespace:BeursfuifChiroZevendonk.Models"
+             x:Class="BeursfuifChiroZevendonk.Views.ManageDrinksPage"
+             x:DataType="vm:ManageDrinksPageViewModel"
+             Title="Manage Drinks">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="10">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="Save Layout"
+            Style="{StaticResource NavigationButtonStyle}"
+            Command="{Binding SaveLayoutCommand}"/>
+                <Button Text="Load Layout"
+            Style="{StaticResource NavigationButtonStyle}"
+            Command="{Binding LoadLayoutCommand}"/>
+                <Button Text="Delete Layout"
+            Style="{StaticResource NavigationButtonStyle}"
+            Command="{Binding DeleteLayoutCommand}"/>
+            </HorizontalStackLayout>
+
+            <CollectionView ItemsSource="{Binding Drinks}" 
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Drink">
+                        <Grid Padding="10"
+                  RowDefinitions="Auto"
+                  HorizontalOptions="Center"
+                  ColumnSpacing="10">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0"
+                             Orientation="Horizontal"
+                             Spacing="10"
+                             HorizontalOptions="Start"
+                             VerticalOptions="Center">
+                                <Label Text="{Binding Number, StringFormat='{0}.'}"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           VerticalOptions="Center" />
+
+                                <Label Text="{Binding Name}"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           VerticalOptions="Center" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Orientation="Horizontal"
+                             Spacing="15">
+                                <BoxView Color="{Binding DrinkColor}"
+                             WidthRequest="20"
+                             HeightRequest="20"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"/>
+
+                                <Label Text="{Binding MinPrice, StringFormat='Min: {0:C}'}"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" />
+
+                                <Label Text="{Binding MaxPrice, StringFormat='Max: {0:C}'}"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="2"
+                             Orientation="Horizontal"
+                             Spacing="10"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center">
+                                <Button Text="Edit"
+                            VerticalOptions="Center"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ManageDrinksPageViewModel}}, Path=EditDrinkCommand}"
+                            CommandParameter="{Binding .}" />
+
+                                <Button Text="Delete"
+                            TextColor="White"
+                            BackgroundColor="Red"
+                            VerticalOptions="Center"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ManageDrinksPageViewModel}}, Path=DeleteDrinkCommand}"
+                            CommandParameter="{Binding .}" />
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Button Text="Go to MainPage"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            WidthRequest="200"
+            Command="{Binding NavigateToMainPageCommand}"
+            Style="{StaticResource NavigationButtonStyle}"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

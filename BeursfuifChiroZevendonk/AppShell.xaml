@@ -19,5 +19,9 @@
     Title="Add drink"
     ContentTemplate="{DataTemplate views:AddDrinkPage}"
     Route="AddDrinkPage" />
+    <ShellContent
+    Title="Manage drinks"
+    ContentTemplate="{DataTemplate views:ManageDrinksPage}"
+    Route="ManageDrinksPage" />
 
 </Shell>

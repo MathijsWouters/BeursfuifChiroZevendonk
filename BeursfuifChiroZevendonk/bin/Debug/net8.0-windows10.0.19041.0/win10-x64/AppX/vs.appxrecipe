@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-04T15:25:24.469</Modified>
+      <Modified>2024-04-04T21:58:51.986</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-04T15:11:05.561</Modified>
+      <Modified>2024-04-04T21:58:51.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.runtimeconfig.json">
       <PackagePath>BeursfuifChiroZevendonk.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-04T13:50:44.524</Modified>
+      <Modified>2024-04-04T21:04:08.249</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.dll">
       <PackagePath>BeursfuifChiroZevendonk.dll</PackagePath>
-      <Modified>2024-04-04T15:25:24.162</Modified>
+      <Modified>2024-04-04T21:58:51.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BeursfuifChiroZevendonk.exe</PackagePath>
-      <Modified>2024-04-04T15:25:24.167</Modified>
+      <Modified>2024-04-04T21:58:51.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:25.247</Modified>
+      <Modified>2024-04-04T21:02:59.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:25.259</Modified>
+      <Modified>2024-04-04T21:02:59.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:25.274</Modified>
+      <Modified>2024-04-04T21:02:59.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:25.299</Modified>
+      <Modified>2024-04-04T21:02:59.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:25.396</Modified>
+      <Modified>2024-04-04T21:02:59.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -83,211 +83,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-04-04T13:23:26.041</Modified>
+      <Modified>2024-04-04T21:03:00.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.367</Modified>
+      <Modified>2024-04-04T21:03:00.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.384</Modified>
+      <Modified>2024-04-04T21:03:00.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.400</Modified>
+      <Modified>2024-04-04T21:03:00.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.426</Modified>
+      <Modified>2024-04-04T21:03:00.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.528</Modified>
+      <Modified>2024-04-04T21:03:00.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.122</Modified>
+      <Modified>2024-04-04T21:03:00.173</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.126</Modified>
+      <Modified>2024-04-04T21:03:00.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.144</Modified>
+      <Modified>2024-04-04T21:03:00.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.130</Modified>
+      <Modified>2024-04-04T21:03:00.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.134</Modified>
+      <Modified>2024-04-04T21:03:00.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.096</Modified>
+      <Modified>2024-04-04T21:03:00.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.100</Modified>
+      <Modified>2024-04-04T21:03:00.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.118</Modified>
+      <Modified>2024-04-04T21:03:00.169</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.104</Modified>
+      <Modified>2024-04-04T21:03:00.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.108</Modified>
+      <Modified>2024-04-04T21:03:00.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.048</Modified>
+      <Modified>2024-04-04T21:03:00.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.052</Modified>
+      <Modified>2024-04-04T21:03:00.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.057</Modified>
+      <Modified>2024-04-04T21:03:00.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.061</Modified>
+      <Modified>2024-04-04T21:03:00.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.067</Modified>
+      <Modified>2024-04-04T21:03:00.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.071</Modified>
+      <Modified>2024-04-04T21:03:00.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.075</Modified>
+      <Modified>2024-04-04T21:03:00.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.093</Modified>
+      <Modified>2024-04-04T21:03:00.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.079</Modified>
+      <Modified>2024-04-04T21:03:00.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.083</Modified>
+      <Modified>2024-04-04T21:03:00.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.205</Modified>
+      <Modified>2024-04-04T21:03:00.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.212</Modified>
+      <Modified>2024-04-04T21:03:00.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.221</Modified>
+      <Modified>2024-04-04T21:03:00.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.233</Modified>
+      <Modified>2024-04-04T21:03:00.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.257</Modified>
+      <Modified>2024-04-04T21:03:00.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.173</Modified>
+      <Modified>2024-04-04T21:03:00.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.177</Modified>
+      <Modified>2024-04-04T21:03:00.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.182</Modified>
+      <Modified>2024-04-04T21:03:00.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.188</Modified>
+      <Modified>2024-04-04T21:03:00.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.199</Modified>
+      <Modified>2024-04-04T21:03:00.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.148</Modified>
+      <Modified>2024-04-04T21:03:00.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.152</Modified>
+      <Modified>2024-04-04T21:03:00.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.157</Modified>
+      <Modified>2024-04-04T21:03:00.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.162</Modified>
+      <Modified>2024-04-04T21:03:00.215</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.169</Modified>
+      <Modified>2024-04-04T21:03:00.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.265</Modified>
+      <Modified>2024-04-04T21:03:00.325</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.275</Modified>
+      <Modified>2024-04-04T21:03:00.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.287</Modified>
+      <Modified>2024-04-04T21:03:00.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.305</Modified>
+      <Modified>2024-04-04T21:03:00.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.355</Modified>
+      <Modified>2024-04-04T21:03:00.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.032</Modified>
+      <Modified>2024-04-04T21:03:00.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.041</Modified>
+      <Modified>2024-04-04T21:03:00.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.051</Modified>
+      <Modified>2024-04-04T21:03:00.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.066</Modified>
+      <Modified>2024-04-04T21:03:00.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-04-04T13:23:26.121</Modified>
+      <Modified>2024-04-04T21:03:00.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.deps.json">
       <PackagePath>BeursfuifChiroZevendonk.deps.json</PackagePath>
-      <Modified>2024-04-04T13:50:44.433</Modified>
+      <Modified>2024-04-04T21:48:25.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

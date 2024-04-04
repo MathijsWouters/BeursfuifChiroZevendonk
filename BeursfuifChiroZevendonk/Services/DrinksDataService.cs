@@ -11,6 +11,15 @@ namespace BeursfuifChiroZevendonk.Services
     {
         public ObservableCollection<Drink> Drinks { get; private set; } = new ObservableCollection<Drink>();
 
-        // ... Other drink related methods
+        public void UpdateDrink(Drink updatedDrink)
+        {
+            var drink = Drinks.FirstOrDefault(d => d.Number == updatedDrink.Number); 
+            if (drink != null)
+            {
+                drink.Name = updatedDrink.Name;
+                drink.MinPrice = updatedDrink.MinPrice;
+                drink.MaxPrice = updatedDrink.MaxPrice;
+            }
+        }
     }
 }

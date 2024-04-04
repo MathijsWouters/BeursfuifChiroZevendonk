@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeursfuifChiroZevendonk.Views.EditDrinkPage"
+             xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
+             xmlns:model="clr-namespace:BeursfuifChiroZevendonk.Models"
+             x:DataType="vm:EditDrinkPageViewModel"
+             Title="Edit Drink">
+    <ContentPage.Content>
+        <Frame BackgroundColor="White"
+               CornerRadius="20"
+               Padding="15"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               WidthRequest="350"
+               HeightRequest="300">
+            <StackLayout Spacing="10">
+                <Entry Placeholder="Drink name"
+                       Text="{Binding Name, Mode=TwoWay}"
+                       TextColor="Black" />
+                <StackLayout Orientation="Vertical" Spacing="5">
+                    <Label Text="Min Price" FontSize="Small" TextColor="Black"/>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <Button Text="-" Command="{Binding DecreaseMinPriceCommand}" WidthRequest="30" />
+                        <Entry Text="{Binding MinPrice, Mode=TwoWay}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                        <Button Text="+" Command="{Binding IncreaseMinPriceCommand}" WidthRequest="30" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="5">
+                    <Label Text="Max Price" FontSize="Small" TextColor="Black"/>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <Button Text="-" Command="{Binding DecreaseMaxPriceCommand}" WidthRequest="30" />
+                        <Entry Text="{Binding MaxPrice, Mode=TwoWay}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" TextColor="Black"/>
+                        <Button Text="+" Command="{Binding IncreaseMaxPriceCommand}" WidthRequest="30" />
+                    </StackLayout>
+                </StackLayout>
+                <Button Text="Save Changes" Command="{Binding SaveDrinkCommand}" />
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

@@ -14,8 +14,9 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [ObservableProperty]
         private bool _isBeursPageOpen;
         public ObservableCollection<Drink> Drinks => _drinksService.Drinks;
-        public ICommand DrinkSelectedCommand { get; }
         private readonly DrinksDataService _drinksService;
+        public ICommand DrinkSelectedCommand { get; }
+        
         public MainPageViewModel(DrinksDataService drinksService)
         {
             DrinkSelectedCommand = new RelayCommand<Drink>(OnDrinkSelected);
@@ -63,7 +64,6 @@ namespace BeursfuifChiroZevendonk.ViewModels
             }
             catch (Exception ex)
             {
-                // Output the exception to your debug window or handle it as necessary
                 Debug.WriteLine(ex.ToString());
             }
         }
@@ -71,7 +71,16 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [RelayCommand]
         private async Task NavigateToManageDrinks()
         {
-            // Logic to navigate to the manage drinks page
+            try
+            {
+                var manageDrinksVm = new ManageDrinksPageViewModel(_drinksService);
+                var uri = new Uri($"///{nameof(ManageDrinksPage)}?ViewModel={manageDrinksVm.GetType().FullName}", UriKind.Relative);
+                await Shell.Current.GoToAsync(uri);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
         }
 
         [RelayCommand]
