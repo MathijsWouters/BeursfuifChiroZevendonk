@@ -102,7 +102,7 @@
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -165,7 +165,7 @@
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -228,7 +228,7 @@
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -286,7 +286,7 @@
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.1, )"
             }
           },
           "imports": [

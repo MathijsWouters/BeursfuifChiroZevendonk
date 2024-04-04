@@ -5,6 +5,7 @@
              xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
              xmlns:views="clr-namespace:BeursfuifChiroZevendonk.Views"
              xmlns:models="clr-namespace:BeursfuifChiroZevendonk.Models"
+             x:DataType="vm:MainPageViewModel"
              Title=""
              Shell.NavBarIsVisible="False">
     <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="3*,2*,*">
@@ -22,7 +23,7 @@
                         Grid.Row="1" Grid.Column="0" 
                         HorizontalOptions="Fill" VerticalOptions="Center">
             <CollectionView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="models:Drink">
                     <Frame CornerRadius="10"
                            BorderColor="White"
                            Padding="10"
@@ -50,7 +51,7 @@
                             <!-- Additional elements like number frame can be added here -->
                         </Grid>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:DrinksViewModel}}, Path=DrinkSelectedCommand}"
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MainPageViewModel}}, Path=DrinkSelectedCommand}"
                                                   CommandParameter="{Binding .}" />
                         </Frame.GestureRecognizers>
                     </Frame>

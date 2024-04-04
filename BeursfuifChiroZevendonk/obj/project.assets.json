@@ -597,18 +597,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -698,10 +698,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -714,7 +714,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -744,26 +744,26 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -776,11 +776,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -3657,18 +3657,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -3719,10 +3719,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -3735,7 +3735,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -3750,26 +3750,26 @@
           "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -3782,11 +3782,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -6599,18 +6599,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -6661,10 +6661,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -6677,7 +6677,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -6692,26 +6692,26 @@
           "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -6724,11 +6724,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -9541,18 +9541,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -9603,10 +9603,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -9619,7 +9619,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -9634,26 +9634,26 @@
           "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -9666,11 +9666,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -12483,18 +12483,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -12542,10 +12542,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -12558,7 +12558,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -12573,26 +12573,26 @@
           "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -12605,11 +12605,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -15422,18 +15422,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -15481,10 +15481,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -15497,7 +15497,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -15509,26 +15509,26 @@
           "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -15541,11 +15541,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -18358,18 +18358,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -18420,10 +18420,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -18436,7 +18436,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -18448,26 +18448,26 @@
           "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -18480,11 +18480,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -21297,18 +21297,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Maui.ColorPicker.dll": {
+          "lib/net6.0-android31.0/Maui.ColorPicker.dll": {
             "related": ".xml"
           }
         }
@@ -21359,10 +21359,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.7"
+          "SkiaSharp.NativeAssets.Android": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -21375,7 +21375,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.7": {
+      "SkiaSharp.NativeAssets.Android/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -21387,26 +21387,26 @@
           "buildTransitive/net6.0-android30.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -21419,11 +21419,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -24225,16 +24225,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -24493,10 +24494,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -24509,7 +24510,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -24525,6 +24526,10 @@
             "assetType": "native",
             "rid": "ios"
           },
+          "runtimes/ios/native/libSkiaSharp.framework/Modules/module.modulemap": {
+            "assetType": "native",
+            "rid": "ios"
+          },
           "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
             "assetType": "native",
             "rid": "ios"
@@ -24532,25 +24537,13 @@
           "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp": {
             "assetType": "native",
             "rid": "ios"
-          },
-          "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist": {
-            "assetType": "native",
-            "rid": "iossimulator"
-          },
-          "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
-            "assetType": "native",
-            "rid": "iossimulator"
-          },
-          "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp": {
-            "assetType": "native",
-            "rid": "iossimulator"
           }
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -24563,10 +24556,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -24579,11 +24572,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -25238,6 +25231,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -26257,16 +26258,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -26731,10 +26733,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -26747,7 +26749,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -26759,10 +26761,10 @@
           "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -26775,10 +26777,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -26791,11 +26793,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -27486,6 +27488,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -28530,16 +28540,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -29004,10 +29015,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -29020,7 +29031,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -29032,10 +29043,10 @@
           "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -29048,10 +29059,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -29064,11 +29075,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -29759,6 +29770,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -30803,16 +30822,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -31277,10 +31297,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -31293,7 +31313,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -31305,10 +31325,10 @@
           "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -31321,10 +31341,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -31337,11 +31357,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -32032,6 +32052,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -33076,16 +33104,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -33547,10 +33576,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -33563,7 +33592,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -33575,10 +33604,10 @@
           "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -33591,10 +33620,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -33607,11 +33636,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -34302,6 +34331,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -35346,16 +35383,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -35817,10 +35855,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -35833,7 +35871,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -35842,18 +35880,19 @@
           "lib/net6.0-ios13.6/_._": {}
         },
         "native": {
-          "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist": {},
-          "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {},
-          "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp": {}
+          "runtimes/ios/native/libSkiaSharp.framework/Info.plist": {},
+          "runtimes/ios/native/libSkiaSharp.framework/Modules/module.modulemap": {},
+          "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {},
+          "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp": {}
         },
         "build": {
           "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -35866,10 +35905,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -35882,11 +35921,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -36577,6 +36616,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -37621,16 +37668,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -38095,10 +38143,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -38111,7 +38159,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -38121,6 +38169,7 @@
         },
         "native": {
           "runtimes/ios/native/libSkiaSharp.framework/Info.plist": {},
+          "runtimes/ios/native/libSkiaSharp.framework/Modules/module.modulemap": {},
           "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {},
           "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp": {}
         },
@@ -38128,10 +38177,10 @@
           "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -38144,10 +38193,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -38160,11 +38209,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -38855,6 +38904,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -39899,16 +39956,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-ios17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-ios15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -40367,10 +40425,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.7"
+          "SkiaSharp.NativeAssets.iOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -40383,7 +40441,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.7": {
+      "SkiaSharp.NativeAssets.iOS/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -40395,10 +40453,10 @@
           "buildTransitive/net6.0-ios13.6/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -40411,10 +40469,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -40427,11 +40485,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -41122,6 +41180,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -42167,16 +42233,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -42435,10 +42502,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -42451,7 +42518,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -42469,10 +42536,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -42485,10 +42552,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -42501,11 +42568,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -43160,6 +43227,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -44179,16 +44254,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -44653,10 +44729,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -44669,7 +44745,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -44681,10 +44757,10 @@
           "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -44697,10 +44773,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -44713,11 +44789,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -45408,6 +45484,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -46452,16 +46536,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -46926,10 +47011,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -46942,7 +47027,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -46954,10 +47039,10 @@
           "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -46970,10 +47055,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -46986,11 +47071,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -47681,6 +47766,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -48725,16 +48818,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -49199,10 +49293,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -49215,7 +49309,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -49227,10 +49321,10 @@
           "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -49243,10 +49337,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -49259,11 +49353,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -49954,6 +50048,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -50998,16 +51100,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -51469,10 +51572,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -51485,7 +51588,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -51497,10 +51600,10 @@
           "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -51513,10 +51616,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -51529,11 +51632,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -52224,6 +52327,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -53268,16 +53379,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -53739,10 +53851,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -53755,7 +53867,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -53767,10 +53879,10 @@
           "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -53783,10 +53895,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -53799,11 +53911,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -54494,6 +54606,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -55538,16 +55658,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -56012,10 +56133,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -56028,7 +56149,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -56043,10 +56164,10 @@
           "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -56059,10 +56180,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -56075,11 +56196,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -56770,6 +56891,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -57814,16 +57943,17 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll": {}
+          "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -58282,10 +58412,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.7"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -58298,7 +58428,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -58310,10 +58440,10 @@
           "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
-      "SkiaSharp.Views/2.88.7": {
+      "SkiaSharp.Views/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -58326,10 +58456,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -58342,11 +58472,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views": "2.88.1"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -59037,6 +59167,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -60225,16 +60363,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -60493,11 +60631,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -60510,13 +60648,13 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtimeTargets": {
           "runtimes/osx/native/libSkiaSharp.dylib": {
@@ -60525,13 +60663,13 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtimeTargets": {
           "runtimes/win-arm64/native/libSkiaSharp.dll": {
@@ -60548,10 +60686,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -60564,11 +60702,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -60581,11 +60719,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -62377,16 +62515,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -62851,11 +62989,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -62868,28 +63006,28 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -62902,11 +63040,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -62919,11 +63057,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -64776,16 +64914,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -65250,11 +65388,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -65267,28 +65405,28 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -65301,11 +65439,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -65318,11 +65456,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -67175,16 +67313,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -67649,11 +67787,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -67666,28 +67804,28 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -67700,11 +67838,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -67717,11 +67855,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -69574,16 +69712,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -70045,11 +70183,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -70062,28 +70200,28 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -70096,11 +70234,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -70113,11 +70251,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -71970,16 +72108,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -72441,11 +72579,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -72458,28 +72596,28 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -72492,11 +72630,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -72509,11 +72647,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -74366,16 +74504,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -74840,11 +74978,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -74857,28 +74995,28 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -74891,11 +75029,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -74908,11 +75046,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -76771,16 +76909,16 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "compile": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {}
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -77239,11 +77377,11 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "compile": {
           "lib/net6.0/SkiaSharp.dll": {
@@ -77256,31 +77394,31 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net5.0/_._": {}
         },
         "native": {
           "runtimes/win-x64/native/libSkiaSharp.dll": {}
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -77293,11 +77431,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -77310,11 +77448,11 @@
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.1.5",
-          "SkiaSharp": "2.88.7"
+          "Microsoft.WindowsAppSDK": "1.0.3",
+          "SkiaSharp": "2.88.1"
         },
         "compile": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
@@ -80784,21 +80922,20 @@
         "netstandard.library.nuspec"
       ]
     },
-    "nor0x.Maui.ColorPicker/1.0.3": {
-      "sha512": "4Ojv7Ck4FzHJ6vyPm/uCVSFB5Lc0XS+GUDS373WZ7VAkV07nkp8tAB6aYQnCxefQm4G4/Cl7k7cs6NjqKK+pRg==",
+    "nor0x.Maui.ColorPicker/1.0.1": {
+      "sha512": "feRODi7QFebwglp0qxzW7xBUqahQwEwfdzf/WeQhI0/VYDF1KTNwIMC3DWuFa5h8C30oCxcNp71u87rv3Er05g==",
       "type": "package",
-      "path": "nor0x.maui.colorpicker/1.0.3",
+      "path": "nor0x.maui.colorpicker/1.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "lib/net8.0-android34.0/Maui.ColorPicker.dll",
-        "lib/net8.0-android34.0/Maui.ColorPicker.xml",
-        "lib/net8.0-ios17.2/Maui.ColorPicker.dll",
-        "lib/net8.0-maccatalyst17.2/Maui.ColorPicker.dll",
-        "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll",
-        "lib/net8.0/Maui.ColorPicker.dll",
-        "nor0x.maui.colorpicker.1.0.3.nupkg.sha512",
+        "lib/net6.0-android31.0/Maui.ColorPicker.dll",
+        "lib/net6.0-android31.0/Maui.ColorPicker.xml",
+        "lib/net6.0-ios15.4/Maui.ColorPicker.dll",
+        "lib/net6.0-maccatalyst15.4/Maui.ColorPicker.dll",
+        "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll",
+        "nor0x.maui.colorpicker.1.0.1.nupkg.sha512",
         "nor0x.maui.colorpicker.nuspec"
       ]
     },
@@ -81828,10 +81965,10 @@
         "sixlabors.fonts.nuspec"
       ]
     },
-    "SkiaSharp/2.88.7": {
-      "sha512": "LJHAMrbWO00J7jXWLWehyjqFo29T4VzABimfJb4nICqpEe3c/KvQGWL4ItON8ymzhxYOeFgyxeRzuNzO4GHSug==",
+    "SkiaSharp/2.88.1": {
+      "sha512": "bEgYq0n0kVb/t/3DgQTILBqlXcNjKmz0t8ur9w41UK+pbufBGcEF8QMJQIhdRYohHqhsBwrCF87WUBkeRAuquA==",
       "type": "package",
-      "path": "skiasharp/2.88.7",
+      "path": "skiasharp/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -81844,6 +81981,9 @@
         "lib/net462/SkiaSharp.dll",
         "lib/net462/SkiaSharp.pdb",
         "lib/net462/SkiaSharp.xml",
+        "lib/net5.0/SkiaSharp.dll",
+        "lib/net5.0/SkiaSharp.pdb",
+        "lib/net5.0/SkiaSharp.xml",
         "lib/net6.0-android30.0/SkiaSharp.dll",
         "lib/net6.0-android30.0/SkiaSharp.pdb",
         "lib/net6.0-android30.0/SkiaSharp.xml",
@@ -81898,14 +82038,14 @@
         "lib/xamarinwatchos1.0/SkiaSharp.dll",
         "lib/xamarinwatchos1.0/SkiaSharp.pdb",
         "lib/xamarinwatchos1.0/SkiaSharp.xml",
-        "skiasharp.2.88.7.nupkg.sha512",
+        "skiasharp.2.88.1.nupkg.sha512",
         "skiasharp.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.Android/2.88.7": {
-      "sha512": "8sf5x/cNwsOqQ+AlVvymB3IulhGYfiDSArvPtEaMPn4DpUU3KP1Rdb27hDNj89pklORIOwCtpSoknG8vmgJcoQ==",
+    "SkiaSharp.NativeAssets.Android/2.88.1": {
+      "sha512": "vhehsQ5wWqRblwJBdpZwdRywYmSBEzow/Y6eTIngGq0NtyslZiwafu5YqjbWcgZeggiA/ZaBpTivuIM0YUuM+g==",
       "type": "package",
-      "path": "skiasharp.nativeassets.android/2.88.7",
+      "path": "skiasharp.nativeassets.android/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -81921,14 +82061,14 @@
         "runtimes/android-arm64/native/libSkiaSharp.so",
         "runtimes/android-x64/native/libSkiaSharp.so",
         "runtimes/android-x86/native/libSkiaSharp.so",
-        "skiasharp.nativeassets.android.2.88.7.nupkg.sha512",
+        "skiasharp.nativeassets.android.2.88.1.nupkg.sha512",
         "skiasharp.nativeassets.android.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.iOS/2.88.7": {
-      "sha512": "IdRZQVp3l/rM7Dkt1wqpIlG6E+OiuNAtcYDLBoIllGUrymajNRfXwwj+QFt9vKtz1TQk9btDp4Y3ydgEvxNkCw==",
+    "SkiaSharp.NativeAssets.iOS/2.88.1": {
+      "sha512": "YhCPBfzxWj2bSCkWl8kYh9t+tgmgLTqWB2arVElQfb649XZ8d5e1SX1p2nz8s35lGfg0MZRZzsv8Xy0ArjMioA==",
       "type": "package",
-      "path": "skiasharp.nativeassets.ios/2.88.7",
+      "path": "skiasharp.nativeassets.ios/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -81941,19 +82081,17 @@
         "lib/net6.0-ios13.6/_._",
         "lib/xamarinios1.0/_._",
         "runtimes/ios/native/libSkiaSharp.framework/Info.plist",
+        "runtimes/ios/native/libSkiaSharp.framework/Modules/module.modulemap",
         "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources",
         "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp",
-        "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist",
-        "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources",
-        "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp",
-        "skiasharp.nativeassets.ios.2.88.7.nupkg.sha512",
+        "skiasharp.nativeassets.ios.2.88.1.nupkg.sha512",
         "skiasharp.nativeassets.ios.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.MacCatalyst/2.88.7": {
-      "sha512": "/RlVa9TsFsHLgd49WntMmiKDfY2gqnlcsRm5ovmwq+JtLMld3rdqYTDWtwCrJdyScktBWZlWNFWVgzmKPwY6xQ==",
+    "SkiaSharp.NativeAssets.MacCatalyst/2.88.1": {
+      "sha512": "y+NYeJ9TuUr3PJxN75DjNlCXUqeoqnfSqWz4qx+eOGhxPdHfSF8CqTKJcQAy5vQvLl+cJGipfq2jtV/cJhQ6Yg==",
       "type": "package",
-      "path": "skiasharp.nativeassets.maccatalyst/2.88.7",
+      "path": "skiasharp.nativeassets.maccatalyst/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -81963,14 +82101,14 @@
         "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets",
         "lib/net6.0-maccatalyst13.5/_._",
         "runtimes/maccatalyst/native/libSkiaSharp.framework.zip",
-        "skiasharp.nativeassets.maccatalyst.2.88.7.nupkg.sha512",
+        "skiasharp.nativeassets.maccatalyst.2.88.1.nupkg.sha512",
         "skiasharp.nativeassets.maccatalyst.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.macOS/2.88.7": {
-      "sha512": "3jNzco4VjcYPFNxR9aNWcgweFXbTSdM1VpNRzCS4X0i1A1OuNqcaulrAvmntNpujeWxHo9e6WGh6FN8Jf5+XhA==",
+    "SkiaSharp.NativeAssets.macOS/2.88.1": {
+      "sha512": "pJETwmhPe7L3w9x5eBHjmFucj5WiI4cYhG+v04IzZs0gcdC7aTeIh6D+vE3hjxaRBr6eDEr/U/JEPSm7YEfxPg==",
       "type": "package",
-      "path": "skiasharp.nativeassets.macos/2.88.7",
+      "path": "skiasharp.nativeassets.macos/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -81983,20 +82121,20 @@
         "buildTransitive/net6.0-macos10.15/SkiaSharp.NativeAssets.macOS.targets",
         "buildTransitive/xamarinmac2.0/SkiaSharp.NativeAssets.macOS.targets",
         "lib/net462/_._",
+        "lib/net5.0/_._",
         "lib/net6.0-macos10.15/_._",
-        "lib/net6.0/_._",
         "lib/netcoreapp3.1/_._",
         "lib/netstandard1.3/_._",
         "lib/xamarinmac2.0/_._",
         "runtimes/osx/native/libSkiaSharp.dylib",
-        "skiasharp.nativeassets.macos.2.88.7.nupkg.sha512",
+        "skiasharp.nativeassets.macos.2.88.1.nupkg.sha512",
         "skiasharp.nativeassets.macos.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.Win32/2.88.7": {
-      "sha512": "BCXmWdQ0oVck9vRwC8U3ocSaTHEx28VB+6qw9OxGIMQ86iO5bp4Flqk3IXH0l9Pbr7vWAUOpI212iaL9mTaUZQ==",
+    "SkiaSharp.NativeAssets.Win32/2.88.1": {
+      "sha512": "rea9/AzPq3n5tQJ9ffQJqhrhl1EkO9XtnPjEDu+6ovsLJoSIj4khvPiqNvxo/j97bo1/qQP6VsWjk06U0TUtYg==",
       "type": "package",
-      "path": "skiasharp.nativeassets.win32/2.88.7",
+      "path": "skiasharp.nativeassets.win32/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -82005,20 +82143,20 @@
         "build/net462/SkiaSharp.NativeAssets.Win32.targets",
         "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
         "lib/net462/_._",
-        "lib/net6.0/_._",
+        "lib/net5.0/_._",
         "lib/netcoreapp3.1/_._",
         "lib/netstandard1.3/_._",
         "runtimes/win-arm64/native/libSkiaSharp.dll",
         "runtimes/win-x64/native/libSkiaSharp.dll",
         "runtimes/win-x86/native/libSkiaSharp.dll",
-        "skiasharp.nativeassets.win32.2.88.7.nupkg.sha512",
+        "skiasharp.nativeassets.win32.2.88.1.nupkg.sha512",
         "skiasharp.nativeassets.win32.nuspec"
       ]
     },
-    "SkiaSharp.Views/2.88.7": {
-      "sha512": "5AMe/bZCQT0dEaeWFaNk4yYPVy/dYjpBqxjvY7QfAW/fWGDV0QDqG10ZB/E3l2ExbUf+DRCNMNW3fwOa0TxXFA==",
+    "SkiaSharp.Views/2.88.1": {
+      "sha512": "CXTRGgy0YMHCt3KknUs/+ra2EJy6WXgX1+gFPHa0AWVt7Rki1ByTdfpAW5G3DYKLBgZ8YIjBv92IbSMj3yEQdw==",
       "type": "package",
-      "path": "skiasharp.views/2.88.7",
+      "path": "skiasharp.views/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -82029,7 +82167,6 @@
         "lib/net462/SkiaSharp.Views.Desktop.dll",
         "lib/net462/SkiaSharp.Views.Desktop.pdb",
         "lib/net462/SkiaSharp.Views.Desktop.xml",
-        "lib/net6.0-android30.0/SkiaSharp.Views.Android.aar",
         "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll",
         "lib/net6.0-android30.0/SkiaSharp.Views.Android.pdb",
         "lib/net6.0-android30.0/SkiaSharp.Views.Android.xml",
@@ -82070,14 +82207,14 @@
         "runtimes/win10-arm64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "skiasharp.views.2.88.7.nupkg.sha512",
+        "skiasharp.views.2.88.1.nupkg.sha512",
         "skiasharp.views.nuspec"
       ]
     },
-    "SkiaSharp.Views.Maui.Controls/2.88.7": {
-      "sha512": "68FMgXFV9UYrbTuTrP02EGzOvYeMsn3NEtCUifFEqezUu7su24jJ6GzlqIGNeZJydz9cfE/tjqFf6FobKONo7Q==",
+    "SkiaSharp.Views.Maui.Controls/2.88.1": {
+      "sha512": "QRUtsSUSMyZun5/iGBdHKlpCHQmaLxcVqxhDOIjexzgNamLcDcr7kAS4n8AvqsFTFVQ8vG/rgh+6FCiJX31RCw==",
       "type": "package",
-      "path": "skiasharp.views.maui.controls/2.88.7",
+      "path": "skiasharp.views.maui.controls/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -82100,14 +82237,14 @@
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.dll",
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.pdb",
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.xml",
-        "skiasharp.views.maui.controls.2.88.7.nupkg.sha512",
+        "skiasharp.views.maui.controls.2.88.1.nupkg.sha512",
         "skiasharp.views.maui.controls.nuspec"
       ]
     },
-    "SkiaSharp.Views.Maui.Core/2.88.7": {
-      "sha512": "I8JO/0deBlXkAUCZEyuapCDHV11RaTPmsdXgX3zh/lbAiPDYCZS+vZ4TmMVh3Z3oROZpVGRVY1Oet3o/vYhAPw==",
+    "SkiaSharp.Views.Maui.Core/2.88.1": {
+      "sha512": "QUkx+5jbSRQgb2wcMn9t8hKsoxu5gycAX4ewSAgUUXYpCTkVNrGyfg7cW1yGj/4plJy+pPY+Q5L/dwe/P0zhqQ==",
       "type": "package",
-      "path": "skiasharp.views.maui.core/2.88.7",
+      "path": "skiasharp.views.maui.core/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -82130,25 +82267,28 @@
         "lib/net6.0/SkiaSharp.Views.Maui.Core.dll",
         "lib/net6.0/SkiaSharp.Views.Maui.Core.pdb",
         "lib/net6.0/SkiaSharp.Views.Maui.Core.xml",
-        "skiasharp.views.maui.core.2.88.7.nupkg.sha512",
+        "skiasharp.views.maui.core.2.88.1.nupkg.sha512",
         "skiasharp.views.maui.core.nuspec"
       ]
     },
-    "SkiaSharp.Views.WinUI/2.88.7": {
-      "sha512": "J/vLT04TyVQwArlclrsn+T0DTa/I4C8Z005un6onwiHX69ywSCK3sGod8HXE+Cst1IPy+XN6LDUds+Z/L4iomg==",
+    "SkiaSharp.Views.WinUI/2.88.1": {
+      "sha512": "RCdVNeEX4hcRJg8duwh4fIemK3VPRtTtv3plgfNPih9336Wr6q3KtvXp4I4h+sh0qWTkFdIirHyW1Es2RxIzXg==",
       "type": "package",
-      "path": "skiasharp.views.winui/2.88.7",
+      "path": "skiasharp.views.winui/2.88.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
+        "lib/net5.0-windows10.0.18362.0/SkiaSharp.Views.Windows.dll",
+        "lib/net5.0-windows10.0.18362.0/SkiaSharp.Views.Windows.pdb",
+        "lib/net5.0-windows10.0.18362.0/SkiaSharp.Views.Windows.xml",
         "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Windows.dll",
         "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Windows.pdb",
         "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Windows.xml",
         "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll",
         "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.pdb",
         "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.xml",
-        "skiasharp.views.winui.2.88.7.nupkg.sha512",
+        "skiasharp.views.winui.2.88.1.nupkg.sha512",
         "skiasharp.views.winui.nuspec"
       ]
     },
@@ -84365,6 +84505,23 @@
         "ref/xamarinwatchos10/_._",
         "system.runtime.interopservices.4.3.0.nupkg.sha512",
         "system.runtime.interopservices.nuspec"
+      ]
+    },
+    "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+      "sha512": "vq+81ZqZz9oHV6iWgGXFnxHAyO5xA73nfvDNu5LwymIK294is5bRo3P063VToAbDRyyc0qq/YFRYjHmiD6Cv8Q==",
+      "type": "package",
+      "path": "system.runtime.interopservices.nfloat.internal/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/net6.0/System.Runtime.InteropServices.dll",
+        "ref/net6.0/System.Runtime.InteropServices.xml",
+        "system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+        "system.runtime.interopservices.nfloat.internal.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -87534,7 +87691,7 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.3",
       "SharpHook >= 5.3.2",
       "SharpHook.Reactive >= 5.3.2",
-      "nor0x.Maui.ColorPicker >= 1.0.3"
+      "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
     "net8.0-ios17.2": [
       "ClosedXML >= 0.102.2",
@@ -87545,7 +87702,7 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.3",
       "SharpHook >= 5.3.2",
       "SharpHook.Reactive >= 5.3.2",
-      "nor0x.Maui.ColorPicker >= 1.0.3"
+      "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
     "net8.0-maccatalyst17.2": [
       "ClosedXML >= 0.102.2",
@@ -87556,7 +87713,7 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.3",
       "SharpHook >= 5.3.2",
       "SharpHook.Reactive >= 5.3.2",
-      "nor0x.Maui.ColorPicker >= 1.0.3"
+      "nor0x.Maui.ColorPicker >= 1.0.1"
     ],
     "net8.0-windows10.0.19041": [
       "ClosedXML >= 0.102.2",
@@ -87566,7 +87723,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "SharpHook >= 5.3.2",
       "SharpHook.Reactive >= 5.3.2",
-      "nor0x.Maui.ColorPicker >= 1.0.3"
+      "nor0x.Maui.ColorPicker >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -87671,7 +87828,7 @@
           },
           "nor0x.Maui.ColorPicker": {
             "target": "Package",
-            "version": "[1.0.3, )"
+            "version": "[1.0.1, )"
           }
         },
         "imports": [
@@ -87734,7 +87891,7 @@
           },
           "nor0x.Maui.ColorPicker": {
             "target": "Package",
-            "version": "[1.0.3, )"
+            "version": "[1.0.1, )"
           }
         },
         "imports": [
@@ -87797,7 +87954,7 @@
           },
           "nor0x.Maui.ColorPicker": {
             "target": "Package",
-            "version": "[1.0.3, )"
+            "version": "[1.0.1, )"
           }
         },
         "imports": [
@@ -87855,7 +88012,7 @@
           },
           "nor0x.Maui.ColorPicker": {
             "target": "Package",
-            "version": "[1.0.3, )"
+            "version": "[1.0.1, )"
           }
         },
         "imports": [

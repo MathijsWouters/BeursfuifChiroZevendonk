@@ -16,7 +16,7 @@
           "Microsoft.Maui.Controls.Compatibility": "8.0.7",
           "SharpHook": "5.3.2",
           "SharpHook.Reactive": "5.3.2",
-          "nor0x.Maui.ColorPicker": "1.0.3",
+          "nor0x.Maui.ColorPicker": "1.0.1",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },
         "runtime": {
@@ -560,14 +560,14 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "nor0x.Maui.ColorPicker/1.0.3": {
+      "nor0x.Maui.ColorPicker/1.0.1": {
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.7"
+          "SkiaSharp.Views.Maui.Controls": "2.88.1"
         },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Maui.ColorPicker.dll": {
-            "assemblyVersion": "1.0.3.0",
-            "fileVersion": "1.0.3.0"
+          "lib/net6.0-windows10.0.19041/Maui.ColorPicker.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -760,58 +760,58 @@
           }
         }
       },
-      "SkiaSharp/2.88.7": {
+      "SkiaSharp/2.88.1": {
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
+          "SkiaSharp.NativeAssets.Win32": "2.88.1",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1"
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
             "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.7.0"
+            "fileVersion": "2.88.1.0"
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {},
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "SkiaSharp.NativeAssets.macOS/2.88.1": {},
+      "SkiaSharp.NativeAssets.Win32/2.88.1": {
         "native": {
           "runtimes/win-x64/native/libSkiaSharp.dll": {
             "fileVersion": "0.0.0.0"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.7": {
+      "SkiaSharp.Views.Maui.Controls/2.88.1": {
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.7"
+          "SkiaSharp.Views.Maui.Core": "2.88.1"
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Controls.dll": {
             "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.7.0"
+            "fileVersion": "2.88.1.0"
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.7": {
+      "SkiaSharp.Views.Maui.Core/2.88.1": {
         "dependencies": {
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.Views.WinUI": "2.88.7"
+          "SkiaSharp": "2.88.1",
+          "SkiaSharp.Views.WinUI": "2.88.1"
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/SkiaSharp.Views.Maui.Core.dll": {
             "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.7.0"
+            "fileVersion": "2.88.1.0"
           }
         }
       },
-      "SkiaSharp.Views.WinUI/2.88.7": {
+      "SkiaSharp.Views.WinUI/2.88.1": {
         "dependencies": {
           "Microsoft.WindowsAppSDK": "1.3.230724000",
-          "SkiaSharp": "2.88.7"
+          "SkiaSharp": "2.88.1"
         },
         "runtime": {
           "lib/net6.0-windows10.0.19041.0/SkiaSharp.Views.Windows.dll": {
             "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.7.0"
+            "fileVersion": "2.88.1.0"
           }
         }
       },
@@ -1717,12 +1717,12 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
-    "nor0x.Maui.ColorPicker/1.0.3": {
+    "nor0x.Maui.ColorPicker/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4Ojv7Ck4FzHJ6vyPm/uCVSFB5Lc0XS+GUDS373WZ7VAkV07nkp8tAB6aYQnCxefQm4G4/Cl7k7cs6NjqKK+pRg==",
-      "path": "nor0x.maui.colorpicker/1.0.3",
-      "hashPath": "nor0x.maui.colorpicker.1.0.3.nupkg.sha512"
+      "sha512": "sha512-feRODi7QFebwglp0qxzW7xBUqahQwEwfdzf/WeQhI0/VYDF1KTNwIMC3DWuFa5h8C30oCxcNp71u87rv3Er05g==",
+      "path": "nor0x.maui.colorpicker/1.0.1",
+      "hashPath": "nor0x.maui.colorpicker.1.0.1.nupkg.sha512"
     },
     "runtime.any.System.Collections/4.3.0": {
       "type": "package",
@@ -2039,47 +2039,47 @@
       "path": "sixlabors.fonts/1.0.0",
       "hashPath": "sixlabors.fonts.1.0.0.nupkg.sha512"
     },
-    "SkiaSharp/2.88.7": {
+    "SkiaSharp/2.88.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LJHAMrbWO00J7jXWLWehyjqFo29T4VzABimfJb4nICqpEe3c/KvQGWL4ItON8ymzhxYOeFgyxeRzuNzO4GHSug==",
-      "path": "skiasharp/2.88.7",
-      "hashPath": "skiasharp.2.88.7.nupkg.sha512"
+      "sha512": "sha512-bEgYq0n0kVb/t/3DgQTILBqlXcNjKmz0t8ur9w41UK+pbufBGcEF8QMJQIhdRYohHqhsBwrCF87WUBkeRAuquA==",
+      "path": "skiasharp/2.88.1",
+      "hashPath": "skiasharp.2.88.1.nupkg.sha512"
     },
-    "SkiaSharp.NativeAssets.macOS/2.88.7": {
+    "SkiaSharp.NativeAssets.macOS/2.88.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3jNzco4VjcYPFNxR9aNWcgweFXbTSdM1VpNRzCS4X0i1A1OuNqcaulrAvmntNpujeWxHo9e6WGh6FN8Jf5+XhA==",
-      "path": "skiasharp.nativeassets.macos/2.88.7",
-      "hashPath": "skiasharp.nativeassets.macos.2.88.7.nupkg.sha512"
+      "sha512": "sha512-pJETwmhPe7L3w9x5eBHjmFucj5WiI4cYhG+v04IzZs0gcdC7aTeIh6D+vE3hjxaRBr6eDEr/U/JEPSm7YEfxPg==",
+      "path": "skiasharp.nativeassets.macos/2.88.1",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.1.nupkg.sha512"
     },
-    "SkiaSharp.NativeAssets.Win32/2.88.7": {
+    "SkiaSharp.NativeAssets.Win32/2.88.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BCXmWdQ0oVck9vRwC8U3ocSaTHEx28VB+6qw9OxGIMQ86iO5bp4Flqk3IXH0l9Pbr7vWAUOpI212iaL9mTaUZQ==",
-      "path": "skiasharp.nativeassets.win32/2.88.7",
-      "hashPath": "skiasharp.nativeassets.win32.2.88.7.nupkg.sha512"
+      "sha512": "sha512-rea9/AzPq3n5tQJ9ffQJqhrhl1EkO9XtnPjEDu+6ovsLJoSIj4khvPiqNvxo/j97bo1/qQP6VsWjk06U0TUtYg==",
+      "path": "skiasharp.nativeassets.win32/2.88.1",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.1.nupkg.sha512"
     },
-    "SkiaSharp.Views.Maui.Controls/2.88.7": {
+    "SkiaSharp.Views.Maui.Controls/2.88.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-68FMgXFV9UYrbTuTrP02EGzOvYeMsn3NEtCUifFEqezUu7su24jJ6GzlqIGNeZJydz9cfE/tjqFf6FobKONo7Q==",
-      "path": "skiasharp.views.maui.controls/2.88.7",
-      "hashPath": "skiasharp.views.maui.controls.2.88.7.nupkg.sha512"
+      "sha512": "sha512-QRUtsSUSMyZun5/iGBdHKlpCHQmaLxcVqxhDOIjexzgNamLcDcr7kAS4n8AvqsFTFVQ8vG/rgh+6FCiJX31RCw==",
+      "path": "skiasharp.views.maui.controls/2.88.1",
+      "hashPath": "skiasharp.views.maui.controls.2.88.1.nupkg.sha512"
     },
-    "SkiaSharp.Views.Maui.Core/2.88.7": {
+    "SkiaSharp.Views.Maui.Core/2.88.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I8JO/0deBlXkAUCZEyuapCDHV11RaTPmsdXgX3zh/lbAiPDYCZS+vZ4TmMVh3Z3oROZpVGRVY1Oet3o/vYhAPw==",
-      "path": "skiasharp.views.maui.core/2.88.7",
-      "hashPath": "skiasharp.views.maui.core.2.88.7.nupkg.sha512"
+      "sha512": "sha512-QUkx+5jbSRQgb2wcMn9t8hKsoxu5gycAX4ewSAgUUXYpCTkVNrGyfg7cW1yGj/4plJy+pPY+Q5L/dwe/P0zhqQ==",
+      "path": "skiasharp.views.maui.core/2.88.1",
+      "hashPath": "skiasharp.views.maui.core.2.88.1.nupkg.sha512"
     },
-    "SkiaSharp.Views.WinUI/2.88.7": {
+    "SkiaSharp.Views.WinUI/2.88.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-J/vLT04TyVQwArlclrsn+T0DTa/I4C8Z005un6onwiHX69ywSCK3sGod8HXE+Cst1IPy+XN6LDUds+Z/L4iomg==",
-      "path": "skiasharp.views.winui/2.88.7",
-      "hashPath": "skiasharp.views.winui.2.88.7.nupkg.sha512"
+      "sha512": "sha512-RCdVNeEX4hcRJg8duwh4fIemK3VPRtTtv3plgfNPih9336Wr6q3KtvXp4I4h+sh0qWTkFdIirHyW1Es2RxIzXg==",
+      "path": "skiasharp.views.winui/2.88.1",
+      "hashPath": "skiasharp.views.winui.2.88.1.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

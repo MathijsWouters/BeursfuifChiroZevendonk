@@ -15,5 +15,9 @@
     Title="Beurs"
     ContentTemplate="{DataTemplate views:BeursPage}"
     Route="BeursPage" />
+    <ShellContent
+    Title="Add drink"
+    ContentTemplate="{DataTemplate views:AddDrinkPage}"
+    Route="AddDrinkPage" />
 
 </Shell>

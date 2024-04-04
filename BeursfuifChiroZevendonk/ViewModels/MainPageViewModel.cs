@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace BeursfuifChiroZevendonk.ViewModels
 {
@@ -11,11 +13,13 @@ namespace BeursfuifChiroZevendonk.ViewModels
     {
         [ObservableProperty]
         private bool _isBeursPageOpen;
-        public ObservableCollection<Drink> Drinks { get; set; }
-        public MainPageViewModel()
+        public ObservableCollection<Drink> Drinks => _drinksService.Drinks;
+        public ICommand DrinkSelectedCommand { get; }
+        private readonly DrinksDataService _drinksService;
+        public MainPageViewModel(DrinksDataService drinksService)
         {
-            Drinks = new ObservableCollection<Drink>();
-            // Initialize your commands here, and load drinks if needed
+            DrinkSelectedCommand = new RelayCommand<Drink>(OnDrinkSelected);
+            _drinksService = drinksService;
         }
         [RelayCommand]
         private async Task OpenBeursAsync()
@@ -31,31 +35,37 @@ namespace BeursfuifChiroZevendonk.ViewModels
 
                 if (response)
                 {
-                    // Gebruiker bevestigt dat het venster ergens open is, doe niets.
                     return;
                 }
                 else
                 {
-                    // Gebruiker zegt dat het venster niet open is, probeer opnieuw te openen.
                     _isBeursPageOpen = false;
                 }
             }
 
             if (!_isBeursPageOpen)
             {
-                var beursVm = new BeursPageViewModel();
+                var beursVm = new BeursPageViewModel(_drinksService); 
                 var beursPage = new BeursPage(beursVm);
                 var newWindow = new Window(beursPage);
                 Application.Current.OpenWindow(newWindow);
                 _isBeursPageOpen = true;
             }
         }
-
-
         [RelayCommand]
         private async Task NavigateToAddDrink()
         {
-            // Logic to navigate to the add drink page
+            try
+            {
+                var addDrinkVm = new AddDrinkPageViewModel(_drinksService);
+                var uri = new Uri($"///{nameof(AddDrinkPage)}?ViewModel={addDrinkVm.GetType().FullName}", UriKind.Relative);
+                await Shell.Current.GoToAsync(uri);
+            }
+            catch (Exception ex)
+            {
+                // Output the exception to your debug window or handle it as necessary
+                Debug.WriteLine(ex.ToString());
+            }
         }
 
         [RelayCommand]
@@ -74,6 +84,10 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private async Task StopFeestje()
         {
             // Logic to stop "Feestje"
+        }
+        private void OnDrinkSelected(Drink drink)
+        {
+            // Handle the drink selection here (e.g., navigation or updating UI)
         }
     }
 }

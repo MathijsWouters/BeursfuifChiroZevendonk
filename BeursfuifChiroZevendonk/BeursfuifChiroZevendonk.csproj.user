@@ -9,6 +9,9 @@
     <MauiXaml Update="Resources\Styles\BeursFuifStyles.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\AddDrinkPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\BeursPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
