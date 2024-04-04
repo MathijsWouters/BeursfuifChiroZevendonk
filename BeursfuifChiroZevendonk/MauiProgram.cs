@@ -22,9 +22,13 @@ namespace BeursfuifChiroZevendonk
 
             //ViewModels
             builder.Services.AddSingleton<TemplateViewModel>();
+            builder.Services.AddSingleton<DrinksViewModel>();
+            builder.Services.AddSingleton<MainPageViewModel>();
 
             //views
             //builder.Services.AddSingleton<ViewName>();
+            builder.Services.AddSingleton<BeursPage>();
+            builder.Services.AddSingleton<MainPage>();
 
             return builder.Build();
         }

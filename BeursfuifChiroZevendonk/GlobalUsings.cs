@@ -4,3 +4,6 @@ global using BeursfuifChiroZevendonk.Views;
 global using CommunityToolkit.Mvvm.ComponentModel;
 global using CommunityToolkit.Mvvm.Input;
 global using System.Text.Json;
+global using SharpHook;
+global using SharpHook.Reactive;
+global using ClosedXML.Excel;

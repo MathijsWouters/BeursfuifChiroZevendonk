@@ -2,11 +2,62 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BeursfuifChiroZevendonk.Views.MainPage"
-             Title="MainPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
+             xmlns:views="clr-namespace:BeursfuifChiroZevendonk.Views"
+             xmlns:models="clr-namespace:BeursfuifChiroZevendonk.Models"
+             Title=""
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="3*,2*,*">
+        <!-- Header with navigation buttons -->
+        <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="50" HorizontalOptions="Center">
+            <Button Text="Open Beurs" Command="{Binding OpenBeursCommand}" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Add Drink" Command="{Binding NavigateToAddDrinkCommand}" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Manage Drinks" Command="{Binding NavigateToManageDrinksCommand}" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Start Feestje" Command="{Binding StartFeestjeCommand}" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Stop Feestje" Command="{Binding StopFeestjeCommand}" Style="{StaticResource NavigationButtonStyle}"/>
+        </HorizontalStackLayout>
+
+        <CollectionView ItemsSource="{Binding Drinks}"
+                        SelectionMode="None"
+                        Grid.Row="1" Grid.Column="0" 
+                        HorizontalOptions="Fill" VerticalOptions="Center">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="10"
+                           BorderColor="White"
+                           Padding="10"
+                           Margin="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Text="{Binding Name}" Grid.Row="0"
+                                   FontAttributes="Bold"
+                                   FontSize="Medium"
+                                   HorizontalOptions="Center"/>
+                            <BoxView Color="{Binding DrinkColor}" Grid.Row="1"
+                                     WidthRequest="60"
+                                     HeightRequest="125"
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"/>
+                            <Label Text="{Binding CurrentPrice, StringFormat='{0:C}'}" Grid.Row="1"
+                                   HorizontalOptions="End"
+                                   VerticalOptions="End"
+                                   Margin="0,0,10,10"
+                                   FontAttributes="Bold"
+                                   FontSize="Medium"/>
+                            <!-- Additional elements like number frame can be added here -->
+                        </Grid>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:DrinksViewModel}}, Path=DrinkSelectedCommand}"
+                                                  CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Other UI components like the receipt list, timer display, etc., can go here -->
+    </Grid>
 </ContentPage>
