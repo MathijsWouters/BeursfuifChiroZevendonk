@@ -17,7 +17,6 @@ namespace BeursfuifChiroZevendonk.ViewModels
         {
             base.Title = "Beurs";
             _drinksService = drinksService;
-            // This ViewModel now has access to the same Drinks collection as MainPageViewModel
         }
     }
 }

@@ -210,6 +210,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [RelayCommand]
         private async Task StopFeestje()
         {
+            bool confirmStop = await Shell.Current.DisplayAlert("Confirm", "Are you sure you want to stop? There is no going back.", "Yes", "No");
+            if (!confirmStop) return;
             _isFeestjeActive = false;
             StartFeestjeButtonColor = Colors.DarkSlateGray;
             StartFeestjeButtonEnabled = true;
@@ -245,7 +247,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
 
         private async Task SaveAndConvertSalesData()
         {
-            if (_isFeestjeActive)
+            if (!_isFeestjeActive)
             {
                 await SaveReceiptData(); 
                 await _drinksService.ConvertSalesDataToExcelAsync("sales_data.json", "Beursfuif.xlsx");

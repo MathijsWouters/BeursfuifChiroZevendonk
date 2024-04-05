@@ -2,9 +2,9 @@ namespace BeursfuifChiroZevendonk.Views;
 
 public partial class BeursPage : ContentPage
 {
-	public BeursPage(BeursPageViewModel vm)
+	public BeursPage(BeursPageViewModel viewmodel)
 	{
-		InitializeComponent();
-		BindingContext = vm;
+        InitializeComponent();
+		BindingContext = viewmodel;
 	}
 }

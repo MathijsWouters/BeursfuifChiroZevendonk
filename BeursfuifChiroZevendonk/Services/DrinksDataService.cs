@@ -147,17 +147,33 @@ namespace BeursfuifChiroZevendonk.Services
                 worksheet.Cell("B1").Value = "Total Sold";
                 worksheet.Cell("C1").Value = "Total Income";
 
-                for (int i = 0; i < salesDataList.Count; i++)
+                decimal totalIncome = 0;
+                int currentRow = 2; 
+                foreach (var data in salesDataList)
                 {
-                    var row = i + 2; 
-                    worksheet.Cell($"A{row}").Value = salesDataList[i].DrinkName;
-                    worksheet.Cell($"B{row}").Value = salesDataList[i].TotalSold;
-                    worksheet.Cell($"C{row}").Value = salesDataList[i].TotalIncome;
+                    worksheet.Cell($"A{currentRow}").Value = data.DrinkName;
+                    worksheet.Cell($"B{currentRow}").Value = data.TotalSold;
+                    worksheet.Cell($"C{currentRow}").Value = data.TotalIncome;
+                    totalIncome += data.TotalIncome; 
+                    currentRow++;
                 }
+                worksheet.Cell($"A{currentRow}").Value = "Total Income";
+                worksheet.Cell($"C{currentRow}").Value = totalIncome;
+                worksheet.Range($"A{currentRow}:B{currentRow}").Merge(); 
+
                 var downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
-                workbook.SaveAs(Path.Combine(downloadsPath, targetFileName));
+                var excelFilePath = Path.Combine(downloadsPath, targetFileName);
+                if (!Directory.Exists(downloadsPath))
+                {
+                    Directory.CreateDirectory(downloadsPath);
+                }
+                workbook.SaveAs(excelFilePath);
+                var jsonFilePath = Path.Combine(FileSystem.AppDataDirectory, sourceFileName);
+                if (File.Exists(jsonFilePath))
+                {
+                    File.Delete(jsonFilePath);
+                }
             }
-            File.Delete(Path.Combine(FileSystem.AppDataDirectory, sourceFileName));
         }
 
         public async Task DeleteSalesDataAsync(string filename)

@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BeursfuifChiroZevendonk.Views.BeursPage"
              xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
              xmlns:models="clr-namespace:BeursfuifChiroZevendonk.Models"
+             x:Class="BeursfuifChiroZevendonk.Views.BeursPage"
              x:DataType="vm:BeursPageViewModel"
              Title="{Binding Title}">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Grid RowDefinitions="3*,*">
+        <BoxView Grid.Row="0" Color="LightGray"/>
+        <ScrollView Grid.Row="1" Orientation="Horizontal">
+            <CollectionView ItemsSource="{Binding Drinks}" 
+                            HorizontalOptions="CenterAndExpand">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Drink">
+                        <Frame BorderColor="White" CornerRadius="10" Padding="0" Margin="5,2.5" WidthRequest="150">
+                            <Grid RowDefinitions="*,*,*">
+                                <Label Grid.Row="0"
+                           Text="{Binding Name}"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                                       FontSize="Medium"/>
+                                <Label Grid.Row="1"
+                           Text="{Binding CurrentPrice, StringFormat='€{0:0.00}'}"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                                       FontSize="Medium"/>
+                                <BoxView Grid.Row="2"
+                             Color="{Binding DrinkColor}"
+                             Opacity="1"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </Grid>
 </ContentPage>
+
+
