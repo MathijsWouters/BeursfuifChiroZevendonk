@@ -13,14 +13,60 @@ namespace BeursfuifChiroZevendonk.ViewModels
     {
         [ObservableProperty]
         private bool _isBeursPageOpen;
+
+        [ObservableProperty]
+        private ObservableCollection<ReceiptItem> _items = new ObservableCollection<ReceiptItem>();
+
+        public decimal TotalPrice => Items.Sum(item => item.TotalPrice);
+        public decimal TotalVakjes => TotalPrice / 0.25m;
         public ObservableCollection<Drink> Drinks => _drinksService.Drinks;
         private readonly DrinksDataService _drinksService;
         public ICommand DrinkSelectedCommand { get; }
         
         public MainPageViewModel(DrinksDataService drinksService)
         {
-            DrinkSelectedCommand = new RelayCommand<Drink>(OnDrinkSelected);
+            DrinkSelectedCommand = new RelayCommand<Drink>(AddDrinkToReceipt);
+            //RemoveLastItemCommand = new RelayCommand(RemoveLastItemFromReceipt);
             _drinksService = drinksService;
+        }
+        private void AddDrinkToReceipt(Drink drink)
+        {
+            var existingItem = Items.FirstOrDefault(i => i.DrinkName == drink.Name);
+            if (existingItem != null)
+            {
+                existingItem.Quantity++;
+            }
+            else
+            {
+                Items.Add(new ReceiptItem
+                {
+                    DrinkName = drink.Name,
+                    Quantity = 1,
+                    CurrentPrice = drink.CurrentPrice
+                });
+            }
+            UpdateReceiptTotals();
+        }
+        private void RemoveLastItemFromReceipt()
+        {
+            if (Items.Any())
+            {
+                var lastItem = Items.Last();
+                if (lastItem.Quantity > 1)
+                {
+                    lastItem.Quantity--;
+                }
+                else
+                {
+                    Items.Remove(lastItem);
+                }
+            }
+            UpdateReceiptTotals();
+        }
+        private void UpdateReceiptTotals()
+        {
+            OnPropertyChanged(nameof(TotalPrice));
+            OnPropertyChanged(nameof(TotalVakjes));
         }
         [RelayCommand]
         private async Task OpenBeursAsync()
@@ -93,10 +139,6 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private async Task StopFeestje()
         {
             // Logic to stop "Feestje"
-        }
-        private void OnDrinkSelected(Drink drink)
-        {
-            // Handle the drink selection here (e.g., navigation or updating UI)
         }
     }
 }

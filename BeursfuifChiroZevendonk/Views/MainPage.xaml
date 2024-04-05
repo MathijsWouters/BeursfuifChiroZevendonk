@@ -19,9 +19,9 @@
         </HorizontalStackLayout>
 
         <Grid x:Name="DrinksGrid"
-      Grid.Row="1" Grid.Column="0" Padding="10"
+      Grid.Row="1" Grid.Column="0" Padding="20"
       HorizontalOptions="Fill" VerticalOptions="Center">
-            <Grid.RowDefinitions>
+            <Grid.RowDefinitions >
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -41,7 +41,7 @@
                         <Frame CornerRadius="10"
                BorderColor="White"
                Padding="0"
-               Margin="5"
+               Margin="0,0,0,0"
                WidthRequest="200" HeightRequest="125"
                BindingContext="{Binding .}">
                             <Frame.GestureRecognizers>
@@ -95,8 +95,65 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
+        <Grid Grid.Row="1" Grid.Column="2" Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="TenSecondTimerLabel"
+           Text="Timer: 10 seconds"
+           Grid.Row="0"
+           HorizontalOptions="Center"
+           TextColor="White"
+           FontAttributes="Bold"
+           FontSize="Medium"/>
+            <Frame Grid.Row="1"
+           CornerRadius="10"
+           BorderColor="White"
+           Padding="0">
+                <CollectionView x:Name="ReceiptListView" ItemsSource="{Binding Items}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:ReceiptItem">
+                            <StackLayout Orientation="Horizontal" Padding="10" Spacing="0">
+                                <Label Text="{Binding DrinkName}" 
+                       HorizontalOptions="StartAndExpand" 
+                       LineBreakMode="TailTruncation" 
+                       FontSize="Medium" />
+                                <Label Text="X" 
+                       HorizontalOptions="Center" 
+                       FontSize="Medium" 
+                       Margin="0,0,10,0"/>
+                                <Label Text="{Binding Quantity}" 
+                       HorizontalOptions="Center" 
+                       FontSize="Medium"
+                       Margin="0,0,10,0"/>
+                                <Label Text="=" 
+                       HorizontalOptions="Center" 
+                       FontSize="Medium" 
+                       Margin="0,0,10,0"/>
+                                <Label Text="{Binding TotalPrice, StringFormat='€{0:0.00}'}" 
+                       HorizontalOptions="End" 
+                       FontSize="Medium" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Frame>
+            <Label Text="{Binding TotalPrice, StringFormat='Total: {0:N2}'}"
+           Grid.Row="2"
+           HorizontalOptions="Center"
+           TextColor="White"
+           FontAttributes="Bold"
+           FontSize="Medium"/>
+            <Label Text="{Binding TotalVakjes, StringFormat='Vakjes: {0:F0}'}"
+           Grid.Row="3"
+           HorizontalOptions="Center"
+           TextColor="White"
+           FontAttributes="Bold"
+           FontSize="Medium"/>
+        </Grid>
 
-
-        <!-- Other UI components like the receipt list, timer display, etc., can go here -->
     </Grid>
 </ContentPage>

@@ -61,19 +61,61 @@ namespace BeursfuifChiroZevendonk.ViewModels
             var editDrinkPage = new EditDrinkPage(editDrinkVm); 
             await Shell.Current.Navigation.PushAsync(editDrinkPage);
         }
-        private void OnSaveLayout()
+        private async void OnSaveLayout()
         {
-            // Logic for saving layout
+            var filename = await Application.Current.MainPage.DisplayPromptAsync("Save Layout", "Enter a filename for the layout:");
+            if (!string.IsNullOrWhiteSpace(filename))
+            {
+                bool result = await _drinksService.SaveDrinksLayoutAsync(Drinks, filename);
+                if (result)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Success", "Layout saved successfully.", "OK");
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to save the layout.", "OK");
+                }
+            }
         }
 
-        private void OnLoadLayout()
+        private async void OnLoadLayout()
         {
-            // Logic for loading layout
+            var layouts = _drinksService.GetSavedLayouts().ToList();
+            if (layouts.Any())
+            {
+                string layoutName = await Application.Current.MainPage.DisplayActionSheet("Select a Layout", "Cancel", null, layouts.ToArray());
+                if (layoutName != null && layoutName != "Cancel")
+                {
+                    Drinks.Clear();
+                    var loadedDrinks = await _drinksService.LoadDrinksLayoutAsync(layoutName);
+                    foreach (var drink in loadedDrinks)
+                    {
+                        Drinks.Add(drink);
+                    }
+                    await Application.Current.MainPage.DisplayAlert("Success", "Layout loaded successfully.", "OK");
+                }
+            }
+            else
+            {
+                await Application.Current.MainPage.DisplayAlert("No Layouts Found", "There are no saved layouts to load.", "OK");
+            }
         }
-
-        private void OnDeleteLayout()
+        private async void OnDeleteLayout()
         {
-            // Logic for deleting layout
+            var layouts = _drinksService.GetSavedLayouts().ToList();
+            string layoutToDelete = await Application.Current.MainPage.DisplayActionSheet("Select a layout to delete", "Cancel", null, layouts.ToArray());
+            if (layoutToDelete != null && layoutToDelete != "Cancel")
+            {
+                bool isDeleted = await _drinksService.DeleteLayoutAsync(layoutToDelete);
+                if (isDeleted)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Success", "Layout deleted successfully.", "OK");
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to delete the layout.", "OK");
+                }
+            }
         }
         private async void NavigateToMainPage()
         {
