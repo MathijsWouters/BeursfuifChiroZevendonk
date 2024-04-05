@@ -14,8 +14,8 @@
             <Button Text="Open Beurs" Command="{Binding OpenBeursCommand}" Style="{StaticResource NavigationButtonStyle}"/>
             <Button Text="Add Drink" Command="{Binding NavigateToAddDrinkCommand}" Style="{StaticResource NavigationButtonStyle}"/>
             <Button Text="Manage Drinks" Command="{Binding NavigateToManageDrinksCommand}" Style="{StaticResource NavigationButtonStyle}"/>
-            <Button Text="Start Feestje" Command="{Binding StartFeestjeCommand}" Style="{StaticResource NavigationButtonStyle}"/>
-            <Button Text="Stop Feestje" Command="{Binding StopFeestjeCommand}" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Start Feestje" Command="{Binding StartFeestjeCommand}" BackgroundColor="{Binding StartFeestjeButtonColor}" IsEnabled="{Binding StartFeestjeButtonEnabled}" Style="{StaticResource NavigationButtonStyle}"/>
+            <Button Text="Stop Feestje" Command="{Binding StopFeestjeCommand}" IsEnabled="{Binding StopFeestjeButtonEnabled}" Style="{StaticResource NavigationButtonStyle}"/>
         </HorizontalStackLayout>
 
         <Grid x:Name="DrinksGrid"
@@ -103,7 +103,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label x:Name="TenSecondTimerLabel"
-           Text="Timer: 10 seconds"
+           Text="{Binding TenSecondTimerText}"
            Grid.Row="0"
            HorizontalOptions="Center"
            TextColor="White"

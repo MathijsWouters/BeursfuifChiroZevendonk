@@ -10,3 +10,4 @@ global using SharpHook.Reactive;
 global using ClosedXML.Excel;
 global using Microsoft.Maui.Controls;
 global using Microsoft.Maui.Devices;
+global using System.Timers;

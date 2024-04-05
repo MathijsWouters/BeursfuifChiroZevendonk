@@ -6,27 +6,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Timer = System.Timers.Timer;
 
 namespace BeursfuifChiroZevendonk.ViewModels
 {
     public partial class MainPageViewModel : BaseViewModel
     {
         [ObservableProperty]
+        private Color startFeestjeButtonColor = Colors.DarkSlateGray;
+
+        [ObservableProperty]
+        private bool startFeestjeButtonEnabled = true;
+
+        [ObservableProperty]
+        private bool stopFeestjeButtonEnabled = false;
+        private readonly IDispatcher dispatcher;
+        private Timer countdownTimer;
+        private DateTime lastDrinkAddedTime;
+        [ObservableProperty]
         private bool _isBeursPageOpen;
 
         [ObservableProperty]
+        private string tenSecondTimerText = "Timer: 10 seconds";
+        [ObservableProperty]
         private ObservableCollection<ReceiptItem> _items = new ObservableCollection<ReceiptItem>();
-
+        private bool _isFeestjeActive;
         public decimal TotalPrice => Items.Sum(item => item.TotalPrice);
         public decimal TotalVakjes => TotalPrice / 0.25m;
         public ObservableCollection<Drink> Drinks => _drinksService.Drinks;
         private readonly DrinksDataService _drinksService;
         public ICommand DrinkSelectedCommand { get; }
-        
-        public MainPageViewModel(DrinksDataService drinksService)
+        public MainPageViewModel(IDispatcher dispatcher, DrinksDataService drinksService)
         {
             DrinkSelectedCommand = new RelayCommand<Drink>(AddDrinkToReceipt);
             _drinksService = drinksService;
+            _isFeestjeActive = false;
+            this.dispatcher = dispatcher;
+            InitializeCountdownTimer();
 #if WINDOWS
     var keyboardService = new KeyboardService();
     keyboardService.OnBackspacePressed += () => RemoveLastItemFromReceipt();
@@ -34,6 +50,38 @@ namespace BeursfuifChiroZevendonk.ViewModels
     keyboardService.OnEnterPressed += OnEnterKeyPressed;
     keyboardService.Start();
 #endif
+        }
+        private void InitializeCountdownTimer()
+        {
+            countdownTimer = new Timer(1000);
+            countdownTimer.Elapsed += HandleCountdownTick;
+            countdownTimer.AutoReset = true;
+
+        }
+        private void HandleCountdownTick(object sender, ElapsedEventArgs e)
+        {
+            var timeSinceLastDrinkAdded = DateTime.Now - lastDrinkAddedTime;
+            if (timeSinceLastDrinkAdded.TotalSeconds >= 10)
+            {
+                dispatcher.Dispatch(() =>
+                {
+                    OnTenSecondCountdownCompleted();
+                });
+                countdownTimer.Stop();
+            }
+            else
+            {
+                // Optionally update some UI to show the countdown, e.g., a timer label
+                dispatcher.Dispatch(() =>
+                {
+                    TenSecondTimerText = $"Timer: {10 - (int)timeSinceLastDrinkAdded.TotalSeconds} seconds";
+                });
+            }
+        }
+        private void ResetTimer()
+        {
+            countdownTimer.Stop();
+            TenSecondTimerText = "Timer: 10 seconds";
         }
         private void AddDrinkToReceipt(Drink drink)
         {
@@ -51,6 +99,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
                     CurrentPrice = drink.CurrentPrice
                 });
             }
+            lastDrinkAddedTime = DateTime.Now; 
+            if (!countdownTimer.Enabled) countdownTimer.Start();
             UpdateReceiptTotals();
         }
         private void AddDrinkByNumber(int number)
@@ -64,7 +114,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
 
         private void OnEnterKeyPressed()
         {
-            // Handle Enter key press here...
+            OnTenSecondCountdownCompleted();
         }
         private void RemoveLastItemFromReceipt()
         {
@@ -149,15 +199,58 @@ namespace BeursfuifChiroZevendonk.ViewModels
         }
 
         [RelayCommand]
-        private async Task StartFeestje()
+        private void StartFeestje()
         {
-            // Logic to start "Feestje"
+            _isFeestjeActive = true;
+            StartFeestjeButtonColor = Colors.Green;
+            StartFeestjeButtonEnabled = false;
+            StopFeestjeButtonEnabled = true;
         }
 
         [RelayCommand]
         private async Task StopFeestje()
         {
-            // Logic to stop "Feestje"
+            _isFeestjeActive = false;
+            StartFeestjeButtonColor = Colors.DarkSlateGray;
+            StartFeestjeButtonEnabled = true;
+            StopFeestjeButtonEnabled = false;
+            countdownTimer.Stop();
+            await SaveAndConvertSalesData();
+            await _drinksService.DeleteSalesDataAsync("sales_data.json");
         }
+        private async void OnTenSecondCountdownCompleted()
+        {
+            if (_isFeestjeActive)
+            {
+                await SaveReceiptData();
+            }
+            ClearReceipt();
+            ResetTimer();
+        }
+
+
+        private async Task SaveReceiptData()
+        {
+            if (Items.Any())
+            {
+                await _drinksService.UpdateAndSaveSalesDataAsync("sales_data.json", new List<ReceiptItem>(Items));
+            }
+        }
+
+        private void ClearReceipt()
+        {
+            Items.Clear(); 
+            UpdateReceiptTotals();
+        }
+
+        private async Task SaveAndConvertSalesData()
+        {
+            if (_isFeestjeActive)
+            {
+                await SaveReceiptData(); 
+                await _drinksService.ConvertSalesDataToExcelAsync("sales_data.json", "Beursfuif.xlsx");
+            }
+        }
+
     }
 }
