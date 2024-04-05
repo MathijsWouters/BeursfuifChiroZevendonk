@@ -26,8 +26,14 @@ namespace BeursfuifChiroZevendonk.ViewModels
         public MainPageViewModel(DrinksDataService drinksService)
         {
             DrinkSelectedCommand = new RelayCommand<Drink>(AddDrinkToReceipt);
-            //RemoveLastItemCommand = new RelayCommand(RemoveLastItemFromReceipt);
             _drinksService = drinksService;
+#if WINDOWS
+    var keyboardService = new KeyboardService();
+    keyboardService.OnBackspacePressed += () => RemoveLastItemFromReceipt();
+    keyboardService.OnNumpadPressed += AddDrinkByNumber;
+    keyboardService.OnEnterPressed += OnEnterKeyPressed;
+    keyboardService.Start();
+#endif
         }
         private void AddDrinkToReceipt(Drink drink)
         {
@@ -46,6 +52,19 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 });
             }
             UpdateReceiptTotals();
+        }
+        private void AddDrinkByNumber(int number)
+        {
+            var drink = Drinks.FirstOrDefault(d => d.Number == number);
+            if (drink != null)
+            {
+                AddDrinkToReceipt(drink);
+            }
+        }
+
+        private void OnEnterKeyPressed()
+        {
+            // Handle Enter key press here...
         }
         private void RemoveLastItemFromReceipt()
         {
