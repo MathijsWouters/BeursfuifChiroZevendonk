@@ -42,7 +42,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             MaxLimit = (double)highestMaxPrice,
             ShowSeparatorLines = false,
             LabelsPaint = new SolidColorPaint(SKColors.White),
-            TextSize = 16
+            TextSize = 20
         }
             };
 
@@ -59,6 +59,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         new Axis
         {
             Labels = labels.ToArray(),
+            LabelsPaint = new SolidColorPaint(SKColors.White),
+            TextSize = 20,
             LabelsRotation = 15
         }
             };
