@@ -59,7 +59,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             countdownTimer.Elapsed += HandleCountdownTick;
             countdownTimer.AutoReset = true;
 
-            fiveMinuteTimer = new Timer(10000); 
+            fiveMinuteTimer = new Timer(300000); 
             fiveMinuteTimer.Elapsed += HandleFiveMinuteTick;
             fiveMinuteTimer.AutoReset = true;
 
@@ -231,6 +231,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             await _drinksService.InitializeFiveMinuteSalesDataWithRandomValuesAsync();
             await _drinksService.InitializeCurrentSalesDataAsync();
             fiveMinuteTimer.Start();
+            MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
         }
         [RelayCommand]
         private async Task StopFeestje()
@@ -247,6 +248,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             await _drinksService.DeleteSalesDataAsync("sales_data.json");
             await _drinksService.DeleteFileAsync(FiveMinuteDataFile);
             await _drinksService.DeleteFileAsync("current_" + FiveMinuteDataFile);
+            await _drinksService.SaveHistoricalPricesAsync();
             foreach (var drink in _drinksService.Drinks)
             {
                 drink.ClearHistoricalPrices();

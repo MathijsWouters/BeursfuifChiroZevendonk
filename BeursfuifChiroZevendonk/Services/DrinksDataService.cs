@@ -367,7 +367,18 @@ namespace BeursfuifChiroZevendonk.Services
                 else return 0; 
             }
         }
+        public async Task SaveHistoricalPricesAsync()
+        {
+            var drinksData = Drinks.Select(drink => new
+            {
+                DrinkName = drink.Name,
+                Prices = drink.HistoricalPrices.Skip(12).ToList() 
+            }).ToList();
 
+            var json = JsonSerializer.Serialize(drinksData, new JsonSerializerOptions { WriteIndented = true });
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "historical_drink_prices.json");
+            await File.WriteAllTextAsync(filePath, json);
+        }
 
     }
 
