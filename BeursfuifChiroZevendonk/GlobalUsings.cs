@@ -11,3 +11,5 @@ global using ClosedXML.Excel;
 global using Microsoft.Maui.Controls;
 global using Microsoft.Maui.Devices;
 global using System.Timers;
+global using SkiaSharp;
+global using LiveChartsCore.SkiaSharpView.Maui;

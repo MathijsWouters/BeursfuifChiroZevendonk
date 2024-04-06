@@ -241,7 +241,14 @@ namespace BeursfuifChiroZevendonk.Services
                     var percentageChange = CalculatePercentageChange(previousSale.QuantitySoldLastFiveMinutes, currentSale.QuantitySoldLastFiveMinutes);
                     var adjustment = DetermineAdjustmentMagnitude(percentageChange, 0.25m); 
                     var newPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, drink.CurrentPrice + adjustment));
-                    drink.CurrentPrice = newPrice;
+                    if (drink.CurrentPrice != newPrice)
+                    {
+                        drink.CurrentPrice = newPrice;
+                    }
+                    else
+                    {
+                        drink.LogCurrentPrice();
+                    }
                 }
             }
             await ResetCurrentSalesDataAsync();

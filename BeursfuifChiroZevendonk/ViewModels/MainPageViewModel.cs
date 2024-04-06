@@ -86,6 +86,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private async void HandleFiveMinuteTick(object sender, ElapsedEventArgs e)
         {
             await _drinksService.ProcessFiveMinuteSalesDataAsync(_drinksService.Drinks.ToList());
+            MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
+
 
             if (_isFeestjeActive)
             {
@@ -154,6 +156,14 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [RelayCommand]
         private async Task OpenBeursAsync()
         {
+            if (!Drinks.Any())
+            {
+                await Shell.Current.DisplayAlert(
+                    "Geen Dranken",
+                    "Er zijn geen dranken beschikbaar. Voeg eerst enkele dranken toe.",
+                    "OK");
+                return; 
+            }
             if (_isBeursPageOpen)
             {
                 bool response = await Shell.Current.DisplayAlert(
@@ -237,6 +247,10 @@ namespace BeursfuifChiroZevendonk.ViewModels
             await _drinksService.DeleteSalesDataAsync("sales_data.json");
             await _drinksService.DeleteFileAsync(FiveMinuteDataFile);
             await _drinksService.DeleteFileAsync("current_" + FiveMinuteDataFile);
+            foreach (var drink in _drinksService.Drinks)
+            {
+                drink.ClearHistoricalPrices();
+            }
         }
         private async void OnTenSecondCountdownCompleted()
         {

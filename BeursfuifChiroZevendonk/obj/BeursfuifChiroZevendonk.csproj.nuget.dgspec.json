@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "LiveChartsCore.SkiaSharpView.Maui": {
+              "target": "Package",
+              "version": "[2.0.0-rc2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -99,6 +103,10 @@
             "SharpHook.Reactive": {
               "target": "Package",
               "version": "[5.3.2, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.7, )"
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",
@@ -137,6 +145,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "LiveChartsCore.SkiaSharpView.Maui": {
+              "target": "Package",
+              "version": "[2.0.0-rc2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -162,6 +174,10 @@
             "SharpHook.Reactive": {
               "target": "Package",
               "version": "[5.3.2, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.7, )"
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",
@@ -200,6 +216,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "LiveChartsCore.SkiaSharpView.Maui": {
+              "target": "Package",
+              "version": "[2.0.0-rc2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -225,6 +245,10 @@
             "SharpHook.Reactive": {
               "target": "Package",
               "version": "[5.3.2, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.7, )"
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",
@@ -264,6 +288,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "LiveChartsCore.SkiaSharpView.Maui": {
+              "target": "Package",
+              "version": "[2.0.0-rc2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -283,6 +311,10 @@
             "SharpHook.Reactive": {
               "target": "Package",
               "version": "[5.3.2, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.7, )"
             },
             "nor0x.Maui.ColorPicker": {
               "target": "Package",

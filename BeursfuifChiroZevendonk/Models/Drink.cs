@@ -10,6 +10,8 @@ namespace BeursfuifChiroZevendonk.Models
     public partial class Drink : BaseModel
     {
         [ObservableProperty]
+        private List<decimal> historicalPrices = new List<decimal>();
+        [ObservableProperty]
         private int number;
 
         [ObservableProperty]
@@ -40,6 +42,7 @@ namespace BeursfuifChiroZevendonk.Models
             MaxPrice = maxPrice;
             StartingPrice = CalculateStartingPrice();
             CurrentPrice = StartingPrice;
+            HistoricalPrices.Add(currentPrice);
         }
         protected override void OnPropertyChanged(PropertyChangedEventArgs e)
         {
@@ -47,7 +50,12 @@ namespace BeursfuifChiroZevendonk.Models
             if (e.PropertyName == nameof(MinPrice) || e.PropertyName == nameof(MaxPrice))
             {
                 StartingPrice = CalculateStartingPrice();
+                HistoricalPrices.Clear();
                 CurrentPrice = StartingPrice; 
+            }
+            if (e.PropertyName == nameof(CurrentPrice))
+            {
+                HistoricalPrices.Add(CurrentPrice);
             }
         }
         private decimal CalculateStartingPrice()
@@ -57,5 +65,13 @@ namespace BeursfuifChiroZevendonk.Models
 
         private static decimal RoundToNearestQuarter(decimal number)
             => Math.Round(number * 4, MidpointRounding.AwayFromZero) / 4;
+        public void ClearHistoricalPrices()
+        {
+            HistoricalPrices.Clear();
+        }
+        public void LogCurrentPrice()
+        {
+            HistoricalPrices.Add(CurrentPrice);
+        }
     }
 }

@@ -3,12 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
              xmlns:models="clr-namespace:BeursfuifChiroZevendonk.Models"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
              x:Class="BeursfuifChiroZevendonk.Views.BeursPage"
              x:DataType="vm:BeursPageViewModel"
              Title="{Binding Title}">
 
     <Grid RowDefinitions="3*,*">
-        <BoxView Grid.Row="0" Color="LightGray"/>
+        <lvc:CartesianChart Series="{Binding Series}"
+                    YAxes="{Binding YAxes}"
+                    XAxes="{Binding XAxes}"
+                            Margin="5">
+        </lvc:CartesianChart>
         <ScrollView Grid.Row="1" Orientation="Horizontal">
             <CollectionView ItemsSource="{Binding Drinks}" 
                             HorizontalOptions="CenterAndExpand">

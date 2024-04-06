@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BeursfuifChiroZevendonk</name>
+    </assembly>
+    <members>
+        <member name="T:BeursfuifChiroZevendonk.Models.BaseModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.BaseModel.IsBusy">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.BaseModel.isBusy"/>
+        </member>
+        <member name="T:BeursfuifChiroZevendonk.Models.Drink">
+            <inheritdoc/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.Drink.HistoricalPrices">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.Drink.historicalPrices"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.Drink.Number">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.Drink.number"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.Drink.Name">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.Drink.name"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.Drink.CurrentPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.Drink.currentPrice"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.Drink.MinPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.Drink.minPrice"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.Drink.MaxPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.Drink.maxPrice"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.Models.Drink.StartingPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.Models.Drink.startingPrice"/>
+        </member>
+        <member name="T:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.Name">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.name"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.MinPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.minPrice"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.MaxPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.maxPrice"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.ColorHex">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.colorHex"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.SaveDrinkCommand">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.saveDrinkCommand"/>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.increaseMinPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.IncreaseMinPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.IncreaseMinPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.IncreaseMinPrice"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.decreaseMinPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMinPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMinPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMinPrice"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.increaseMaxPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.IncreaseMaxPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.IncreaseMaxPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.IncreaseMaxPrice"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.decreaseMaxPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMaxPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMaxPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMaxPrice"/>.</summary>
+        </member>
+        <member name="T:BeursfuifChiroZevendonk.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="T:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.Name">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.name"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.MinPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.minPrice"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.MaxPrice">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.maxPrice"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.SaveDrinkCommand">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.saveDrinkCommand"/>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.increaseMinPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.IncreaseMinPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.IncreaseMinPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.IncreaseMinPrice"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.decreaseMinPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.DecreaseMinPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.DecreaseMinPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.DecreaseMinPrice"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.increaseMaxPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.IncreaseMaxPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.IncreaseMaxPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.IncreaseMaxPrice"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.decreaseMaxPriceCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.DecreaseMaxPriceCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.DecreaseMaxPriceCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.EditDrinkPageViewModel.DecreaseMaxPrice"/>.</summary>
+        </member>
+        <member name="T:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StartFeestjeButtonColor">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.startFeestjeButtonColor"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StartFeestjeButtonEnabled">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.startFeestjeButtonEnabled"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StopFeestjeButtonEnabled">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.stopFeestjeButtonEnabled"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.IsBeursPageOpen">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel._isBeursPageOpen"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.TenSecondTimerText">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.tenSecondTimerText"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.Items">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel._items"/>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.openBeursCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.OpenBeursCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.OpenBeursCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.OpenBeursAsync"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.navigateToAddDrinkCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.NavigateToAddDrinkCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.NavigateToAddDrinkCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.NavigateToAddDrink"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.navigateToManageDrinksCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.NavigateToManageDrinksCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.NavigateToManageDrinksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.NavigateToManageDrinks"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.startFeestjeCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StartFeestjeCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StartFeestjeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StartFeestje"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.stopFeestjeCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StopFeestjeCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StopFeestjeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StopFeestje"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HistoricalPrices">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HistoricalPrices" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Number">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Number" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MinPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MinPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MaxPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MaxPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StartingPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StartingPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ColorHex">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ColorHex" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SaveDrinkCommand">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SaveDrinkCommand" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StartFeestjeButtonColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StartFeestjeButtonColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StartFeestjeButtonEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StartFeestjeButtonEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StopFeestjeButtonEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StopFeestjeButtonEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBeursPageOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBeursPageOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TenSecondTimerText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TenSecondTimerText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HistoricalPrices">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HistoricalPrices" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Number">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Number" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MinPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MinPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MaxPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MaxPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StartingPrice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StartingPrice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ColorHex">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ColorHex" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SaveDrinkCommand">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SaveDrinkCommand" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StartFeestjeButtonColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StartFeestjeButtonColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StartFeestjeButtonEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StartFeestjeButtonEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StopFeestjeButtonEnabled">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StopFeestjeButtonEnabled" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBeursPageOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBeursPageOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TenSecondTimerText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TenSecondTimerText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+    </members>
+</doc>
