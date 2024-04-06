@@ -12,6 +12,8 @@ namespace BeursfuifChiroZevendonk.Services
     {
         public ObservableCollection<Drink> Drinks { get; private set; } = new ObservableCollection<Drink>();
 
+        private const string previousFiveMinuteDataFile = "five_minute_drink_data.json";
+        private const string CurrentFiveMinuteDataFile = "current_five_minute_drink_data.json";
         public void UpdateDrink(Drink updatedDrink)
         {
             var drink = Drinks.FirstOrDefault(d => d.Number == updatedDrink.Number); 
@@ -191,10 +193,175 @@ namespace BeursfuifChiroZevendonk.Services
                 catch (Exception ex)
                 {
                     Debug.WriteLine($"Error deleting file {filename}: {ex.Message}");
-                    // Handle any errors, such as logging or notifying the user
                 }
             }
         }
+        public async Task InitializeFiveMinuteSalesDataWithRandomValuesAsync()
+        {
+            var random = new Random();
+            var initialData = Drinks.Select(drink => new FiveMinuteDrinkSalesData
+            {
+                DrinkName = drink.Name,
+                QuantitySoldLastFiveMinutes = random.Next(5, 15)
+            }).ToList();
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, previousFiveMinuteDataFile);
+            var json = JsonSerializer.Serialize(initialData);
+            await File.WriteAllTextAsync(filePath, json);
+        }
+
+        public async Task InitializeCurrentSalesDataAsync()
+        {
+            var currentSalesData = Drinks.Select(drink => new FiveMinuteDrinkSalesData
+            {
+                DrinkName = drink.Name,
+                QuantitySoldLastFiveMinutes = 0
+            }).ToList();
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, CurrentFiveMinuteDataFile);
+            var json = JsonSerializer.Serialize(currentSalesData);
+            await File.WriteAllTextAsync(filePath, json);
+        }
+
+        public async Task ProcessFiveMinuteSalesDataAsync(List<Drink> drinks)
+        {
+            var previousSalesFilePath = Path.Combine(FileSystem.AppDataDirectory, previousFiveMinuteDataFile);
+            var currentSalesFilePath = Path.Combine(FileSystem.AppDataDirectory, CurrentFiveMinuteDataFile);
+
+            var previousSalesDataJson = await File.ReadAllTextAsync(previousSalesFilePath);
+            var currentSalesDataJson = await File.ReadAllTextAsync(currentSalesFilePath);
+
+            var previousSalesData = JsonSerializer.Deserialize<List<FiveMinuteDrinkSalesData>>(previousSalesDataJson) ?? new List<FiveMinuteDrinkSalesData>();
+            var currentSalesData = JsonSerializer.Deserialize<List<FiveMinuteDrinkSalesData>>(currentSalesDataJson) ?? new List<FiveMinuteDrinkSalesData>();
+
+            foreach (var drink in drinks)
+            {
+                var currentSale = currentSalesData.FirstOrDefault(c => c.DrinkName == drink.Name);
+                var previousSale = previousSalesData.FirstOrDefault(p => p.DrinkName == drink.Name);
+                if (currentSale != null && previousSale != null)
+                {
+                    var percentageChange = CalculatePercentageChange(previousSale.QuantitySoldLastFiveMinutes, currentSale.QuantitySoldLastFiveMinutes);
+                    var adjustment = DetermineAdjustmentMagnitude(percentageChange, drink.MinPrice, drink.CurrentPrice, 0.25m); 
+                    var newPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, drink.CurrentPrice + adjustment));
+                    drink.CurrentPrice = newPrice;
+                }
+            }
+            await ResetCurrentSalesDataAsync();
+        }
+        public async Task ResetCurrentSalesDataAsync()
+        {
+            var currentSalesFilePath = Path.Combine(FileSystem.AppDataDirectory, CurrentFiveMinuteDataFile);
+            var currentSalesDataJson = await File.ReadAllTextAsync(currentSalesFilePath);
+            var currentSalesData = JsonSerializer.Deserialize<List<FiveMinuteDrinkSalesData>>(currentSalesDataJson) ?? new List<FiveMinuteDrinkSalesData>();
+            var previousSalesFilePath = Path.Combine(FileSystem.AppDataDirectory, previousFiveMinuteDataFile);
+            await File.WriteAllTextAsync(previousSalesFilePath, JsonSerializer.Serialize(currentSalesData));
+            var resetData = Drinks.Select(drink => new FiveMinuteDrinkSalesData
+            {
+                DrinkName = drink.Name,
+                QuantitySoldLastFiveMinutes = 0
+            }).ToList();
+            await File.WriteAllTextAsync(currentSalesFilePath, JsonSerializer.Serialize(resetData));
+        }
+        public async Task UpdateCurrentFiveMinuteSalesDataAsync(List<ReceiptItem> receiptItems)
+        {
+            var currentSalesDataPath = Path.Combine(FileSystem.AppDataDirectory, CurrentFiveMinuteDataFile);
+            var currentSalesDataJson = await File.ReadAllTextAsync(currentSalesDataPath);
+            var currentSalesData = JsonSerializer.Deserialize<List<FiveMinuteDrinkSalesData>>(currentSalesDataJson) ?? new List<FiveMinuteDrinkSalesData>();
+
+            foreach (var item in receiptItems)
+            {
+                var drinkData = currentSalesData.FirstOrDefault(d => d.DrinkName == item.DrinkName);
+                if (drinkData != null)
+                {
+                    drinkData.QuantitySoldLastFiveMinutes += item.Quantity;
+                }
+                else
+                {
+                    currentSalesData.Add(new FiveMinuteDrinkSalesData
+                    {
+                        DrinkName = item.DrinkName,
+                        QuantitySoldLastFiveMinutes = item.Quantity
+                    });
+                }
+            }
+
+            await SaveFiveMinuteSalesDataAsync(CurrentFiveMinuteDataFile, currentSalesData);
+        }
+        private static async Task SaveFiveMinuteSalesDataAsync(string filename, List<FiveMinuteDrinkSalesData> salesData)
+        {
+            var folderPath = FileSystem.AppDataDirectory;
+            var filePath = Path.Combine(folderPath, filename);
+            try
+            {
+                var json = JsonSerializer.Serialize(salesData, new JsonSerializerOptions { WriteIndented = true });
+                await File.WriteAllTextAsync(filePath, json);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Failed to save five-minute sales data: {ex}");
+            }
+        }
+        public async Task DeleteFileAsync(string filename)
+        {
+            var folderPath = FileSystem.AppDataDirectory;
+            var filePath = Path.Combine(folderPath, filename);
+
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    File.Delete(filePath);
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Failed to delete file {filename}: {ex}");
+                }
+            }
+        }
+        private decimal CalculatePercentageChange(int previousSales, int currentSales)
+        {
+            if (previousSales == 0 && currentSales == 0)
+            {
+                return -100; 
+            }
+            else if (previousSales == 0)
+            {
+                return 100;
+            }
+            else
+            {
+                return ((decimal)(currentSales - previousSales) / previousSales) * 100;
+            }
+        }
+
+        private static decimal DetermineAdjustmentMagnitude(decimal percentageChange, decimal minPrice, decimal currentPrice, decimal interval)
+        {
+            var random = new Random();
+            var chance = random.Next(100);
+
+            if (percentageChange == -100)
+            {
+                return chance < 80 ? -interval : 0;
+            }
+            else if (percentageChange <= -15)
+            {
+                if (chance < 55) return -interval;
+                else if (chance < 70) return -2 * interval;
+                else return 0;
+            }
+            else if (percentageChange >= 15)
+            {
+                if (chance < 55) return interval;
+                else if (chance < 70) return 2 * interval;
+                else return 0;
+            }
+            else
+            {
+                if (chance < 42.5) return interval; 
+                else if (chance < 85) return -interval; 
+                else return 0; 
+            }
+        }
+
 
     }
+
 }

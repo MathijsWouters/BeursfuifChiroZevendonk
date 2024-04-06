@@ -22,6 +22,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private bool stopFeestjeButtonEnabled = false;
         private readonly IDispatcher dispatcher;
         private Timer countdownTimer;
+        private Timer fiveMinuteTimer;
+        private const string FiveMinuteDataFile = "five_minute_drink_data.json";
         private DateTime lastDrinkAddedTime;
         [ObservableProperty]
         private bool _isBeursPageOpen;
@@ -42,7 +44,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             _drinksService = drinksService;
             _isFeestjeActive = false;
             this.dispatcher = dispatcher;
-            InitializeCountdownTimer();
+            InitializeTimer();
 #if WINDOWS
     var keyboardService = new KeyboardService();
     keyboardService.OnBackspacePressed += () => RemoveLastItemFromReceipt();
@@ -51,11 +53,15 @@ namespace BeursfuifChiroZevendonk.ViewModels
     keyboardService.Start();
 #endif
         }
-        private void InitializeCountdownTimer()
+        private void InitializeTimer()
         {
             countdownTimer = new Timer(1000);
             countdownTimer.Elapsed += HandleCountdownTick;
             countdownTimer.AutoReset = true;
+
+            fiveMinuteTimer = new Timer(10000); 
+            fiveMinuteTimer.Elapsed += HandleFiveMinuteTick;
+            fiveMinuteTimer.AutoReset = true;
 
         }
         private void HandleCountdownTick(object sender, ElapsedEventArgs e)
@@ -71,11 +77,20 @@ namespace BeursfuifChiroZevendonk.ViewModels
             }
             else
             {
-                // Optionally update some UI to show the countdown, e.g., a timer label
                 dispatcher.Dispatch(() =>
                 {
                     TenSecondTimerText = $"Timer: {10 - (int)timeSinceLastDrinkAdded.TotalSeconds} seconds";
                 });
+            }
+        }
+        private async void HandleFiveMinuteTick(object sender, ElapsedEventArgs e)
+        {
+            await _drinksService.ProcessFiveMinuteSalesDataAsync(_drinksService.Drinks.ToList());
+
+            if (_isFeestjeActive)
+            {
+                fiveMinuteTimer.Stop();
+                fiveMinuteTimer.Start();
             }
         }
         private void ResetTimer()
@@ -111,7 +126,6 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 AddDrinkToReceipt(drink);
             }
         }
-
         private void OnEnterKeyPressed()
         {
             OnTenSecondCountdownCompleted();
@@ -182,7 +196,6 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 Debug.WriteLine(ex.ToString());
             }
         }
-
         [RelayCommand]
         private async Task NavigateToManageDrinks()
         {
@@ -197,16 +210,18 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 Debug.WriteLine(ex.ToString());
             }
         }
-
         [RelayCommand]
-        private void StartFeestje()
+        private async Task StartFeestje()
         {
             _isFeestjeActive = true;
             StartFeestjeButtonColor = Colors.Green;
             StartFeestjeButtonEnabled = false;
             StopFeestjeButtonEnabled = true;
-        }
 
+            await _drinksService.InitializeFiveMinuteSalesDataWithRandomValuesAsync();
+            await _drinksService.InitializeCurrentSalesDataAsync();
+            fiveMinuteTimer.Start();
+        }
         [RelayCommand]
         private async Task StopFeestje()
         {
@@ -217,20 +232,22 @@ namespace BeursfuifChiroZevendonk.ViewModels
             StartFeestjeButtonEnabled = true;
             StopFeestjeButtonEnabled = false;
             countdownTimer.Stop();
+            fiveMinuteTimer.Stop();
             await SaveAndConvertSalesData();
             await _drinksService.DeleteSalesDataAsync("sales_data.json");
+            await _drinksService.DeleteFileAsync(FiveMinuteDataFile);
+            await _drinksService.DeleteFileAsync("current_" + FiveMinuteDataFile);
         }
         private async void OnTenSecondCountdownCompleted()
         {
             if (_isFeestjeActive)
             {
                 await SaveReceiptData();
+                await _drinksService.UpdateCurrentFiveMinuteSalesDataAsync(new List<ReceiptItem>(Items));
             }
             ClearReceipt();
             ResetTimer();
         }
-
-
         private async Task SaveReceiptData()
         {
             if (Items.Any())
@@ -238,13 +255,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 await _drinksService.UpdateAndSaveSalesDataAsync("sales_data.json", new List<ReceiptItem>(Items));
             }
         }
-
         private void ClearReceipt()
         {
             Items.Clear(); 
             UpdateReceiptTotals();
         }
-
         private async Task SaveAndConvertSalesData()
         {
             if (!_isFeestjeActive)
