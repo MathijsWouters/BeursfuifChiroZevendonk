@@ -106,8 +106,7 @@
               "RelativeToolTip": "Views\\AddDrinkPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-05T21:26:11.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T21:26:11.255Z"
             },
             {
               "$type": "Document",
@@ -189,7 +188,7 @@
               "RelativeDocumentMoniker": "Services\\DrinksDataService.cs",
               "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Services\\DrinksDataService.cs",
               "RelativeToolTip": "Services\\DrinksDataService.cs",
-              "ViewState": "AQIAAEgBAAAAAAAAAAAuwFcBAAAqAAAA",
+              "ViewState": "AQIAADUBAAAAAAAAAAAhwBgBAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T08:39:31.251Z",
               "EditorCaption": ""
@@ -204,8 +203,7 @@
               "RelativeToolTip": "ViewModels\\MainPageViewModel.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAcwEEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T09:27:31.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T09:27:31.06Z"
             },
             {
               "$type": "Document",
@@ -217,8 +215,7 @@
               "RelativeToolTip": "Models\\FiveMinuteDrinkSalesData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T13:13:04.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-06T13:13:04.271Z"
             },
             {
               "$type": "Document",
@@ -230,8 +227,7 @@
               "RelativeToolTip": "Views\\BeursPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-05T20:26:46.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T20:26:46.649Z"
             },
             {
               "$type": "Document",
@@ -243,8 +239,7 @@
               "RelativeToolTip": "Views\\BeursPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T20:43:09.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T20:43:09.461Z"
             },
             {
               "$type": "Document",
@@ -256,8 +251,7 @@
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T20:46:50.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T20:46:50.245Z"
             },
             {
               "$type": "Document",
@@ -269,8 +263,7 @@
               "RelativeToolTip": "Views\\MainPage.xaml",
               "ViewState": "AQIAADkAAAAAAAAAAIBJwDMAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-05T08:47:36.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T08:47:36.921Z"
             },
             {
               "$type": "Document",
@@ -282,8 +275,7 @@
               "RelativeToolTip": "ViewModels\\ManageDrinksPageViewModel.cs",
               "ViewState": "AQIAAFkAAAAAAAAAAAAmwHYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T08:34:21.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T08:34:21.518Z"
             },
             {
               "$type": "Document",
@@ -295,8 +287,7 @@
               "RelativeToolTip": "GlobalUsings.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T10:50:42.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T10:50:42.446Z"
             },
             {
               "$type": "Document",
@@ -308,8 +299,7 @@
               "RelativeToolTip": "Views\\EditDrinkPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T21:31:29.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T21:31:29.484Z"
             },
             {
               "$type": "Document",
@@ -321,8 +311,7 @@
               "RelativeToolTip": "ViewModels\\EditDrinkPageViewModel.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwC8AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T21:27:02.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T21:27:02.598Z"
             },
             {
               "$type": "Document",
@@ -334,8 +323,7 @@
               "RelativeToolTip": "ViewModels\\AddDrinkPageViewModel.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAwwFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T21:35:39.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T21:35:39.643Z"
             },
             {
               "$type": "Document",
@@ -347,8 +335,7 @@
               "RelativeToolTip": "Views\\EditDrinkPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAEBVwA8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-04T21:27:53.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T21:27:53.685Z"
             },
             {
               "$type": "Document",

@@ -239,7 +239,7 @@ namespace BeursfuifChiroZevendonk.Services
                 if (currentSale != null && previousSale != null)
                 {
                     var percentageChange = CalculatePercentageChange(previousSale.QuantitySoldLastFiveMinutes, currentSale.QuantitySoldLastFiveMinutes);
-                    var adjustment = DetermineAdjustmentMagnitude(percentageChange, drink.MinPrice, drink.CurrentPrice, 0.25m); 
+                    var adjustment = DetermineAdjustmentMagnitude(percentageChange, 0.25m); 
                     var newPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, drink.CurrentPrice + adjustment));
                     drink.CurrentPrice = newPrice;
                 }
@@ -332,7 +332,7 @@ namespace BeursfuifChiroZevendonk.Services
             }
         }
 
-        private static decimal DetermineAdjustmentMagnitude(decimal percentageChange, decimal minPrice, decimal currentPrice, decimal interval)
+        private static decimal DetermineAdjustmentMagnitude(decimal percentageChange, decimal interval)
         {
             var random = new Random();
             var chance = random.Next(100);
