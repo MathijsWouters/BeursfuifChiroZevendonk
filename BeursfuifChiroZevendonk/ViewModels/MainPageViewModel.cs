@@ -19,14 +19,21 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private bool startFeestjeButtonEnabled = true;
 
         [ObservableProperty]
+        private Color crashButtonColor;
+        [ObservableProperty]
         private bool stopFeestjeButtonEnabled = false;
         private readonly IDispatcher dispatcher;
         private Timer countdownTimer;
         private Timer fiveMinuteTimer;
+        private Timer partyTimer;
         private const string FiveMinuteDataFile = "five_minute_drink_data.json";
         private DateTime lastDrinkAddedTime;
         [ObservableProperty]
         private bool _isBeursPageOpen;
+        [ObservableProperty]
+        private bool _isCrashActive;
+        [ObservableProperty]
+        private bool _afterCrashTick;
 
         [ObservableProperty]
         private string tenSecondTimerText = "Timer: 10 seconds";
@@ -38,9 +45,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
         public ObservableCollection<Drink> Drinks => _drinksService.Drinks;
         private readonly DrinksDataService _drinksService;
         public ICommand DrinkSelectedCommand { get; }
+        public ICommand CrashCommand { get; }
         public MainPageViewModel(IDispatcher dispatcher, DrinksDataService drinksService)
         {
             DrinkSelectedCommand = new RelayCommand<Drink>(AddDrinkToReceipt);
+            CrashCommand = new Command(ExecuteCrashCommand);
             _drinksService = drinksService;
             _isFeestjeActive = false;
             this.dispatcher = dispatcher;
@@ -62,6 +71,10 @@ namespace BeursfuifChiroZevendonk.ViewModels
             fiveMinuteTimer = new Timer(300000); 
             fiveMinuteTimer.Elapsed += HandleFiveMinuteTick;
             fiveMinuteTimer.AutoReset = true;
+
+            partyTimer = new Timer(500); 
+            partyTimer.Elapsed += (sender, e) => PartyTime(); 
+            partyTimer.AutoReset = true;
 
         }
         private void HandleCountdownTick(object sender, ElapsedEventArgs e)
@@ -85,16 +98,50 @@ namespace BeursfuifChiroZevendonk.ViewModels
         }
         private async void HandleFiveMinuteTick(object sender, ElapsedEventArgs e)
         {
-            await _drinksService.ProcessFiveMinuteSalesDataAsync(_drinksService.Drinks.ToList());
+            if (_isCrashActive)
+            {
+                partyTimer.Start();
+                await _drinksService.ProcessCrashDataAsync(_drinksService.Drinks.ToList());
+                _isCrashActive = false;
+                _afterCrashTick = true;
+            }
+            else if (_afterCrashTick)
+            {
+                partyTimer.Stop(); 
+                CrashButtonColor = Colors.DarkSlateGray; 
+                OnPropertyChanged(nameof(CrashButtonColor));
+                await _drinksService.ProcessPostCrashDataAsync(_drinksService.Drinks.ToList());
+                _afterCrashTick = false;
+            }
+            else
+            {
+                await _drinksService.ProcessFiveMinuteSalesDataAsync(_drinksService.Drinks.ToList());
+            }
             MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
-
-
             if (_isFeestjeActive)
             {
                 fiveMinuteTimer.Stop();
                 fiveMinuteTimer.Start();
             }
         }
+        private void PartyTime()
+        {
+            var random = new Random();
+            var color = Color.FromRgb(
+    random.Next(256) / 255.0,  
+    random.Next(256) / 255.0,  
+    random.Next(256) / 255.0
+            );
+
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                CrashButtonColor = color;
+                OnPropertyChanged(nameof(CrashButtonColor));
+            });
+
+                partyTimer.Start(); 
+        }
+
         private void ResetTimer()
         {
             countdownTimer.Stop();
@@ -195,6 +242,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [RelayCommand]
         private async Task NavigateToAddDrink()
         {
+            if (_drinksService.Drinks.Count >= 9)
+            {
+                await Shell.Current.DisplayAlert("Maximaal aantal drankjes bereikt", "Er kunnen maximaal 9 drankjes worden toegevoegd. Verwijder een drankje om een nieuwe toe te voegen.", "OK");
+                return;
+            }
             try
             {
                 var addDrinkVm = new AddDrinkPageViewModel(_drinksService);
@@ -236,7 +288,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [RelayCommand]
         private async Task StopFeestje()
         {
-            bool confirmStop = await Shell.Current.DisplayAlert("Confirm", "Are you sure you want to stop? There is no going back.", "Yes", "No");
+            bool confirmStop = await Shell.Current.DisplayAlert("Bevestig", "Ben je zeker dat je wilt stoppen?", "Ja", "Nee");
             if (!confirmStop) return;
             _isFeestjeActive = false;
             StartFeestjeButtonColor = Colors.DarkSlateGray;
@@ -283,6 +335,14 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 await SaveReceiptData(); 
                 await _drinksService.ConvertSalesDataToExcelAsync("sales_data.json", "Beursfuif.xlsx");
             }
+        }
+        private void ExecuteCrashCommand()
+        {
+            if (_isFeestjeActive)
+            {
+                _isCrashActive = true;
+            }
+            
         }
 
     }

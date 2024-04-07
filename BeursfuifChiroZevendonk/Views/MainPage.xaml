@@ -154,6 +154,10 @@
            FontAttributes="Bold"
            FontSize="Medium"/>
         </Grid>
+        <Button Text="Crash" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="End"
+        Command="{Binding CrashCommand}"
+        BackgroundColor="{Binding CrashButtonColor}"
+        Style="{StaticResource NavigationButtonStyle}" HeightRequest="80" WidthRequest="300" Margin="10"/>
 
     </Grid>
 </ContentPage>

@@ -33,12 +33,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
 
         private async void OnDeleteDrink(Drink drink)
         {
-            // Ask the user for confirmation before deleting the drink
             bool isUserSure = await App.Current.MainPage.DisplayAlert(
-                "Confirm",
-                "Are you sure you want to delete this drink?",
-                "Yes",
-                "No"
+                "Bevestiging",
+                "Ben je zeker dat je dit drankje wilt verwijderen?",
+                "Ja",
+                "Nee"
             );
 
             if (isUserSure)
@@ -69,11 +68,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 bool result = await _drinksService.SaveDrinksLayoutAsync(Drinks, filename);
                 if (result)
                 {
-                    await Application.Current.MainPage.DisplayAlert("Success", "Layout saved successfully.", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Success", "Lay-out succesvol opgeslagen!", "OK");
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to save the layout.", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Error", "Niet geslaagd in lay-out opslaan.", "OK");
                 }
             }
         }
@@ -92,12 +91,12 @@ namespace BeursfuifChiroZevendonk.ViewModels
                     {
                         Drinks.Add(drink);
                     }
-                    await Application.Current.MainPage.DisplayAlert("Success", "Layout loaded successfully.", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Success", "Lay-out succesvol geladen!", "OK");
                 }
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("No Layouts Found", "There are no saved layouts to load.", "OK");
+                await Application.Current.MainPage.DisplayAlert("Geen lay-outs", "Er zijn geen opgeslagen lay-outs om in te laden.", "OK");
             }
         }
         private async void OnDeleteLayout()
@@ -109,11 +108,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 bool isDeleted = await _drinksService.DeleteLayoutAsync(layoutToDelete);
                 if (isDeleted)
                 {
-                    await Application.Current.MainPage.DisplayAlert("Success", "Layout deleted successfully.", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Success", "Lay-out succesvol verwijderd!", "OK");
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to delete the layout.", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Error", "Niet gelukt om lay-out te verwijderen!", "OK");
                 }
             }
         }

@@ -379,7 +379,34 @@ namespace BeursfuifChiroZevendonk.Services
             var filePath = Path.Combine(FileSystem.AppDataDirectory, "historical_drink_prices.json");
             await File.WriteAllTextAsync(filePath, json);
         }
+        public async Task ProcessCrashDataAsync(List<Drink> drinks)
+        {
+            foreach (var drink in drinks)
+            {
+                var randomChance = new Random().Next(100);
+                if (randomChance < 20) 
+                {
+                    drink.CurrentPrice = drink.MinPrice + 0.25m; 
+                }
+                else
+                {
+                    drink.CurrentPrice = drink.MinPrice; 
+                }
+            }
+            await ResetCurrentSalesDataAsync();
+        }
 
+        public async Task ProcessPostCrashDataAsync(List<Drink> drinks)
+        {
+            foreach (var drink in drinks)
+            {
+                decimal averagePrice = (drink.MinPrice + drink.MaxPrice) / 2;
+
+                decimal adjustment = new Random().NextDouble() < 0.5 ? -0.25m : 0.25m;
+                drink.CurrentPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, averagePrice + adjustment));
+            }
+            await ResetCurrentSalesDataAsync();
+        }
     }
 
 }

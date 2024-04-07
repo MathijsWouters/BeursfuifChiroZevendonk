@@ -55,7 +55,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
         }
         private async Task DisplayConfirmation()
         {
-            await Application.Current.MainPage.DisplayAlert("Success", "Drink added successfully", "OK");
+            await Application.Current.MainPage.DisplayAlert("Success", "Drankje succesvol toegevoegd!", "OK");
         }
         protected override void OnPropertyChanged(PropertyChangedEventArgs e)
         {
@@ -86,6 +86,10 @@ namespace BeursfuifChiroZevendonk.ViewModels
         {
             MaxPrice = Math.Max(0, MaxPrice - 0.25m);
         }
-
+        [RelayCommand]
+        private static async Task NavigateToMainPage()
+        {
+            await Shell.Current.GoToAsync("//MainPage");
+        }
     }
 }
