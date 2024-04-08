@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BeursfuifChiroZevendonk</id>
+    <version>1.0.0</version>
+    <authors>BeursfuifChiroZevendonk</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="a4c7fd382447a8ff1a41eb84e330c86e62a2fb0e" />
+    <dependencies>
+      <group targetFramework="net8.0-android34.0">
+        <dependency id="ClosedXML" version="0.102.2" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="LiveChartsCore.SkiaSharpView.Maui" version="2.0.0-rc2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="SharpHook" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SharpHook.Reactive" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp" version="2.88.7" exclude="Build,Analyzers" />
+        <dependency id="nor0x.Maui.ColorPicker" version="1.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-ios17.2">
+        <dependency id="ClosedXML" version="0.102.2" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="LiveChartsCore.SkiaSharpView.Maui" version="2.0.0-rc2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="SharpHook" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SharpHook.Reactive" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp" version="2.88.7" exclude="Build,Analyzers" />
+        <dependency id="nor0x.Maui.ColorPicker" version="1.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-maccatalyst17.2">
+        <dependency id="ClosedXML" version="0.102.2" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="LiveChartsCore.SkiaSharpView.Maui" version="2.0.0-rc2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="SharpHook" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SharpHook.Reactive" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp" version="2.88.7" exclude="Build,Analyzers" />
+        <dependency id="nor0x.Maui.ColorPicker" version="1.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-windows10.0.19041">
+        <dependency id="ClosedXML" version="0.102.2" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="LiveChartsCore.SkiaSharpView.Maui" version="2.0.0-rc2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="SharpHook" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SharpHook.Reactive" version="5.3.2" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp" version="2.88.7" exclude="Build,Analyzers" />
+        <dependency id="nor0x.Maui.ColorPicker" version="1.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-android\BeursfuifChiroZevendonk.runtimeconfig.json" target="lib\net8.0-android34.0\BeursfuifChiroZevendonk.runtimeconfig.json" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-android\BeursfuifChiroZevendonk.dll" target="lib\net8.0-android34.0\BeursfuifChiroZevendonk.dll" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-android\BeursfuifChiroZevendonk.xml" target="lib\net8.0-android34.0\BeursfuifChiroZevendonk.xml" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-ios\iossimulator-x64\BeursfuifChiroZevendonk.runtimeconfig.json" target="lib\net8.0-ios17.2\BeursfuifChiroZevendonk.runtimeconfig.json" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-ios\iossimulator-x64\BeursfuifChiroZevendonk.dll" target="lib\net8.0-ios17.2\BeursfuifChiroZevendonk.dll" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\BeursfuifChiroZevendonk.runtimeconfig.json" target="lib\net8.0-maccatalyst17.2\BeursfuifChiroZevendonk.runtimeconfig.json" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\BeursfuifChiroZevendonk.dll" target="lib\net8.0-maccatalyst17.2\BeursfuifChiroZevendonk.dll" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.runtimeconfig.json" target="lib\net8.0-windows10.0.19041\BeursfuifChiroZevendonk.runtimeconfig.json" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.dll" target="lib\net8.0-windows10.0.19041\BeursfuifChiroZevendonk.dll" />
+    <file src="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net8.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>

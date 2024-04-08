@@ -40,6 +40,7 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.Name">
             <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.name"/>
@@ -79,6 +80,12 @@
         </member>
         <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMaxPriceCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.DecreaseMaxPrice"/>.</summary>
+        </member>
+        <member name="F:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.navigateToMainPageCommand">
+            <summary>The backing field for <see cref="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.NavigateToMainPageCommand"/>.</summary>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.NavigateToMainPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BeursfuifChiroZevendonk.ViewModels.AddDrinkPageViewModel.NavigateToMainPage"/>.</summary>
         </member>
         <member name="T:BeursfuifChiroZevendonk.ViewModels.BaseViewModel">
             <inheritdoc/>
@@ -143,11 +150,20 @@
         <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StartFeestjeButtonEnabled">
             <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.startFeestjeButtonEnabled"/>
         </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.CrashButtonColor">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.crashButtonColor"/>
+        </member>
         <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.StopFeestjeButtonEnabled">
             <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.stopFeestjeButtonEnabled"/>
         </member>
         <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.IsBeursPageOpen">
             <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel._isBeursPageOpen"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.IsCrashActive">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel._isCrashActive"/>
+        </member>
+        <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.AfterCrashTick">
+            <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel._afterCrashTick"/>
         </member>
         <member name="P:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.TenSecondTimerText">
             <inheritdoc cref="F:BeursfuifChiroZevendonk.ViewModels.MainPageViewModel.tenSecondTimerText"/>
@@ -230,11 +246,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StartFeestjeButtonEnabled">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StartFeestjeButtonEnabled" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CrashButtonColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CrashButtonColor" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StopFeestjeButtonEnabled">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StopFeestjeButtonEnabled" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBeursPageOpen">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBeursPageOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsCrashActive">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsCrashActive" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AfterCrashTick">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AfterCrashTick" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TenSecondTimerText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TenSecondTimerText" generated properties.</summary>
@@ -287,11 +312,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StartFeestjeButtonEnabled">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StartFeestjeButtonEnabled" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CrashButtonColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CrashButtonColor" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StopFeestjeButtonEnabled">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StopFeestjeButtonEnabled" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBeursPageOpen">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBeursPageOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsCrashActive">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsCrashActive" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AfterCrashTick">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AfterCrashTick" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TenSecondTimerText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TenSecondTimerText" generated properties.</summary>
