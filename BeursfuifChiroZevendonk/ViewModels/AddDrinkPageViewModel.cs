@@ -45,12 +45,12 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 DrinkColorHex = this.ColorHex
             };
             _drinksService.Drinks.Add(newDrink);
+            MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
             await DisplayConfirmation();
 
             Name = string.Empty;
             MinPrice = 0;
             MaxPrice = 0;
-            // Navigate back to the main page
             await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
         }
         private async Task DisplayConfirmation()

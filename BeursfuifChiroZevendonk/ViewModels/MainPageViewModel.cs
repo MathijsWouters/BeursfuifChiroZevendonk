@@ -242,6 +242,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [RelayCommand]
         private async Task NavigateToAddDrink()
         {
+            if (_isFeestjeActive) 
+            {
+                await Shell.Current.DisplayAlert("Feestje actief","Het is niet mogelijk drankjes toe te voegen als het feestje actief is.","OK");
+                return;
+            } 
             if (_drinksService.Drinks.Count >= 9)
             {
                 await Shell.Current.DisplayAlert("Maximaal aantal drankjes bereikt", "Er kunnen maximaal 9 drankjes worden toegevoegd. Verwijder een drankje om een nieuwe toe te voegen.", "OK");
@@ -305,6 +310,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
             {
                 drink.ClearHistoricalPrices();
             }
+            await Shell.Current.DisplayAlert("Einde feestje", "Het feestje is gestopt. Je gegevens zitten in je downloads folder.", "OK");
+
         }
         private async void OnTenSecondCountdownCompleted()
         {
