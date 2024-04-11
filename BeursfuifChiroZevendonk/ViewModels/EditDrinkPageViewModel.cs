@@ -16,6 +16,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private string name;
 
         [ObservableProperty]
+        private double colorPickerX;
+
+        [ObservableProperty]
+        private double colorPickerY;
+        [ObservableProperty]
         private decimal minPrice;
 
         [ObservableProperty]
@@ -43,8 +48,6 @@ namespace BeursfuifChiroZevendonk.ViewModels
             _originalDrink.Name = this.Name;
             _originalDrink.MinPrice = this.MinPrice;
             _originalDrink.MaxPrice = this.MaxPrice;
-
-            // Assuming there's a method to update the drink in the data service
             _drinksService.UpdateDrink(_originalDrink);
 
             await DisplayConfirmation("Success", "Drink updated successfully");

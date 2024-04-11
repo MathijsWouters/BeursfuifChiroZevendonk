@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BeursfuifChiroZevendonk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8e52c1f010628ef0289dbf1ce6591a890ec2ceb2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e21198ea222d91b390b5107f511403f793fd304a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BeursfuifChiroZevendonk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BeursfuifChiroZevendonk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

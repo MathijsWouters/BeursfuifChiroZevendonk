@@ -5,6 +5,12 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+#if WINDOWS
+using Windows.Storage.Pickers;
+using System.Runtime.InteropServices;
+using Windows.Storage;
+#endif
+
 
 namespace BeursfuifChiroZevendonk.Services
 {
@@ -150,26 +156,43 @@ namespace BeursfuifChiroZevendonk.Services
                 worksheet.Cell("C1").Value = "Total Income";
 
                 decimal totalIncome = 0;
-                int currentRow = 2; 
+                int currentRow = 2;
                 foreach (var data in salesDataList)
                 {
                     worksheet.Cell($"A{currentRow}").Value = data.DrinkName;
                     worksheet.Cell($"B{currentRow}").Value = data.TotalSold;
                     worksheet.Cell($"C{currentRow}").Value = data.TotalIncome;
-                    totalIncome += data.TotalIncome; 
+                    totalIncome += data.TotalIncome;
                     currentRow++;
                 }
                 worksheet.Cell($"A{currentRow}").Value = "Total Income";
                 worksheet.Cell($"C{currentRow}").Value = totalIncome;
-                worksheet.Range($"A{currentRow}:B{currentRow}").Merge(); 
+                worksheet.Range($"A{currentRow}:B{currentRow}").Merge();
+#if WINDOWS
+        var folderPicker = new FolderPicker();
+        folderPicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+        folderPicker.FileTypeFilter.Add("*");
 
-                var downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
-                var excelFilePath = Path.Combine(downloadsPath, targetFileName);
-                if (!Directory.Exists(downloadsPath))
-                {
-                    Directory.CreateDirectory(downloadsPath);
-                }
-                workbook.SaveAs(excelFilePath);
+        IntPtr hwnd = GetActiveWindow();
+        WinRT.Interop.InitializeWithWindow.Initialize(folderPicker, hwnd);
+
+        var folder = await folderPicker.PickSingleFolderAsync();
+        if (folder != null)
+        {
+            var file = await folder.CreateFileAsync(targetFileName, CreationCollisionOption.ReplaceExisting);
+            using (var stream = await file.OpenStreamForWriteAsync())
+            {
+                workbook.SaveAs(stream);
+                stream.Close();
+            }
+            await Application.Current.MainPage.DisplayAlert("Success", "Data succesvol opgeslagen in de desbetreffende folder.", "OK");
+        }
+        else
+        {
+            await Application.Current.MainPage.DisplayAlert("Error", "Niet geslaagd in het opslaan van data.", "OK");
+        }
+#endif
+
                 var jsonFilePath = Path.Combine(FileSystem.AppDataDirectory, sourceFileName);
                 if (File.Exists(jsonFilePath))
                 {
@@ -177,7 +200,18 @@ namespace BeursfuifChiroZevendonk.Services
                 }
             }
         }
-
+#if WINDOWS
+private IntPtr GetActiveWindow()
+{
+    var window = Application.Current.Windows.FirstOrDefault();
+    if (window?.Handler?.PlatformView is Microsoft.UI.Xaml.Window uiWindow)
+    {
+        var windowHandle = WinRT.Interop.WindowNative.GetWindowHandle(uiWindow);
+        return windowHandle;
+    }
+    return IntPtr.Zero;
+}
+#endif
         public async Task DeleteSalesDataAsync(string filename)
         {
             var folderPath = FileSystem.AppDataDirectory;

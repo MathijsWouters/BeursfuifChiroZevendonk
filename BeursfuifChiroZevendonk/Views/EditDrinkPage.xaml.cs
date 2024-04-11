@@ -7,4 +7,5 @@ public partial class EditDrinkPage : ContentPage
 		InitializeComponent();
 		BindingContext = viewModel;
 	}
+
 }
