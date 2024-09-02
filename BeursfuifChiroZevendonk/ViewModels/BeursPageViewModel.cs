@@ -1,4 +1,5 @@
 ﻿using LiveChartsCore;
+using LiveChartsCore.Measure;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
 using System.Collections.Generic;
@@ -66,7 +67,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
                     Name = drink.Name,
                     Fill = new SolidColorPaint(SKColor.Parse(drink.DrinkColorHex)),
                     MaxBarWidth = double.NaN, 
-                    Padding = 30 
+                    Padding = 30
                 };
 
                 series.Add(columnSeries);
