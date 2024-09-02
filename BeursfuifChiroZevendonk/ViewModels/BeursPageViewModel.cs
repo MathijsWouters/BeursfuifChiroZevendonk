@@ -1,12 +1,10 @@
 ﻿using LiveChartsCore;
+using LiveChartsCore.Measure;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BeursfuifChiroZevendonk.ViewModels
 {
@@ -16,9 +14,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         public ObservableCollection<ISeries> Series { get; set; } = new ObservableCollection<ISeries>();
 
         private readonly DrinksDataService _drinksService;
-        public IEnumerable<Axis> XAxes { get; set; }
         public IEnumerable<Axis> YAxes { get; set; }
-
+        public IEnumerable<Axis> XAxes { get; set; }
 
         public BeursPageViewModel(DrinksDataService drinksService)
         {
@@ -29,6 +26,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             });
             UpdateChart();
         }
+
         private void InitializeAxes()
         {
             decimal highestMaxPrice = Drinks.Max(drink => drink.MaxPrice) + 0.25m;
@@ -45,26 +43,16 @@ namespace BeursfuifChiroZevendonk.ViewModels
             TextSize = 20
         }
             };
-
-            var now = DateTime.Now;
-            var labels = new List<string>();
-            for (int i = 11; i >= 0; i--)
-            {
-                labels.Add(now.AddMinutes(-5 * i).ToString("HH:mm"));
-            }
-            labels.Add(now.ToString("HH:mm"));
-
             XAxes = new Axis[]
-            {
+{
         new Axis
         {
-            Labels = labels.ToArray(),
-            LabelsPaint = new SolidColorPaint(SKColors.White),
-            TextSize = 20,
-            LabelsRotation = 15
+            IsVisible = false,
         }
-            };
+};
+
         }
+
 
         public void UpdateChart()
         {
@@ -73,22 +61,16 @@ namespace BeursfuifChiroZevendonk.ViewModels
 
             foreach (var drink in Drinks)
             {
-                var lastHourPrices = drink.HistoricalPrices.Skip(Math.Max(0, drink.HistoricalPrices.Count - 12)).ToList();
-                if (!lastHourPrices.Contains(drink.CurrentPrice))
+                var columnSeries = new ColumnSeries<decimal>
                 {
-                    lastHourPrices.Add(drink.CurrentPrice);
-                }
-                var lineSeries = new LineSeries<decimal>
-                {
-                    Values = lastHourPrices.ToArray(),
+                    Values = new decimal[] { drink.CurrentPrice },
                     Name = drink.Name,
-                    Stroke = new SolidColorPaint(SKColor.Parse(drink.DrinkColorHex)) { StrokeThickness = 2 },
-                    Fill = new SolidColorPaint(SKColors.Transparent),
-                    GeometrySize = 0,
-                    LineSmoothness = 0.5
+                    Fill = new SolidColorPaint(SKColor.Parse(drink.DrinkColorHex)),
+                    MaxBarWidth = double.NaN, 
+                    Padding = 30
                 };
 
-                series.Add(lineSeries);
+                series.Add(columnSeries);
             }
 
             Series.Clear();
@@ -103,9 +85,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private void RefreshChart()
         {
             OnPropertyChanged(nameof(Series));
-            OnPropertyChanged(nameof(XAxes));
             OnPropertyChanged(nameof(YAxes));
+            OnPropertyChanged(nameof(XAxes));
         }
-
     }
 }
