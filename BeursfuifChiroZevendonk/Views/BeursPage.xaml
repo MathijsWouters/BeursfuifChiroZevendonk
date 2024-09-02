@@ -12,7 +12,9 @@
         <lvc:CartesianChart Series="{Binding Series}"
                     YAxes="{Binding YAxes}"
                     XAxes="{Binding XAxes}"
-                            Margin="5">
+                            Margin="0"
+                            Padding="0"
+                            >
         </lvc:CartesianChart>
         <ScrollView Grid.Row="1" Orientation="Horizontal">
             <CollectionView ItemsSource="{Binding Drinks}" 
