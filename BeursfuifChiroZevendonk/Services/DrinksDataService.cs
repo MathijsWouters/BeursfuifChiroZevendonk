@@ -230,18 +230,6 @@ private IntPtr GetActiveWindow()
                 }
             }
         }
-        public async Task InitializeFiveMinuteSalesDataWithRandomValuesAsync()
-        {
-            var random = new Random();
-            var initialData = Drinks.Select(drink => new FiveMinuteDrinkSalesData
-            {
-                DrinkName = drink.Name,
-                QuantitySoldLastFiveMinutes = random.Next(5, 15)
-            }).ToList();
-            var filePath = Path.Combine(FileSystem.AppDataDirectory, previousFiveMinuteDataFile);
-            var json = JsonSerializer.Serialize(initialData);
-            await File.WriteAllTextAsync(filePath, json);
-        }
 
         public async Task InitializeCurrentSalesDataAsync()
         {

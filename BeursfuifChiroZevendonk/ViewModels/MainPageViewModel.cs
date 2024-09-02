@@ -285,10 +285,11 @@ namespace BeursfuifChiroZevendonk.ViewModels
             StartFeestjeButtonEnabled = false;
             StopFeestjeButtonEnabled = true;
 
-            await _drinksService.InitializeFiveMinuteSalesDataWithRandomValuesAsync();
             await _drinksService.InitializeCurrentSalesDataAsync();
             fiveMinuteTimer.Start();
             MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
+            Debug.WriteLine($"AppDataDirectory: {FileSystem.AppDataDirectory}");
+
         }
         [RelayCommand]
         private async Task StopFeestje()

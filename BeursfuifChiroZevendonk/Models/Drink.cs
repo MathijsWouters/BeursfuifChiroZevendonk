@@ -42,7 +42,6 @@ namespace BeursfuifChiroZevendonk.Models
             MaxPrice = maxPrice;
             StartingPrice = CalculateStartingPrice();
             CurrentPrice = StartingPrice;
-            GenerateFakeHistoricalData();
             HistoricalPrices.Add(currentPrice);
         }
         protected override void OnPropertyChanged(PropertyChangedEventArgs e)
@@ -52,7 +51,6 @@ namespace BeursfuifChiroZevendonk.Models
             {
                 StartingPrice = CalculateStartingPrice();
                 CurrentPrice = StartingPrice;
-                GenerateFakeHistoricalData();
             }
             if (e.PropertyName == nameof(CurrentPrice))
             {
@@ -73,22 +71,6 @@ namespace BeursfuifChiroZevendonk.Models
         public void LogCurrentPrice()
         {
             HistoricalPrices.Add(CurrentPrice);
-        }
-        public void GenerateFakeHistoricalData()
-        {
-            HistoricalPrices.Clear(); 
-            for (int i = 12; i >= 0; i--)
-            {
-                var fakePrice = GenerateFakePrice(MinPrice, MaxPrice);
-                HistoricalPrices.Add(fakePrice);
-            }
-        }
-        private decimal GenerateFakePrice(decimal minPrice, decimal maxPrice)
-        {
-            var random = new Random();
-            var range = (double)(maxPrice - minPrice);
-            var fakePrice = minPrice + (decimal)(random.NextDouble() * range);
-            return RoundToNearestQuarter(fakePrice);
         }
     }
 }
