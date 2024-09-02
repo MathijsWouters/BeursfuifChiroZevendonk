@@ -13,8 +13,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         public ObservableCollection<ISeries> Series { get; set; } = new ObservableCollection<ISeries>();
 
         private readonly DrinksDataService _drinksService;
-        public IEnumerable<Axis> XAxes { get; set; }
         public IEnumerable<Axis> YAxes { get; set; }
+        public IEnumerable<Axis> XAxes { get; set; }
 
         public BeursPageViewModel(DrinksDataService drinksService)
         {
@@ -42,18 +42,14 @@ namespace BeursfuifChiroZevendonk.ViewModels
             TextSize = 20
         }
             };
-
             XAxes = new Axis[]
-                {
-                    new Axis
-                    {
-                        Labels = Drinks.Select(d => d.Name).ToArray(),
-                        LabelsPaint = new SolidColorPaint(SKColors.White),
-                        TextSize = 20,
-                        LabelsRotation = 0,
-                        SeparatorsPaint = new SolidColorPaint(SKColors.Transparent)
-                    }
-                };
+{
+        new Axis
+        {
+            IsVisible = false,
+        }
+};
+
         }
 
 
@@ -70,7 +66,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
                     Name = drink.Name,
                     Fill = new SolidColorPaint(SKColor.Parse(drink.DrinkColorHex)),
                     MaxBarWidth = double.NaN, 
-                    Padding = 50, 
+                    Padding = 30 
                 };
 
                 series.Add(columnSeries);
@@ -88,8 +84,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private void RefreshChart()
         {
             OnPropertyChanged(nameof(Series));
-            OnPropertyChanged(nameof(XAxes));
             OnPropertyChanged(nameof(YAxes));
+            OnPropertyChanged(nameof(XAxes));
         }
     }
 }

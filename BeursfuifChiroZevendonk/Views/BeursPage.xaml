@@ -8,23 +8,17 @@
              x:DataType="vm:BeursPageViewModel"
              Title="{Binding Title}">
 
-    <Grid RowDefinitions="3*,*">
-        <lvc:CartesianChart Series="{Binding Series}"
-                    YAxes="{Binding YAxes}"
-                    XAxes="{Binding XAxes}"
-                            Margin="0"
-                            Padding="0"
-                            >
-        </lvc:CartesianChart>
-        <ScrollView Grid.Row="1" Orientation="Horizontal">
+    <Grid RowDefinitions="0.6*,*,3*">
+
+        <ScrollView Grid.Row="1" Orientation="Horizontal" Margin="50,10,0,0">
             <CollectionView ItemsSource="{Binding Drinks}" 
                             HorizontalOptions="CenterAndExpand">
                 <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10" />
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="20"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Drink">
-                        <Frame BorderColor="White" CornerRadius="10" Padding="0" Margin="5,2.5" WidthRequest="150">
+                        <Frame BorderColor="White" CornerRadius="10" Padding="0" Margin="5,2.5" WidthRequest="165">
                             <Grid RowDefinitions="*,*,*">
                                 <Label Grid.Row="0"
                            Text="{Binding Name}"
@@ -49,6 +43,13 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </ScrollView>
+        <lvc:CartesianChart Series="{Binding Series}"
+            YAxes="{Binding YAxes}"
+            XAxes="{Binding XAxes}" 
+                    Margin="0,20,0,0"
+                    Padding="0"
+                    Grid.Row="2">
+        </lvc:CartesianChart>
     </Grid>
 </ContentPage>
 
