@@ -6,13 +6,35 @@
              x:DataType="vm:SettingsPageViewModel"
              Title="">
 
-    <!-- StackLayout to position the "Go to MainPage" button at the top -->
     <StackLayout Padding="20" Spacing="10">
+        <!-- Go to Main Page Button -->
         <Button Text="Go to MainPage"
                 Command="{Binding NavigateToMainPageCommand}"
                 Style="{StaticResource NavigationButtonStyle}"
                 HorizontalOptions="Start"
                 VerticalOptions="Start" />
 
+        <!-- Update Timer Settings -->
+        <Label Text="Update Timer (in seconds)" 
+               FontSize="Medium" 
+               FontAttributes="Bold"
+               TextColor="Black" />
+        <Entry Placeholder="Enter update interval (e.g., 300)" 
+               Text="{Binding UpdateInterval, Mode=TwoWay}" 
+               Keyboard="Numeric" />
+
+        <!-- Crash Timer Settings -->
+        <Label Text="Crash Timer (in seconds)" 
+               FontSize="Medium" 
+               FontAttributes="Bold"
+               TextColor="Black" />
+        <Entry Placeholder="Enter crash interval (e.g., 60)" 
+               Text="{Binding CrashInterval, Mode=TwoWay}" 
+               Keyboard="Numeric" />
+
+        <!-- Apply Settings Button -->
+        <Button Text="Apply Timer Settings" 
+                Command="{Binding ApplyTimerSettingsCommand}"
+                Style="{StaticResource NavigationButtonStyle}" />
     </StackLayout>
 </ContentPage>
