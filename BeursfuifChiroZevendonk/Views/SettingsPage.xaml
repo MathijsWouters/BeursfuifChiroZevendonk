@@ -4,9 +4,15 @@
              xmlns:vm="clr-namespace:BeursfuifChiroZevendonk.ViewModels"
              x:Class="BeursfuifChiroZevendonk.Views.SettingsPage"
              x:DataType="vm:SettingsPageViewModel"
-             Title="{Binding Title}">
+             Title="">
 
-    <StackLayout Padding="20">
-        <Label Text="Dark Mode" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+    <!-- StackLayout to position the "Go to MainPage" button at the top -->
+    <StackLayout Padding="20" Spacing="10">
+        <Button Text="Go to MainPage"
+                Command="{Binding NavigateToMainPageCommand}"
+                Style="{StaticResource NavigationButtonStyle}"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" />
+
     </StackLayout>
 </ContentPage>

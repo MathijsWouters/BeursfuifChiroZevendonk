@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,18 +11,19 @@ namespace BeursfuifChiroZevendonk.ViewModels
     {
         public SettingsPageViewModel()
         {
-            Title = "Settings";
         }
-
-        // Add settings properties here
-        // Example:
-        [ObservableProperty]
-        private bool isDarkModeEnabled;
-
         [RelayCommand]
-        private void ToggleDarkMode()
+        private async Task NavigateToMainPage()
         {
-            IsDarkModeEnabled = !IsDarkModeEnabled;
+            try
+            {
+                var uri = new Uri($"///{nameof(MainPage)}", UriKind.Relative);
+                await Shell.Current.GoToAsync(uri);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
         }
     }
 }
