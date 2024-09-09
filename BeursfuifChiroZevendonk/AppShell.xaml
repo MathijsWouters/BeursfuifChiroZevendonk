@@ -23,5 +23,9 @@
     Title="Manage drinks"
     ContentTemplate="{DataTemplate views:ManageDrinksPage}"
     Route="ManageDrinksPage" />
+    <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate views:SettingsPage}"
+        Route="SettingsPage" />
 
 </Shell>

@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ViewModels"
   ],
+  "SelectedNode": "\\MauiProgram.cs",
   "PreviewInSolutionExplorer": false
 }

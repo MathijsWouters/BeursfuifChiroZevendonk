@@ -278,6 +278,20 @@ namespace BeursfuifChiroZevendonk.ViewModels
             }
         }
         [RelayCommand]
+        private async Task NavigateToSettings()
+        {
+            try
+            {
+                var settingsVm = new SettingsPageViewModel();
+                var uri = new Uri($"///{nameof(SettingsPage)}?ViewModel={settingsVm.GetType().FullName}", UriKind.Relative);
+                await Shell.Current.GoToAsync(uri);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+        }
+        [RelayCommand]
         private async Task StartFeestje()
         {
             _isFeestjeActive = true;

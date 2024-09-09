@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\services\\drinksdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:services\\drinksdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\views\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:views\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\viewmodels\\editdrinkpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:viewmodels\\editdrinkpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\viewmodels\\beurspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:viewmodels\\beurspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\views\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:views\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\platforms\\windows\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}",
-      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:platforms\\windows\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}"
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\views\\editdrinkpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:views\\editdrinkpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\resources\\raw\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:resources\\raw\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\viewmodels\\settingspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:viewmodels\\settingspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\services\\keyboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:services\\keyboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\services\\drinksdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:services\\drinksdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|c:\\users\\gebruiker\\documents\\chiro\\beursfuifchirozevendonk\\beursfuifchirozevendonk\\models\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD1B8A4-EE2A-4748-A305-676C86FD43DA}|BeursfuifChiroZevendonk.csproj|solutionrelative:models\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,19 +62,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-09T17:09:21.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditDrinkPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\EditDrinkPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\EditDrinkPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\EditDrinkPage.xaml.cs",
+              "RelativeToolTip": "Views\\EditDrinkPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:06:40.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "Views\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:06:36.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SettingsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\SettingsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\SettingsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\SettingsPage.xaml.cs",
+              "RelativeToolTip": "Views\\SettingsPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:04:25.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SettingsPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\SettingsPageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\SettingsPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\SettingsPageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\SettingsPageViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:03:30.89Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GlobalUsings.cs",
-              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\GlobalUsings.cs",
-              "RelativeDocumentMoniker": "GlobalUsings.cs",
-              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\GlobalUsings.cs",
-              "RelativeToolTip": "GlobalUsings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAvAAAA",
+              "Title": "SettingsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\SettingsPage.xaml",
+              "RelativeDocumentMoniker": "Views\\SettingsPage.xaml",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\SettingsPage.xaml",
+              "RelativeToolTip": "Views\\SettingsPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-09T17:03:04.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Views\\MainPage.xaml",
+              "RelativeToolTip": "Views\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAACCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-09T17:00:19.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:39:58.793Z",
+              "WhenOpened": "2024-09-09T16:59:54.161Z",
               "EditorCaption": ""
             },
             {
@@ -65,86 +180,61 @@
               "RelativeDocumentMoniker": "ViewModels\\MainPageViewModel.cs",
               "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\MainPageViewModel.cs",
               "RelativeToolTip": "ViewModels\\MainPageViewModel.cs",
-              "ViewState": "AQIAAB8BAAAAAAAAAAAAADABAABJAAAA",
+              "ViewState": "AQIAAAQBAAAAAAAAAAAUwB8BAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T09:27:31.06Z",
+              "WhenOpened": "2024-09-09T16:56:42.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditDrinkPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\EditDrinkPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\EditDrinkPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\EditDrinkPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\EditDrinkPageViewModel.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAWwDEAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T21:27:02.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appicon.svg",
-              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Resources\\raw\\appicon.svg",
-              "RelativeDocumentMoniker": "Resources\\raw\\appicon.svg",
-              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Resources\\raw\\appicon.svg",
-              "RelativeToolTip": "Resources\\raw\\appicon.svg",
+              "DocumentIndex": 10,
+              "Title": "KeyboardService.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Services\\KeyboardService.cs",
+              "RelativeDocumentMoniker": "Services\\KeyboardService.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Services\\KeyboardService.cs",
+              "RelativeToolTip": "Services\\KeyboardService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-04-10T20:28:24.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appicon.svg",
-              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Resources\\AppIcon\\appicon.svg",
-              "RelativeDocumentMoniker": "Resources\\AppIcon\\appicon.svg",
-              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Resources\\AppIcon\\appicon.svg",
-              "RelativeToolTip": "Resources\\AppIcon\\appicon.svg",
-              "ViewState": "AQIAAIoBAAAAAAAAAAAtwB4AAABKAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-04-10T20:28:01.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BeursPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\BeursPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\BeursPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\ViewModels\\BeursPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\BeursPageViewModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T20:29:13.132Z",
+              "WhenOpened": "2024-09-09T16:56:26.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "DrinksDataService.cs",
               "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Services\\DrinksDataService.cs",
               "RelativeDocumentMoniker": "Services\\DrinksDataService.cs",
               "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Services\\DrinksDataService.cs",
               "RelativeToolTip": "Services\\DrinksDataService.cs",
-              "ViewState": "AQIAALEAAAAAAAAAAAAkwMQAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T08:39:31.251Z",
+              "WhenOpened": "2024-09-09T16:56:24.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Package.appxmanifest",
-              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Platforms\\Windows\\Package.appxmanifest",
-              "RelativeDocumentMoniker": "Platforms\\Windows\\Package.appxmanifest",
-              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Platforms\\Windows\\Package.appxmanifest",
-              "RelativeToolTip": "Platforms\\Windows\\Package.appxmanifest",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001793|",
-              "WhenOpened": "2024-04-08T13:41:23.347Z",
+              "DocumentIndex": 7,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwCkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T16:55:23.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Drink.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Models\\Drink.cs",
+              "RelativeDocumentMoniker": "Models\\Drink.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\chiro\\BeursfuifChiroZevendonk\\BeursfuifChiroZevendonk\\Models\\Drink.cs",
+              "RelativeToolTip": "Models\\Drink.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T16:56:18.504Z",
               "EditorCaption": ""
             }
           ]
