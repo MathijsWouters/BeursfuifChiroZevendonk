@@ -446,10 +446,11 @@ private IntPtr GetActiveWindow()
                 decimal averagePrice = (drink.MinPrice + drink.MaxPrice) / 2;
 
                 decimal adjustment = new Random().NextDouble() < 0.5 ? -0.25m : 0.25m;
-                drink.CurrentPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, averagePrice + adjustment));
+                drink.CurrentPrice = SnapToInterval(Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, averagePrice + adjustment)), 0.25m); 
             }
             await ResetCurrentSalesDataAsync();
         }
+
     }
 
 }

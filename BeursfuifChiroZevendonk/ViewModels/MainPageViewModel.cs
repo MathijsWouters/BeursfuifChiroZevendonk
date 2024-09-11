@@ -155,6 +155,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
 
             CrashButtonColor = Colors.DarkSlateGray;
             OnPropertyChanged(nameof(CrashButtonColor));
+            MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
 
             if (_isFeestjeActive)
             {
@@ -334,11 +335,20 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [RelayCommand]
         private async Task StartFeestje()
         {
+            if (updateTimer == null || updateTimer.Interval == 100 ||
+                crashTimer == null || crashTimer.Interval == 100)
+            {
+                await Shell.Current.DisplayAlert(
+                    "Timers Niet Geconfigureerd",
+                    "De timers voor updates en crashes moeten zijn ingesteld voordat je het feestje kunt starten.",
+                    "OK");
+                return; 
+            }
+
             _isFeestjeActive = true;
             StartFeestjeButtonColor = Colors.Green;
             StartFeestjeButtonEnabled = false;
             StopFeestjeButtonEnabled = true;
-
             await _drinksService.InitializePreviousSalesDataAsync();
             await _drinksService.InitializeCurrentSalesDataAsync();
             updateTimer.Start();
@@ -346,6 +356,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             Debug.WriteLine($"AppDataDirectory: {FileSystem.AppDataDirectory}");
 
         }
+
         [RelayCommand]
         private async Task StopFeestje()
         {
@@ -404,6 +415,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
             if (_isFeestjeActive)
             {
                 _isCrashActive = true;
+                CrashButtonColor = Colors.Red;
+                OnPropertyChanged(nameof(CrashButtonColor));
             }
             
         }

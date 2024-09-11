@@ -18,7 +18,7 @@
         <Label Text="Update Timer (in seconds)" 
                FontSize="Medium" 
                FontAttributes="Bold"
-               TextColor="Black" />
+               TextColor="White" />
         <Entry Placeholder="Enter update interval (e.g., 300)" 
                Text="{Binding UpdateInterval, Mode=TwoWay}" 
                Keyboard="Numeric" />
@@ -27,7 +27,7 @@
         <Label Text="Crash Timer (in seconds)" 
                FontSize="Medium" 
                FontAttributes="Bold"
-               TextColor="Black" />
+               TextColor="White" />
         <Entry Placeholder="Enter crash interval (e.g., 60)" 
                Text="{Binding CrashInterval, Mode=TwoWay}" 
                Keyboard="Numeric" />
