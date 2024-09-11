@@ -8,7 +8,7 @@
              x:DataType="vm:BeursPageViewModel"
              Title="{Binding Title}">
 
-    <Grid RowDefinitions="0.75*,*,3*">
+    <Grid RowDefinitions="0.6*,0.2*,*,3*">
 
         <Image Grid.Row="0"
                Source="banner.jfif"
@@ -17,8 +17,16 @@
                VerticalOptions="FillAndExpand"
                Margin="0"
                />
+        <ProgressBar Grid.Row="1"
+                     Progress="{Binding ProgressValue}"
+                     HeightRequest="20"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Center"
+                     Margin="5"
+                     BackgroundColor="LightGray"
+                     ProgressColor="Purple" />
 
-        <ScrollView Grid.Row="1" Orientation="Horizontal" Margin="50,10,0,0">
+        <ScrollView Grid.Row="2" Orientation="Horizontal" Margin="50,10,0,0">
             <CollectionView ItemsSource="{Binding Drinks}" 
                             HorizontalOptions="CenterAndExpand">
                 <CollectionView.ItemsLayout>
@@ -56,7 +64,7 @@
             XAxes="{Binding XAxes}"
                     Margin="0,20,0,0"
                     Padding="0"
-                    Grid.Row="2">
+                    Grid.Row="3">
         </lvc:CartesianChart>
     </Grid>
 </ContentPage>

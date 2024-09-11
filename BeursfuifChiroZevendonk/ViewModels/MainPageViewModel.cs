@@ -23,10 +23,14 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [ObservableProperty]
         private bool stopFeestjeButtonEnabled = false;
         private readonly IDispatcher dispatcher;
+        [ObservableProperty]
+        private double progressValue;
         private Timer countdownTimer;
         private Timer updateTimer;
         private Timer crashTimer;
         private Timer partyTimer;
+        private double updateIntervalInSeconds;
+        private double crashIntervalInSeconds;
         private const string FiveMinuteDataFile = "five_minute_drink_data.json";
         private DateTime lastDrinkAddedTime;
         [ObservableProperty]
@@ -78,12 +82,31 @@ namespace BeursfuifChiroZevendonk.ViewModels
             partyTimer.AutoReset = true;
 
         }
+        private void StartProgressBarForUpdate()
+        {
+            if (updateIntervalInSeconds <= 0) return;
+
+
+            double durationMilliseconds = updateIntervalInSeconds * 1000;
+            MessagingCenter.Send(this, "ProgressUpdateDuration", durationMilliseconds);
+        }
+
+        private void StartProgressBarForCrash()
+        {
+            if (crashIntervalInSeconds <= 0) return;
+
+            double durationMilliseconds = crashIntervalInSeconds * 1000;
+            MessagingCenter.Send(this, "ProgressCrashDuration", durationMilliseconds);
+        }
+
+
         public void SetUpdateInterval(double seconds)
         {
             if (updateTimer != null)
             {
                 updateTimer.Stop(); 
-                updateTimer.Interval = seconds * 1000; 
+                updateTimer.Interval = seconds * 1000;
+                updateIntervalInSeconds = seconds;
                 if (_isFeestjeActive)
                 {
                     updateTimer.Start(); 
@@ -95,7 +118,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
             if (crashTimer != null)
             {
                 crashTimer.Stop(); 
-                crashTimer.Interval = seconds * 1000; 
+                crashTimer.Interval = seconds * 1000;
+                crashIntervalInSeconds = seconds;   
                 if (_isFeestjeActive)
                 {
                     crashTimer.Start(); 
@@ -127,6 +151,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             {
                 Debug.WriteLine($"[{DateTime.Now}] Crash detected - switching to crash mode...");
                 crashTimer.Start();
+                StartProgressBarForCrash();
                 await _drinksService.ProcessCrashDataAsync(_drinksService.Drinks.ToList());
                 updateTimer.Stop();
                 partyTimer.Start();
@@ -134,6 +159,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             else
             {
                 Debug.WriteLine($"[{DateTime.Now}] Regular update triggered...");
+                StartProgressBarForUpdate();
                 await _drinksService.ProcessFiveMinuteSalesDataAsync(_drinksService.Drinks.ToList());
             }
 
@@ -161,6 +187,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             {
                 crashTimer.Stop();
                 updateTimer.Start();
+                StartProgressBarForUpdate();
             }
         }
 
@@ -352,6 +379,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             await _drinksService.InitializePreviousSalesDataAsync();
             await _drinksService.InitializeCurrentSalesDataAsync();
             updateTimer.Start();
+            StartProgressBarForUpdate();
             MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
             Debug.WriteLine($"AppDataDirectory: {FileSystem.AppDataDirectory}");
 
