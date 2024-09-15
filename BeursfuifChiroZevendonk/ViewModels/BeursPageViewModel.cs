@@ -19,6 +19,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
         private readonly DrinksDataService _drinksService;
         public IEnumerable<Axis> YAxes { get; set; }
         public IEnumerable<Axis> XAxes { get; set; }
+        public event Action<double> ProgressAnimationRequested;
 
         public BeursPageViewModel(DrinksDataService drinksService)
         {
@@ -29,36 +30,14 @@ namespace BeursfuifChiroZevendonk.ViewModels
             });
             MessagingCenter.Subscribe<MainPageViewModel, double>(this, "ProgressUpdateDuration", (sender, duration) =>
             {
-                StartProgressAnimation(duration);
+                ProgressAnimationRequested?.Invoke(duration);
             });
 
             MessagingCenter.Subscribe<MainPageViewModel, double>(this, "ProgressCrashDuration", (sender, duration) =>
             {
-                StartProgressAnimation(duration);
+                ProgressAnimationRequested?.Invoke(duration);
             });
             UpdateChart();
-        }
-        private void StartProgressAnimation(double durationMilliseconds)
-        {
-            Task.Run(async () =>
-            {
-                double progress = 0;
-                int stepDelay = 100;
-                int steps = (int)(durationMilliseconds / stepDelay);
-
-                for (int i = 0; i <= steps; i++)
-                {
-                    progress = (double)i / steps;
-                    Application.Current.Dispatcher.Dispatch(() =>
-                    {
-                        ProgressValue = progress;
-                    });
-
-                    await Task.Delay(stepDelay);
-                }
-
-                Application.Current.Dispatcher.Dispatch(() => ProgressValue = 0);
-            });
         }
         private void InitializeAxes()
         {

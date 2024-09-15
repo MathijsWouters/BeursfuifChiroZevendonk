@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-11T13:51:01.092</Modified>
+      <Modified>2024-09-15T10:55:32.962</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-11T13:51:00.922</Modified>
+      <Modified>2024-09-15T10:55:32.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.runtimeconfig.json">
       <PackagePath>BeursfuifChiroZevendonk.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.dll">
       <PackagePath>BeursfuifChiroZevendonk.dll</PackagePath>
-      <Modified>2024-09-11T13:51:00.024</Modified>
+      <Modified>2024-09-15T10:55:32.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BeursfuifChiroZevendonk.exe</PackagePath>
-      <Modified>2024-09-11T13:51:00.064</Modified>
+      <Modified>2024-09-15T10:55:32.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

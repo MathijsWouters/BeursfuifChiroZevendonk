@@ -6,5 +6,15 @@ public partial class BeursPage : ContentPage
 	{
         InitializeComponent();
 		BindingContext = viewmodel;
-	}
+        viewmodel.ProgressAnimationRequested += StartProgressAnimation;
+
+    }
+    private async void StartProgressAnimation(double durationMilliseconds)
+    {
+        Dispatcher.Dispatch(async () =>
+        {
+            await progressBar.ProgressTo(1, (uint)durationMilliseconds, Easing.Linear);
+            progressBar.Progress = 0;
+        });
+    }
 }
