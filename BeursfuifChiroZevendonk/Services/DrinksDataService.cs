@@ -242,6 +242,23 @@ private IntPtr GetActiveWindow()
             var json = JsonSerializer.Serialize(currentSalesData);
             await File.WriteAllTextAsync(filePath, json);
         }
+        public async Task InitializePreviousSalesDataAsync()
+        {
+            var previousSalesFilePath = Path.Combine(FileSystem.AppDataDirectory, previousFiveMinuteDataFile);
+
+            if (!File.Exists(previousSalesFilePath))
+            {
+                var previousSalesData = Drinks.Select(drink => new FiveMinuteDrinkSalesData
+                {
+                    DrinkName = drink.Name,
+                    QuantitySoldLastFiveMinutes = 0
+                }).ToList();
+
+                var json = JsonSerializer.Serialize(previousSalesData, new JsonSerializerOptions { WriteIndented = true });
+                await File.WriteAllTextAsync(previousSalesFilePath, json);
+            }
+        }
+
 
         public async Task ProcessFiveMinuteSalesDataAsync(List<Drink> drinks)
         {
@@ -261,8 +278,8 @@ private IntPtr GetActiveWindow()
                 if (currentSale != null && previousSale != null)
                 {
                     var percentageChange = CalculatePercentageChange(previousSale.QuantitySoldLastFiveMinutes, currentSale.QuantitySoldLastFiveMinutes);
-                    var adjustment = DetermineAdjustmentMagnitude(percentageChange, 0.25m); 
-                    var newPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, drink.CurrentPrice + adjustment));
+                    var adjustment = DetermineAdjustmentMagnitude(percentageChange, 0.25m);
+                    var newPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, SnapToInterval(drink.CurrentPrice + adjustment, 0.25m)));
                     if (drink.CurrentPrice != newPrice)
                     {
                         drink.CurrentPrice = newPrice;
@@ -389,6 +406,10 @@ private IntPtr GetActiveWindow()
                 else return 0; 
             }
         }
+        private static decimal SnapToInterval(decimal value, decimal interval)
+        {
+            return Math.Round(value / interval) * interval;
+        }
         public async Task SaveHistoricalPricesAsync()
         {
             var drinksData = Drinks.Select(drink => new
@@ -425,10 +446,11 @@ private IntPtr GetActiveWindow()
                 decimal averagePrice = (drink.MinPrice + drink.MaxPrice) / 2;
 
                 decimal adjustment = new Random().NextDouble() < 0.5 ? -0.25m : 0.25m;
-                drink.CurrentPrice = Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, averagePrice + adjustment));
+                drink.CurrentPrice = SnapToInterval(Math.Max(drink.MinPrice, Math.Min(drink.MaxPrice, averagePrice + adjustment)), 0.25m); 
             }
             await ResetCurrentSalesDataAsync();
         }
+
     }
 
 }

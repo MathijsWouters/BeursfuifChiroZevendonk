@@ -31,7 +31,7 @@ namespace BeursfuifChiroZevendonk
             builder.Services.AddTransient<AddDrinkPageViewModel>();
             builder.Services.AddTransient<EditDrinkPageViewModel>();
             builder.Services.AddSingleton<ManageDrinksPageViewModel>();
-
+            builder.Services.AddSingleton<SettingsPageViewModel>();
             //views
             //builder.Services.AddSingleton<ViewName>();
             builder.Services.AddSingleton<BeursPage>();
@@ -39,9 +39,10 @@ namespace BeursfuifChiroZevendonk
             builder.Services.AddTransient<AddDrinkPage>();
             builder.Services.AddTransient<EditDrinkPage>();
             builder.Services.AddSingleton<ManageDrinksPage>();
+            builder.Services.AddSingleton<SettingsPage>();
 
 
-            
+
 
             return builder.Build();
         }

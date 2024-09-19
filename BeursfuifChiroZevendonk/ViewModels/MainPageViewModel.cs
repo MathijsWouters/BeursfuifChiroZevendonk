@@ -23,17 +23,20 @@ namespace BeursfuifChiroZevendonk.ViewModels
         [ObservableProperty]
         private bool stopFeestjeButtonEnabled = false;
         private readonly IDispatcher dispatcher;
+        [ObservableProperty]
+        private double progressValue;
         private Timer countdownTimer;
-        private Timer fiveMinuteTimer;
+        private Timer updateTimer;
+        private Timer crashTimer;
         private Timer partyTimer;
+        private double updateIntervalInSeconds;
+        private double crashIntervalInSeconds;
         private const string FiveMinuteDataFile = "five_minute_drink_data.json";
         private DateTime lastDrinkAddedTime;
         [ObservableProperty]
         private bool _isBeursPageOpen;
         [ObservableProperty]
         private bool _isCrashActive;
-        [ObservableProperty]
-        private bool _afterCrashTick;
 
         [ObservableProperty]
         private string tenSecondTimerText = "Timer: 10 seconds";
@@ -53,7 +56,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             _drinksService = drinksService;
             _isFeestjeActive = false;
             this.dispatcher = dispatcher;
-            InitializeTimer();
+            InitializeTimers();
 #if WINDOWS
     var keyboardService = new KeyboardService();
     keyboardService.OnBackspacePressed += () => RemoveLastItemFromReceipt();
@@ -62,20 +65,66 @@ namespace BeursfuifChiroZevendonk.ViewModels
     keyboardService.Start();
 #endif
         }
-        private void InitializeTimer()
+        private void InitializeTimers()
         {
             countdownTimer = new Timer(1000);
             countdownTimer.Elapsed += HandleCountdownTick;
             countdownTimer.AutoReset = true;
 
-            fiveMinuteTimer = new Timer(300000); 
-            fiveMinuteTimer.Elapsed += HandleFiveMinuteTick;
-            fiveMinuteTimer.AutoReset = true;
+            updateTimer = new Timer(); 
+            updateTimer.Elapsed += HandleUpdateTick;  
+
+            crashTimer = new Timer(); 
+            crashTimer.Elapsed += HandleCrashTick;
 
             partyTimer = new Timer(500); 
             partyTimer.Elapsed += (sender, e) => PartyTime(); 
             partyTimer.AutoReset = true;
 
+        }
+        private void StartProgressBarForUpdate()
+        {
+            if (updateIntervalInSeconds <= 0) return;
+
+
+            double durationMilliseconds = updateIntervalInSeconds * 1000;
+            MessagingCenter.Send(this, "ProgressUpdateDuration", durationMilliseconds);
+        }
+
+        private void StartProgressBarForCrash()
+        {
+            if (crashIntervalInSeconds <= 0) return;
+
+            double durationMilliseconds = crashIntervalInSeconds * 1000;
+            MessagingCenter.Send(this, "ProgressCrashDuration", durationMilliseconds);
+        }
+
+
+        public void SetUpdateInterval(double seconds)
+        {
+            if (updateTimer != null)
+            {
+                updateTimer.Stop(); 
+                updateTimer.Interval = seconds * 1000;
+                updateIntervalInSeconds = seconds;
+                if (_isFeestjeActive)
+                {
+                    updateTimer.Start(); 
+                }
+            }
+        }
+        public void SetCrashInterval(double seconds)
+        {
+            if (crashTimer != null)
+            {
+                crashTimer.Stop(); 
+                crashTimer.Interval = seconds * 1000;
+                crashIntervalInSeconds = seconds;   
+                if (_isFeestjeActive)
+                {
+                    crashTimer.Start(); 
+                }
+            }
         }
         private void HandleCountdownTick(object sender, ElapsedEventArgs e)
         {
@@ -96,34 +145,52 @@ namespace BeursfuifChiroZevendonk.ViewModels
                 });
             }
         }
-        private async void HandleFiveMinuteTick(object sender, ElapsedEventArgs e)
+        private async void HandleUpdateTick(object sender, ElapsedEventArgs e)
         {
             if (_isCrashActive)
             {
-                partyTimer.Start();
+                Debug.WriteLine($"[{DateTime.Now}] Crash detected - switching to crash mode...");
+                crashTimer.Start();
+                StartProgressBarForCrash();
                 await _drinksService.ProcessCrashDataAsync(_drinksService.Drinks.ToList());
-                _isCrashActive = false;
-                _afterCrashTick = true;
-            }
-            else if (_afterCrashTick)
-            {
-                partyTimer.Stop(); 
-                CrashButtonColor = Colors.DarkSlateGray; 
-                OnPropertyChanged(nameof(CrashButtonColor));
-                await _drinksService.ProcessPostCrashDataAsync(_drinksService.Drinks.ToList());
-                _afterCrashTick = false;
+                updateTimer.Stop();
+                partyTimer.Start();
             }
             else
             {
+                Debug.WriteLine($"[{DateTime.Now}] Regular update triggered...");
+                StartProgressBarForUpdate();
                 await _drinksService.ProcessFiveMinuteSalesDataAsync(_drinksService.Drinks.ToList());
             }
+
             MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
+
+        }
+
+        private async void HandleCrashTick(object sender, ElapsedEventArgs e)
+        {
+            Debug.WriteLine($"[{DateTime.Now}] Stopping crash mode and resuming normal operation...");
+
+            partyTimer.Stop();
+            CrashButtonColor = Colors.DarkSlateGray;
+            OnPropertyChanged(nameof(CrashButtonColor));
+
+            Debug.WriteLine($"[{DateTime.Now}] Processing post-crash data...");
+            await _drinksService.ProcessPostCrashDataAsync(_drinksService.Drinks.ToList());
+            _isCrashActive = false;
+
+            CrashButtonColor = Colors.DarkSlateGray;
+            OnPropertyChanged(nameof(CrashButtonColor));
+            MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
+
             if (_isFeestjeActive)
             {
-                fiveMinuteTimer.Stop();
-                fiveMinuteTimer.Start();
+                crashTimer.Stop();
+                updateTimer.Start();
+                StartProgressBarForUpdate();
             }
         }
+
         private void PartyTime()
         {
             var random = new Random();
@@ -278,19 +345,46 @@ namespace BeursfuifChiroZevendonk.ViewModels
             }
         }
         [RelayCommand]
+        private async Task NavigateToSettings()
+        {
+            try
+            {
+                var settingsVm = new SettingsPageViewModel(this);
+                var uri = new Uri($"///{nameof(SettingsPage)}?ViewModel={settingsVm.GetType().FullName}", UriKind.Relative);
+                await Shell.Current.GoToAsync(uri);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+        }
+
+        [RelayCommand]
         private async Task StartFeestje()
         {
+            if (updateTimer == null || updateTimer.Interval == 100 ||
+                crashTimer == null || crashTimer.Interval == 100)
+            {
+                await Shell.Current.DisplayAlert(
+                    "Timers Niet Geconfigureerd",
+                    "De timers voor updates en crashes moeten zijn ingesteld voordat je het feestje kunt starten.",
+                    "OK");
+                return; 
+            }
+
             _isFeestjeActive = true;
             StartFeestjeButtonColor = Colors.Green;
             StartFeestjeButtonEnabled = false;
             StopFeestjeButtonEnabled = true;
-
+            await _drinksService.InitializePreviousSalesDataAsync();
             await _drinksService.InitializeCurrentSalesDataAsync();
-            fiveMinuteTimer.Start();
+            updateTimer.Start();
+            StartProgressBarForUpdate();
             MessagingCenter.Send<App>((App)Application.Current, "PricesUpdated");
             Debug.WriteLine($"AppDataDirectory: {FileSystem.AppDataDirectory}");
 
         }
+
         [RelayCommand]
         private async Task StopFeestje()
         {
@@ -301,7 +395,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
             StartFeestjeButtonEnabled = true;
             StopFeestjeButtonEnabled = false;
             countdownTimer.Stop();
-            fiveMinuteTimer.Stop();
+            updateTimer.Stop();
             await SaveAndConvertSalesData();
             await _drinksService.DeleteSalesDataAsync("sales_data.json");
             await _drinksService.DeleteFileAsync(FiveMinuteDataFile);
@@ -349,6 +443,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
             if (_isFeestjeActive)
             {
                 _isCrashActive = true;
+                CrashButtonColor = Colors.Red;
+                OnPropertyChanged(nameof(CrashButtonColor));
             }
             
         }
