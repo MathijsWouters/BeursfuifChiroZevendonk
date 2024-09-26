@@ -3,6 +3,7 @@ using LiveChartsCore.Measure;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
 using Microsoft.Maui.Dispatching;
+using Microsoft.Maui.Controls;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -37,8 +38,10 @@ namespace BeursfuifChiroZevendonk.ViewModels
             {
                 ProgressAnimationRequested?.Invoke(duration);
             });
+
             UpdateChart();
         }
+
         private void InitializeAxes()
         {
             decimal highestMaxPrice = Drinks.Max(drink => drink.MaxPrice) + 0.25m;

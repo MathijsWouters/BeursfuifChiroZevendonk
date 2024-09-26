@@ -41,6 +41,7 @@ namespace BeursfuifChiroZevendonk.Services
             Debug.WriteLine("Enter key pressed.");
             OnEnterPressed?.Invoke();
             }
+
         }
 
         public void Start()
