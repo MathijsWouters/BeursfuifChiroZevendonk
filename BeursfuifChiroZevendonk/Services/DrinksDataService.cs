@@ -383,14 +383,30 @@ private IntPtr GetActiveWindow()
             var random = new Random();
             var chance = random.Next(100);
 
-            if (percentageChange == -100)
+            if (percentageChange <= -100)
             {
-                return chance < 80 ? -interval : 0;
+                return chance < 80 ? -2 * interval : -interval;
+            }
+            else if (percentageChange <= -50)
+            {
+                if (chance < 20) return -2 * interval;
+                else if (chance < 60) return -interval;
+                else return 0;
             }
             else if (percentageChange <= -15)
             {
                 if (chance < 55) return -interval;
                 else if (chance < 70) return -2 * interval;
+                else return 0;
+            }
+            else if (percentageChange >= 100)
+            {
+                return chance < 80 ? 2 * interval : interval;
+            }
+            else if (percentageChange >= 50)
+            {
+                if (chance < 20) return 2 * interval;
+                else if (chance < 60) return interval;
                 else return 0;
             }
             else if (percentageChange >= 15)
@@ -401,11 +417,13 @@ private IntPtr GetActiveWindow()
             }
             else
             {
-                if (chance < 42.5) return interval; 
-                else if (chance < 85) return -interval; 
-                else return 0; 
+                if (chance < 42.5) return interval;
+                else if (chance < 85) return -interval;
+                else return 0;
             }
         }
+
+
         private static decimal SnapToInterval(decimal value, decimal interval)
         {
             return Math.Round(value / interval) * interval;
