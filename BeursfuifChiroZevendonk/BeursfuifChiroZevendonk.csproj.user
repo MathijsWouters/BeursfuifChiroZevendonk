@@ -6,8 +6,16 @@
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
     <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>False</AppxShowAllApps>
-    <_LastSelectedProfileId>MSIX-win10-x641.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>MSIX-win10-x643.pubxml</_LastSelectedProfileId>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <Source>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</Source>
+    <SmallTileSource>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</MediumTileSource>
+    <WideTileSource>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</WideTileSource>
+    <LargeTileSource>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</LargeTileSource>
+    <AppIconSource>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\appiconLargeTile.scale-400.png</PackageLogoSource>
   </PropertyGroup>
   <ItemGroup>
     <MauiXaml Update="Resources\Styles\BeursFuifStyles.xaml">

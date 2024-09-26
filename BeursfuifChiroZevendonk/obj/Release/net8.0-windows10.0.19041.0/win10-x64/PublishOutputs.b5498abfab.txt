@@ -55,6 +55,7 @@ C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendo
 C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Release\net8.0-android\publish\appiconWideTile.scale-150.png
 C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Release\net8.0-android\publish\appiconWideTile.scale-200.png
 C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Release\net8.0-android\publish\appiconWideTile.scale-400.png
+C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Release\net8.0-android\publish\banner.scale-100.jfif
 C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Release\net8.0-android\publish\dotnet_bot.scale-100.png
 C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Release\net8.0-android\publish\dotnet_bot.scale-125.png
 C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Release\net8.0-android\publish\dotnet_bot.scale-150.png

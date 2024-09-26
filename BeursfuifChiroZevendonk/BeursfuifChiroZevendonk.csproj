@@ -39,7 +39,7 @@
 		<DefaultLanguage>nl-be</DefaultLanguage>
 		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
 		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-		<PackageCertificateThumbprint>50D0FC4E6CB5756A14BB69E2649140765008DC67</PackageCertificateThumbprint>
+		<PackageCertificateThumbprint>7FDC9993A9F713D5E3861675EAB4CB5FDFB288B7</PackageCertificateThumbprint>
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
 		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
 		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>

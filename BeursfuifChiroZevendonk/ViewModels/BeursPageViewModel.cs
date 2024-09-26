@@ -52,7 +52,10 @@ namespace BeursfuifChiroZevendonk.ViewModels
             MaxLimit = (double)highestMaxPrice,
             ShowSeparatorLines = false,
             LabelsPaint = new SolidColorPaint(SKColors.White),
-            TextSize = 20
+            TextSize = 20,
+            UnitWidth = 0.25, 
+            MinStep = 0.25, 
+            Labeler = value => value.ToString("F2")
         }
             };
             XAxes = new Axis[]
@@ -78,8 +81,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
                     Values = new decimal[] { drink.CurrentPrice },
                     Name = drink.Name,
                     Fill = new SolidColorPaint(SKColor.Parse(drink.DrinkColorHex)),
-                    MaxBarWidth = double.NaN, 
-                    Padding = 30
+                    MaxBarWidth = 200, 
+                    Padding = 35
                 };
 
                 series.Add(columnSeries);
@@ -89,6 +92,8 @@ namespace BeursfuifChiroZevendonk.ViewModels
             foreach (var serie in series)
             {
                 Series.Add(serie);
+
+
             }
 
             RefreshChart();

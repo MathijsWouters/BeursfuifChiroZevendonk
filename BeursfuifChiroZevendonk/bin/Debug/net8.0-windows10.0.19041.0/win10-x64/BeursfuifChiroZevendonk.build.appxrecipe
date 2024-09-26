@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.templatemaui</PackageIdentityName>
-    <PackageIdentityPublisher>CN=MathijsWouters</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Mathijs Wouters</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

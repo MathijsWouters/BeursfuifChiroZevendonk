@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.templatemaui</PackageIdentityName>
-    <PackageIdentityPublisher>CN=MathijsWouters</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Mathijs Wouters</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,36 +18,36 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>89A7741C340872460A8B53F4D4BE2FCF4F1C8BF3EB146A6B64025AA1CEE57FA1</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>com.companyname.templatemaui_0.0.1.0_x64__jvvedhb2cste6</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>com.companyname.templatemaui_jvvedhb2cste6!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>BB3CA2ECE29B5CBE2EB7348DF1236E5779EC7DE5E736318958D47BC04D5124C7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>com.companyname.templatemaui_1.0.3.0_x64__v60e3rhbqen2c</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>com.companyname.templatemaui_v60e3rhbqen2c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>com.companyname.templatemaui</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=MathijsWouters</RegisteredPackagePublisher>
-    <RegisteredVersion>0.0.1.0</RegisteredVersion>
+    <RegisteredPackagePublisher>CN=Mathijs Wouters</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.3.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-15T10:55:32.962</Modified>
+      <Modified>2024-09-26T13:20:14.650</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-15T10:55:32.869</Modified>
+      <Modified>2024-09-26T13:20:14.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.runtimeconfig.json">
       <PackagePath>BeursfuifChiroZevendonk.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-02T10:08:41.774</Modified>
+      <Modified>2024-09-24T13:45:42.130</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.dll">
       <PackagePath>BeursfuifChiroZevendonk.dll</PackagePath>
-      <Modified>2024-09-15T10:55:32.589</Modified>
+      <Modified>2024-09-26T13:20:13.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BeursfuifChiroZevendonk.exe</PackagePath>
-      <Modified>2024-09-15T10:55:32.593</Modified>
+      <Modified>2024-09-26T13:20:13.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -279,27 +279,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-09-09T17:03:08.033</Modified>
+      <Modified>2024-09-19T13:30:02.327</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-09-09T17:03:08.041</Modified>
+      <Modified>2024-09-19T13:30:02.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-09-09T17:03:08.051</Modified>
+      <Modified>2024-09-19T13:30:02.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-09-09T17:03:08.066</Modified>
+      <Modified>2024-09-19T13:30:02.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-09-09T17:03:08.120</Modified>
+      <Modified>2024-09-19T13:30:02.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\Documents\chiro\BeursfuifChiroZevendonk\BeursfuifChiroZevendonk\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BeursfuifChiroZevendonk.deps.json">
       <PackagePath>BeursfuifChiroZevendonk.deps.json</PackagePath>
-      <Modified>2024-09-09T17:08:40.249</Modified>
+      <Modified>2024-09-24T13:45:42.015</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gebruiker\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

@@ -89,6 +89,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
 
             double durationMilliseconds = updateIntervalInSeconds * 1000;
             MessagingCenter.Send(this, "ProgressUpdateDuration", durationMilliseconds);
+
         }
 
         private void StartProgressBarForCrash()
