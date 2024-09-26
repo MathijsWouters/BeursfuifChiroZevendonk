@@ -46,7 +46,7 @@ namespace BeursfuifChiroZevendonk.ViewModels
         {
             decimal highestMaxPrice = Drinks.Max(drink => drink.MaxPrice) + 0.25m;
             decimal lowestMinPrice = Drinks.Min(drink => drink.MinPrice) - 0.25m;
-
+            lowestMinPrice = Math.Max(0, lowestMinPrice);
             YAxes = new Axis[]
             {
         new Axis
