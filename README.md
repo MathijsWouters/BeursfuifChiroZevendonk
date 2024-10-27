@@ -26,3 +26,5 @@ These instructions will help you set up and run the application on your local ma
    ```bash
    git clone https://github.com/username/BeursfuifChiroZevendonk.git
    cd BeursfuifChiroZevendonk
+
+Status: Updated
